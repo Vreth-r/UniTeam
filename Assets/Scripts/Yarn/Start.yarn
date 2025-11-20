@@ -1,0 +1,29 @@
+﻿title: Setup
+---
+<<declare $optionsTimer = 0>>
+// set quiz variables here
+<<declare $prototypeQuizVar = 0>>
+===
+
+title: Start
+---
+Pick one!
+-> Option 1 #delay:0.5 #duration:-1 #vPos:top #hPos:left
+    <<jump option1>>
+-> Option 2 #delay:0.5 #duration:-1 #vPos:top #hPos:right
+    <<jump option2>>
+-> default // default option that will semantically never be used but is a good debug safety net
+    <<jump Start>>
+===
+
+title: option1
+---
+You picked option 1.
+<<jump Start>>
+===
+
+title: option2
+---
+You picked option 2.
+<<jump Start>>
+===
