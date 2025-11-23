@@ -1,0 +1,20 @@
+{
+  "nodes": [
+    {
+      "id": "NMA 997",
+      "name": "Intermediate Game Design: Mechanics",
+      "description": "This is a course that exists.",
+      "position": { "x": 0, "y": 0 },
+      "connected": ["TOO 001"],
+      "isStartingNode": true
+    },
+    {
+      "id": "TOO 001",
+      "name": "The Other One",
+      "description": "This is the other course that exists.",
+      "position": { "x": 250, "y": 150 },
+      "connected": [],
+      "isStartingNode": false
+    }
+  ]
+}
