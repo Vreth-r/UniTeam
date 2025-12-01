@@ -31,7 +31,6 @@ public class SkillTreeManager : MonoBehaviour
 
     void GenerateTree()
     {
-        int i = 0;
         // Create each node
         foreach (var nodeData in treeData.nodes)
         {
@@ -48,11 +47,9 @@ public class SkillTreeManager : MonoBehaviour
 
             nodeLookup[nodeData.id] = ui;
             
-            // drawing in an order??
-            // dont play animation until timer ends idk how to do that tho LMAO
+            // dont play animation until a timer ends idk how to do that tho LMAO
             uiAnimation.Play("node-appear");
 
-            i += 1; 
         }
 
         // Create lines between nodes
@@ -113,8 +110,4 @@ public class SkillTreeManager : MonoBehaviour
 
     }
 
-    private IEnumerator WaitForLine(float nodeOrder)
-    {
-        yield return new WaitForSeconds(1f * nodeOrder);
-    }
 }
