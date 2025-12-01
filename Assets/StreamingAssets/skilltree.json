@@ -6,7 +6,9 @@
       "description": "This is a course that exists.",
       "position": { "x": 0, "y": 0 },
       "connected": ["TOO 001"],
-      "isStartingNode": true
+      "isStartingNode": true,
+      "nodeOrder": 0
+      
     },
     {
       "id": "TOO 001",
@@ -14,7 +16,8 @@
       "description": "This is the other course that exists.",
       "position": { "x": 250, "y": 150 },
       "connected": [],
-      "isStartingNode": false
+      "isStartingNode": false,
+      "nodeOrder": 1
     }
   ]
 }
