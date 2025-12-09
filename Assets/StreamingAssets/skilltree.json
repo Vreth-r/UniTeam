@@ -1,0 +1,61 @@
+{
+    "nodes": [
+        {
+            "id": "NMA 997",
+            "name": "Intermediate Game Design: Mechanics",
+            "description": "This is a course that exists.",
+            "position": {
+                "x": -207.5859832763672,
+                "y": 92.12399291992188
+            },
+            "connected": [
+                "TOO 001"
+            ],
+            "isStartingNode": true,
+            "isExpansionNode": true,
+            "startsExpanded": false
+        },
+        {
+            "id": "TOO 001",
+            "name": "The Other One",
+            "description": "This is the other course that exists.",
+            "position": {
+                "x": 127.16812133789063,
+                "y": 465.6782531738281
+            },
+            "connected": [
+                "NMA 998",
+                "NMA 999"
+            ],
+            "isStartingNode": false,
+            "isExpansionNode": true,
+            "startsExpanded": true
+        },
+        {
+            "id": "NMA 998",
+            "name": "Advanced Game Design: Systems",
+            "description": "This is an advanced course that exists.",
+            "position": {
+                "x": 626.516845703125,
+                "y": -289.883544921875
+            },
+            "connected": [],
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false
+        },
+        {
+            "id": "NMA 999",
+            "name": "Extreme Game Design: Gacha",
+            "description": "This is an extreme course that exists.",
+            "position": {
+                "x": 819.3631591796875,
+                "y": 71.38749694824219
+            },
+            "connected": [],
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false
+        }
+    ]
+}
