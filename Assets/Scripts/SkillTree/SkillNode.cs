@@ -15,4 +15,6 @@ public class SkillNodeJSON
     public Vector2 position;
     public string[] connected;
     public bool isStartingNode;
+    public bool isExpansionNode;
+    public bool startsExpanded;
 }

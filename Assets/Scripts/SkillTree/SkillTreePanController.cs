@@ -21,6 +21,8 @@ public class SkillTreePanController : MonoBehaviour
     private bool dragging = false;
     private Vector2 lastPoint;
 
+    public bool editMode = false;
+
     private void OnEnable()
     {
         clickAction.action.started += StartDrag;
@@ -51,6 +53,7 @@ public class SkillTreePanController : MonoBehaviour
 
     private void StartDrag(InputAction.CallbackContext ctx)
     {
+        if (editMode) return;
         dragging = true;
         lastPoint = pointAction.action.ReadValue<Vector2>();
     }
@@ -62,6 +65,7 @@ public class SkillTreePanController : MonoBehaviour
 
     private void DoPan(InputAction.CallbackContext ctx)
     {
+        if (editMode) return;
         if (!dragging)
             return;
 
@@ -73,6 +77,7 @@ public class SkillTreePanController : MonoBehaviour
 
     private void DoScroll(InputAction.CallbackContext ctx)
     {
+        if (editMode) return;
         Vector2 scroll = ctx.ReadValue<Vector2>();
         float amount = scroll.y;
 
