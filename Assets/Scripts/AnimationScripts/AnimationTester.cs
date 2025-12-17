@@ -2,6 +2,8 @@ using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using DG.Tweening;
+using System.Collections;
 
 public class AnimationTester : MonoBehaviour
 {
@@ -10,40 +12,51 @@ public class AnimationTester : MonoBehaviour
     private Animator animator;
     int questionCount = 2;
     public int variant = 0;
+    Vector3 originalPosition;
     InputAction resumeAction;
+    [SerializeField] private AnimationCurve node_tick_curve;
+    Tween nodeTween;
+    Tween resetTween;
+    float elapsedTime = 0;
     void Start()
     {
         resumeAction = InputSystem.actions.FindAction("Next");
-        animator = GetComponent<Animator>();
+        DOTween.Init();
+        // animator = GetComponent<Animator>();
 
-        resumeAction.performed += ctx => PlayAnimation(variant);
+        resumeAction.performed += ctx => PlayAnimation();
+        originalPosition = circleParent.transform.position;
         
     }
 
-    // Update is called once per frame
-
-    void PlayAnimation(int variant)
+void LateUpdate()
     {
-        Debug.Log("playing");
-        if (variant == 0)
+        if (circleParent.position.x >= 760)
         {
-            animator.Play("next-question");
+            nodeTween.Kill();
+            circleParent.position =  new Vector3(originalPosition.x - 140f, circleParent.position.y, 0);
+            nodeTween = circleParent.DOMove(new Vector3(originalPosition.x, circleParent.position.y, 0), 0.8f).SetEase(node_tick_curve);
+            nodeTween.Play();
         }
-        else if (variant == 1)
-        {
-            animator.Play("v2-next-q");
-        }
-        else
-        {
-            animator.Play("v3next-question 1");
-        }
+    }
+
+
+    void PlayAnimation()
+    {
+        UpdateText();
+        float newX = circleParent.position.x + 120f;
+        nodeTween = circleParent.DOMove(new Vector3(newX, circleParent.position.y, 0), 0.8f).SetEase(node_tick_curve);
+        nodeTween.Play();
     }
 
     public void UpdateCircle()
     {
-        float newX = circleParent.position.x + 112.92f;
-        Vector3 newPos = new Vector3 (newX, circleParent.position.y, 0);
-        circleParent.position = newPos;
+        // save the last animation position
+
+        // Debug.Log("animation done");
+        // float newX = circleParent.position.x + 112.92f;
+        // Vector3 newPos = new Vector3 (newX, circleParent.position.y, 0);
+        // circleParent.position = newPos;
     }
 
     public void UpdateText()
