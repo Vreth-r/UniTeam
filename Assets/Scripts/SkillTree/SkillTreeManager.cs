@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using System.Collections;
 using System.IO;
 
 public class SkillTreeManager : MonoBehaviour
@@ -12,6 +13,7 @@ public class SkillTreeManager : MonoBehaviour
 
     public SkillTreePanController panController;
     public SkillNodeInputHandler inputHandler;
+    private Animator uiAnimation;
 
     Dictionary<string, SkillNodeUI> nodeLookup = new();
 
@@ -49,11 +51,21 @@ public class SkillTreeManager : MonoBehaviour
         // 1) Create each node UI
         foreach (var nodeData in treeData.nodes)
         {
+
             var ui = Instantiate(nodePrefab, nodeParent);
+
+            // play a spawn in animation
+            uiAnimation = ui.GetComponentInChildren<Animator>();
+            uiAnimation.Rebind();
+
             ui.InitializeFromJSON(nodeData);
             ui.RectTransform.anchoredPosition = nodeData.position;
 
             nodeLookup[nodeData.id] = ui;
+            
+            // dont play animation until a timer ends idk how to do that tho LMAO
+            uiAnimation.Play("node-appear");
+
         }
 
         // 2) Build child relationships
@@ -145,8 +157,9 @@ public class SkillTreeManager : MonoBehaviour
         line.useWorldSpace = false;
         line.positionCount = 2;
 
-        line.SetPosition(0, a.anchoredPosition);
-        line.SetPosition(1, b.anchoredPosition);
+        // Set positions (anchored space)
+        // line.SetPosition(0, a.anchoredPosition);
+        // line.SetPosition(1, b.anchoredPosition);
 
         line.numCapVertices = 8;
         line.numCornerVertices = 5;
@@ -154,6 +167,26 @@ public class SkillTreeManager : MonoBehaviour
         line.endWidth = 6f;
         line.alignment = LineAlignment.TransformZ;
 
-        return line;
+        // animate the line 
+        StartCoroutine (AnimateLine(a, b, line));
     }
+
+    private IEnumerator AnimateLine(RectTransform a, RectTransform b, LineRenderer line)
+    {
+        float startTime = Time.time;
+
+        Vector3 startPosition = a.anchoredPosition;
+        Vector3 endPosition = b.anchoredPosition;
+
+        Vector3 pos = startPosition;
+        while (pos != endPosition)
+        {
+            float t = Time.time - startTime / 0.1f;
+            pos = Vector3.Lerp(startPosition, endPosition, t);
+            line.SetPosition(1, pos);
+            yield return null;
+        }
+
+    }
+
 }
