@@ -55,8 +55,8 @@ public class SkillTreeManager : MonoBehaviour
             var ui = Instantiate(nodePrefab, nodeParent);
 
             // play a spawn in animation
-            uiAnimation = ui.GetComponentInChildren<Animator>();
-            uiAnimation.Rebind();
+            // uiAnimation = ui.GetComponentInChildren<Animator>();
+            // uiAnimation.Rebind();
 
             ui.InitializeFromJSON(nodeData);
             ui.RectTransform.anchoredPosition = nodeData.position;
@@ -64,7 +64,7 @@ public class SkillTreeManager : MonoBehaviour
             nodeLookup[nodeData.id] = ui;
             
             // dont play animation until a timer ends idk how to do that tho LMAO
-            uiAnimation.Play("node-appear");
+            // uiAnimation.Play("node-appear");
 
         }
 
@@ -169,6 +169,7 @@ public class SkillTreeManager : MonoBehaviour
 
         // animate the line 
         StartCoroutine (AnimateLine(a, b, line));
+        return line;
     }
 
     private IEnumerator AnimateLine(RectTransform a, RectTransform b, LineRenderer line)
