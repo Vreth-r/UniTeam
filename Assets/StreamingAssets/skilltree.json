@@ -20,8 +20,8 @@
             "name": "The Other One",
             "description": "This is the other course that exists.",
             "position": {
-                "x": 127.16812133789063,
-                "y": 465.6782531738281
+                "x": 537.4267578125,
+                "y": 94.72578430175781
             },
             "connected": [
                 "NMA 998",
@@ -36,8 +36,8 @@
             "name": "Advanced Game Design: Systems",
             "description": "This is an advanced course that exists.",
             "position": {
-                "x": 626.516845703125,
-                "y": -289.883544921875
+                "x": 202.74656677246095,
+                "y": -138.80023193359376
             },
             "connected": [],
             "isStartingNode": false,
@@ -49,8 +49,8 @@
             "name": "Extreme Game Design: Gacha",
             "description": "This is an extreme course that exists.",
             "position": {
-                "x": 819.3631591796875,
-                "y": 71.38749694824219
+                "x": 212.57313537597657,
+                "y": 348.9876708984375
             },
             "connected": [],
             "isStartingNode": false,

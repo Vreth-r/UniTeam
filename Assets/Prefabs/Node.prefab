@@ -209,9 +209,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcb10712ca4d68b49948a6d988659731, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillNodeUI
+  icon: {fileID: 0}
   border: {fileID: 6144239725949175722}
   unlockedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   lockedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  leftClickAction: {fileID: 5953326598872513963, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  rightClickAction: {fileID: -6954666215509021422, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  pointerPosAction: {fileID: 2308584774039953228, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  dragAction: {fileID: 2308584774039953228, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   data:
     id: 
     name: 
@@ -219,4 +224,10 @@ MonoBehaviour:
     position: {x: 0, y: 0}
     connected: []
     isStartingNode: 0
+    isExpansionNode: 0
+    startsExpanded: 0
   unlocked: 0
+  isExpanded: 1
+  children: []
+  parentLine: {fileID: 0}
+  editModeEnabled: 0

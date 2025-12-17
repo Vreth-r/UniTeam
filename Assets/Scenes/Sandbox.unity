@@ -664,7 +664,7 @@ GameObject:
   - component: {fileID: 857108439}
   - component: {fileID: 857108438}
   m_Layer: 5
-  m_Name: Save
+  m_Name: Save Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1125,7 +1125,7 @@ GameObject:
   - component: {fileID: 1421045576}
   - component: {fileID: 1421045575}
   m_Layer: 5
-  m_Name: Edit
+  m_Name: Edit Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1573,6 +1573,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1894062244}
   - component: {fileID: 1894062245}
+  - component: {fileID: 1894062246}
   m_Layer: 5
   m_Name: Skilltree Manager
   m_TagString: Untagged
@@ -1616,9 +1617,28 @@ MonoBehaviour:
   nodeParent: {fileID: 1553658071}
   linePrefab: {fileID: 2703437229274315268, guid: f00ad001f3d28eb4695b27dab0ad3c88, type: 3}
   panController: {fileID: 1553658072}
+  inputHandler: {fileID: 1894062246}
   editModeButton: {fileID: 1421045575}
   saveButton: {fileID: 857108438}
   editMode: 0
+--- !u!114 &1894062246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894062243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 876f88c470596654880e8ccc52f68399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillNodeInputHandler
+  leftClickAction: {fileID: 5953326598872513963, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  rightClickAction: {fileID: -6954666215509021422, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  pointerPosAction: {fileID: -319188572196012901, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  dragAction: {fileID: 2308584774039953228, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  editModeEnabled: 0
+  uiCamera: {fileID: 394834495}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

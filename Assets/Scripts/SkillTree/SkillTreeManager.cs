@@ -11,6 +11,7 @@ public class SkillTreeManager : MonoBehaviour
     public LineRenderer linePrefab;
 
     public SkillTreePanController panController;
+    public SkillNodeInputHandler inputHandler;
 
     Dictionary<string, SkillNodeUI> nodeLookup = new();
 
@@ -34,6 +35,7 @@ public class SkillTreeManager : MonoBehaviour
         GenerateTree();
         editModeButton.onClick.AddListener(ToggleEditMode);
         saveButton.onClick.AddListener(SaveTree);
+        SkillNodeInputHandler.Instance.allNodes = nodeLookup;
     }
 
     void LoadJSON()
@@ -109,8 +111,7 @@ public class SkillTreeManager : MonoBehaviour
     {
         editMode = !editMode;
 
-        foreach (var kv in nodeLookup)
-            kv.Value.editModeEnabled = editMode;
+        inputHandler.editModeEnabled = editMode;
 
         panController.editMode = editMode;
 

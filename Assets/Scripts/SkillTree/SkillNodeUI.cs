@@ -1,72 +1,31 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;
-using System.Collections;
 using System.Collections.Generic;
 
-public class SkillNodeUI : MonoBehaviour, IPointerClickHandler, IPointerDownHandler, IDragHandler, IPointerUpHandler
+public class SkillNodeUI : MonoBehaviour
 {
+    [Header("UI")]
     public Image icon;
     public Image border;
 
+    [Header("Colors")]
     public Color unlockedColor = Color.yellow;
     public Color lockedColor = Color.gray;
 
+    [Header("Data")]
     public SkillNodeJSON data;
     public bool unlocked;
     public bool isExpanded = true;
     public List<SkillNodeUI> children = new List<SkillNodeUI>();
-
     public LineRenderer parentLine;
 
     public RectTransform RectTransform => (RectTransform)transform;
-
-    // editing vars
-    bool isDragging = false;
-    Vector2 dragOffset;
-
-    public bool editModeEnabled = false; // set by manager
-    
-    public void OnPointerDown(PointerEventData eventData)
-    {
-        if (!editModeEnabled) return;
-
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(
-            RectTransform.parent as RectTransform,
-            eventData.position,
-            eventData.pressEventCamera,
-            out var localPoint
-        );
-
-        dragOffset = RectTransform.anchoredPosition - localPoint;
-        isDragging = true;
-    }
-
-    public void OnDrag(PointerEventData eventData)
-    {
-        if (!isDragging || !editModeEnabled) return;
-
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(
-            RectTransform.parent as RectTransform,
-            eventData.position,
-            eventData.pressEventCamera,
-            out var localPoint
-        );
-
-        RectTransform.anchoredPosition = localPoint + dragOffset;
-    }
-
-    public void OnPointerUp(PointerEventData eventData)
-    {
-        isDragging = false;
-    }
 
     public void InitializeFromJSON(SkillNodeJSON nodeData)
     {
         data = nodeData;
         unlocked = nodeData.isStartingNode;
         border.color = unlocked ? unlockedColor : lockedColor;
-        //icon.sprite = Resources.Load<Sprite>(data.icon);
     }
 
     public void Unlock()
@@ -75,17 +34,9 @@ public class SkillNodeUI : MonoBehaviour, IPointerClickHandler, IPointerDownHand
         border.color = unlockedColor;
     }
 
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        // Always show tooltip when clicking any node
-        SkillTooltip.Instance.Show(this);
-
-        // Additional behavior ONLY for expansion nodes
-        if (data.isExpansionNode)
-        {
-            ToggleExpansion();
-        }
-    }
+    // -------------------------
+    // EXPANSION LOGIC
+    // -------------------------
 
     public void ToggleExpansion()
     {
@@ -102,11 +53,9 @@ public class SkillNodeUI : MonoBehaviour, IPointerClickHandler, IPointerDownHand
         foreach (var child in children)
         {
             child.gameObject.SetActive(true);
-
             if (child.parentLine != null)
                 child.parentLine.gameObject.SetActive(true);
 
-            // If the child is an expansion node AND starts expanded
             if (child.data.isExpansionNode && child.data.startsExpanded)
                 child.Expand();
         }
@@ -119,11 +68,9 @@ public class SkillNodeUI : MonoBehaviour, IPointerClickHandler, IPointerDownHand
         foreach (var child in children)
         {
             child.gameObject.SetActive(false);
-
             if (child.parentLine != null)
                 child.parentLine.gameObject.SetActive(false);
 
-            // Force collapse deeper nodes
             child.CollapseRecursively();
         }
     }
@@ -135,7 +82,6 @@ public class SkillNodeUI : MonoBehaviour, IPointerClickHandler, IPointerDownHand
         foreach (var child in children)
         {
             child.gameObject.SetActive(true);
-
             if (child.parentLine != null)
                 child.parentLine.gameObject.SetActive(true);
 
@@ -151,7 +97,6 @@ public class SkillNodeUI : MonoBehaviour, IPointerClickHandler, IPointerDownHand
         foreach (var child in children)
         {
             child.gameObject.SetActive(false);
-
             if (child.parentLine != null)
                 child.parentLine.gameObject.SetActive(false);
 
@@ -159,9 +104,17 @@ public class SkillNodeUI : MonoBehaviour, IPointerClickHandler, IPointerDownHand
         }
     }
 
-
     public void AssignChildren(List<SkillNodeUI> childNodes)
     {
         children = childNodes;
+    }
+
+    // -------------------------
+    // TOOLTIP
+    // -------------------------
+
+    public void ShowTooltip()
+    {
+        SkillTooltip.Instance.Show(this);
     }
 }
