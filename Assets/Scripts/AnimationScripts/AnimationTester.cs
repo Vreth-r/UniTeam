@@ -35,7 +35,7 @@ void LateUpdate()
         {
             nodeTween.Kill();
             circleParent.position =  new Vector3(originalPosition.x - 140f, circleParent.position.y, 0);
-            nodeTween = circleParent.DOMove(new Vector3(originalPosition.x, circleParent.position.y, 0), 0.8f).SetEase(node_tick_curve);
+            nodeTween = circleParent.DOMove(new Vector3(originalPosition.x, circleParent.position.y, 0), 0.5f).SetEase(node_tick_curve);
             nodeTween.Play();
         }
     }
