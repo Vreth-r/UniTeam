@@ -4,14 +4,17 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using DG.Tweening;
 using System.Collections;
+using UnityEngine.UI;
 
 public class AnimationTester : MonoBehaviour
 {
     public TextMeshProUGUI text;
     public Transform circleParent;
+    public Image lineImage;
     private Animator animator;
+
+    private Color redColor = new Color(228f, 0, 114f);
     int questionCount = 2;
-    public int variant = 0;
     Vector3 originalPosition;
     InputAction resumeAction;
     [SerializeField] private AnimationCurve node_tick_curve;
@@ -33,10 +36,7 @@ void LateUpdate()
     {
         if (circleParent.position.x >= 760)
         {
-            nodeTween.Kill();
-            circleParent.position =  new Vector3(originalPosition.x - 140f, circleParent.position.y, 0);
-            nodeTween = circleParent.DOMove(new Vector3(originalPosition.x, circleParent.position.y, 0), 0.5f).SetEase(node_tick_curve);
-            nodeTween.Play();
+            ResetAnimation();
         }
     }
 
@@ -49,14 +49,18 @@ void LateUpdate()
         nodeTween.Play();
     }
 
-    public void UpdateCircle()
+    void ResetAnimation()
     {
-        // save the last animation position
+        nodeTween.Kill();
+        circleParent.position =  new Vector3(originalPosition.x - 140f, circleParent.position.y, 0);
+        nodeTween = circleParent.DOMove(new Vector3(originalPosition.x, circleParent.position.y, 0), 0.5f).SetEase(node_tick_curve);
+        nodeTween.Play();
+        UpdateLineColour();
+    }
 
-        // Debug.Log("animation done");
-        // float newX = circleParent.position.x + 112.92f;
-        // Vector3 newPos = new Vector3 (newX, circleParent.position.y, 0);
-        // circleParent.position = newPos;
+    void UpdateLineColour()
+    {
+        lineImage.DOColor(redColor, 1f);
     }
 
     public void UpdateText()
