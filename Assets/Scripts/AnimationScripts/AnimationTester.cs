@@ -11,6 +11,7 @@ public class AnimationTester : MonoBehaviour
     public TextMeshProUGUI text;
     public Transform circleParent;
     public Image lineImage;
+    public Transform lineTransform;
     private Animator animator;
 
     private Color redColor = new Color(228f, 0, 114f);
@@ -29,10 +30,15 @@ public class AnimationTester : MonoBehaviour
 
         resumeAction.performed += ctx => PlayAnimation();
         originalPosition = circleParent.transform.position;
+
+        //ResetAnimation();
+        lineTransform.DOMove(new Vector3(0, lineTransform.position.y, 0), 0.5f).SetEase(Ease.OutSine);
+
+
         
     }
 
-void LateUpdate()
+    void LateUpdate()
     {
         if (circleParent.position.x >= 760)
         {
@@ -55,7 +61,7 @@ void LateUpdate()
         circleParent.position =  new Vector3(originalPosition.x - 140f, circleParent.position.y, 0);
         nodeTween = circleParent.DOMove(new Vector3(originalPosition.x, circleParent.position.y, 0), 0.5f).SetEase(node_tick_curve);
         nodeTween.Play();
-        UpdateLineColour();
+        //UpdateLineColour();
     }
 
     void UpdateLineColour()
