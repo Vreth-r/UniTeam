@@ -32,7 +32,10 @@ public class AnimationTester : MonoBehaviour
         originalPosition = circleParent.transform.position;
 
         //ResetAnimation();
-        lineTransform.DOMove(new Vector3(0, lineTransform.position.y, 0), 0.5f).SetEase(Ease.OutSine);
+        circleParent.position =  new Vector3(originalPosition.x - 140f, circleParent.position.y, 0);
+        circleParent.DOMove(new Vector3(originalPosition.x, circleParent.position.y, 0), 0.5f).SetEase(node_tick_curve);
+        lineTransform.DOMove(new Vector3(-1820, lineTransform.position.y, 0), 0.5f).SetEase(Ease.OutSine).From();
+        text.DOFade(0f, 0.5f).From();
 
 
         
@@ -40,7 +43,7 @@ public class AnimationTester : MonoBehaviour
 
     void LateUpdate()
     {
-        if (circleParent.position.x >= 760)
+        if (circleParent.position.x >= 640)
         {
             ResetAnimation();
         }
@@ -49,10 +52,13 @@ public class AnimationTester : MonoBehaviour
 
     void PlayAnimation()
     {
-        UpdateText();
         float newX = circleParent.position.x + 120f;
         nodeTween = circleParent.DOMove(new Vector3(newX, circleParent.position.y, 0), 0.8f).SetEase(node_tick_curve);
         nodeTween.Play();
+        Sequence TextSequence = DOTween.Sequence();
+        TextSequence.Append(text.DOFade(0f, 0.25f));
+        TextSequence.Append(text.DOFade(1f, 0.25f));
+        StartCoroutine(UpdateText());
     }
 
     void ResetAnimation()
@@ -69,9 +75,11 @@ public class AnimationTester : MonoBehaviour
         lineImage.DOColor(redColor, 1f);
     }
 
-    public void UpdateText()
+    IEnumerator UpdateText()
     {
+        yield return new WaitForSeconds(0.2f);
         text.text = "Placeholder question number " + questionCount;
         questionCount ++;
+        elapsedTime -= 0.1f;
     }
 }
