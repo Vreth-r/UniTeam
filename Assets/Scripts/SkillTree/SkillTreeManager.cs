@@ -6,7 +6,7 @@ using System.IO;
 
 public class SkillTreeManager : MonoBehaviour
 {
-    public string jsonFileName = "skilltree.json";
+    public string jsonFileName = "NMA.json";
     public SkillNodeUI nodePrefab;
     public RectTransform nodeParent;
     public LineRenderer linePrefab;
@@ -23,7 +23,8 @@ public class SkillTreeManager : MonoBehaviour
 
     public Button editModeButton;
     public Button saveButton;
-    public bool editMode = false;
+    public GameObject controlHandlePrefab;
+    public bool editMode = true;
     string jsonPath;
 
     void Awake()
@@ -38,6 +39,7 @@ public class SkillTreeManager : MonoBehaviour
         editModeButton.onClick.AddListener(ToggleEditMode);
         saveButton.onClick.AddListener(SaveTree);
         SkillNodeInputHandler.Instance.allNodes = nodeLookup;
+        ToggleEditMode();
     }
 
     void LoadJSON()
@@ -49,60 +51,81 @@ public class SkillTreeManager : MonoBehaviour
     void GenerateTree()
     {
         // 1) Create each node UI
-        foreach (var nodeData in treeData.nodes)
+        foreach (var course in treeData.nodes)
         {
-
             var ui = Instantiate(nodePrefab, nodeParent);
 
-            // play a spawn in animation
-            // uiAnimation = ui.GetComponentInChildren<Animator>();
-            // uiAnimation.Rebind();
+            ui.InitializeFromJSON(course);
+            ui.RectTransform.anchoredPosition = course.position;
 
-            ui.InitializeFromJSON(nodeData);
-            ui.RectTransform.anchoredPosition = nodeData.position;
-
-            nodeLookup[nodeData.id] = ui;
-            
-            // dont play animation until a timer ends idk how to do that tho LMAO
-            // uiAnimation.Play("node-appear");
-
+            nodeLookup[course.courseCode] = ui;
         }
 
-        // 2) Build child relationships
-        foreach (var nd in treeData.nodes)
+        // reworking this
+        // 2) assign relationships derived
+        foreach (var course in treeData.nodes)
         {
-            var parentUI = nodeLookup[nd.id];
+            var thisUI = nodeLookup[course.courseCode];
 
-            List<SkillNodeUI> children = new List<SkillNodeUI>();
-            foreach (var childID in nd.connected)
+            List<SkillNodeUI> parents = new();
+
+            if (course.prerequisites != null)
             {
-                if (nodeLookup.TryGetValue(childID, out var childUI))
-                    children.Add(childUI);
+                foreach (var prereqCode in course.prerequisites)
+                {
+                    if (nodeLookup.TryGetValue(prereqCode, out var prereqUI))
+                    {
+                        parents.Add(prereqUI);
+                    }
+                }
             }
 
-            parentUI.AssignChildren(children);
+            //thisUI.AssignParents(parents);
         }
 
         // 3) Create lines now that hierarchy is known
-        foreach (var nd in treeData.nodes)
+        if (treeData.connections != null && treeData.connections.Length > 0)
         {
-            var fromUI = nodeLookup[nd.id];
-
-            foreach (var targetID in nd.connected)
-            {
-                if (nodeLookup.TryGetValue(targetID, out var toUI))
-                {
-                    // Store reference to the line inside the child for hiding
-                    var line = CreateLine(fromUI.RectTransform, toUI.RectTransform);
-                    toUI.parentLine = line;
-                }
-            }
+            GenerateConnectionsFromJSON();
         }
-
-        // 4) Apply initial expand/collapse state
-        foreach (var nd in treeData.nodes)
+        else
         {
-            var ui = nodeLookup[nd.id];
+            AutoGenerateConnections();
+        }
+        // foreach (var course in treeData.nodes)
+        // {
+        //     var toUI = nodeLookup[course.courseCode];
+
+        //     // ----- Prerequisites (blue solid lines) -----
+        //     if (course.prerequisites != null)
+        //     {
+        //         foreach (var prereq in course.prerequisites)
+        //         {
+        //             if (nodeLookup.TryGetValue(prereq, out var fromUI))
+        //             {
+        //                 var line = CreateConnection(fromUI, toUI, ConnectionType.Prerequisite);
+        //             }
+        //         }
+        //     }
+
+        //     // ----- Antirequisites (red lines) -----
+        //     if (course.antirequisites != null)
+        //     {
+        //         foreach (var antireq in course.antirequisites)
+        //         {
+        //             if (nodeLookup.TryGetValue(antireq, out var fromUI))
+        //             {
+        //                 var line = CreateConnection(fromUI, toUI, ConnectionType.Antirequisite);
+        //             }
+        //         }
+        //     }
+        // }
+
+        /* will deal with this later
+        // 4) Apply initial expand/collapse state
+        foreach (var course in treeData.nodes)
+        {
+            var ui = nodeLookup[course.courseCode];
 
             if (ui.data.isExpansionNode)
             {
@@ -113,10 +136,10 @@ public class SkillTreeManager : MonoBehaviour
             }
             else if (!ui.data.isStartingNode)
             {
-                // Regular locked nodes default hidden unless a parent shows them
                 ui.gameObject.SetActive(false);
             }
         }
+        */
     }
 
     void ToggleEditMode()
@@ -128,66 +151,141 @@ public class SkillTreeManager : MonoBehaviour
         panController.editMode = editMode;
 
         saveButton.gameObject.SetActive(editMode);
+
+        foreach (var conn in FindObjectsByType<SkillConnectionUI>(FindObjectsSortMode.None))
+        {
+            foreach (var handle in conn.controlHandles)
+            {
+                handle.gameObject.SetActive(editMode);
+            }
+        }
     }
 
     void SaveTree()
     {
         // Copy current RT positions back to the treeData model
-        foreach (var node in treeData.nodes)
+        foreach (var course in treeData.nodes)
         {
-            if (nodeLookup.TryGetValue(node.id, out var ui))
+            if (nodeLookup.TryGetValue(course.courseCode, out var ui))
             {
-                node.position = ui.RectTransform.anchoredPosition;
+                course.position = ui.RectTransform.anchoredPosition;
             }
         }
 
-        // Serialize JSON
+        var connections = new List<SkillConnectionJSON>();
+
+        foreach (var conn in FindObjectsByType<SkillConnectionUI>(FindObjectsSortMode.None))
+        {
+            var conjson = new SkillConnectionJSON
+            {
+                from = conn.from.GetComponent<SkillNodeUI>().data.courseCode,
+                to = conn.to.GetComponent<SkillNodeUI>().data.courseCode,
+                type = conn.type,
+                controlPoints = GetHandlePositions(conn)
+            };
+
+            connections.Add(conjson);
+        }
+
+        treeData.connections = connections.ToArray();
+
         var json = JsonUtility.ToJson(treeData, true);
-
-        // Save to disk
         File.WriteAllText(jsonPath, json);
-
         Debug.Log("Tree saved to: " + jsonPath);
     }
 
-    LineRenderer CreateLine(RectTransform a, RectTransform b)
+    void GenerateConnectionsFromJSON()
     {
-        var line = Instantiate(linePrefab, nodeParent);
+        foreach (var c in treeData.connections)
+        {
+            if (!nodeLookup.TryGetValue(c.from, out var fromUI)) continue;
+            if (!nodeLookup.TryGetValue(c.to, out var toUI)) continue;
 
-        line.useWorldSpace = false;
-        line.positionCount = 2;
+            var conn = CreateConnection(fromUI, toUI, c.type, false);
 
-        // Set positions (anchored space)
-        // line.SetPosition(0, a.anchoredPosition);
-        // line.SetPosition(1, b.anchoredPosition);
-
-        line.numCapVertices = 8;
-        line.numCornerVertices = 5;
-        line.startWidth = 6f;
-        line.endWidth = 6f;
-        line.alignment = LineAlignment.TransformZ;
-
-        // animate the line 
-        StartCoroutine (AnimateLine(a, b, line));
-        return line;
+            // Recreate handles
+            if (c.controlPoints != null)
+            {
+                foreach (var p in c.controlPoints)
+                {
+                    conn.AddHandle(controlHandlePrefab, p);
+                }
+            }
+        }
     }
 
-    private IEnumerator AnimateLine(RectTransform a, RectTransform b, LineRenderer line)
+    void AutoGenerateConnections()
     {
-        float startTime = Time.time;
-
-        Vector3 startPosition = a.anchoredPosition;
-        Vector3 endPosition = b.anchoredPosition;
-
-        Vector3 pos = startPosition;
-        while (pos != endPosition)
+        foreach (var course in treeData.nodes)
         {
-            float t = Time.time - startTime / 0.1f;
-            pos = Vector3.Lerp(startPosition, endPosition, t);
-            line.SetPosition(1, pos);
-            yield return null;
+            var toUI = nodeLookup[course.courseCode];
+
+            if (course.prerequisites != null)
+            {
+                foreach (var prereq in course.prerequisites)
+                {
+                    if (nodeLookup.TryGetValue(prereq, out var fromUI))
+                    {
+                        CreateConnection(fromUI, toUI, ConnectionType.Prerequisite, true);
+                    }
+                }
+            }
+
+            if (course.antirequisites != null)
+            {
+                foreach (var antireq in course.antirequisites)
+                {
+                    if (nodeLookup.TryGetValue(antireq, out var fromUI))
+                    {
+                        CreateConnection(fromUI, toUI, ConnectionType.Antirequisite, true);
+                    }
+                }
+            }
+        }
+    }
+
+    Vector2[] GetHandlePositions(SkillConnectionUI conn)
+    {
+        var list = new List<Vector2>();
+
+        foreach (var handle in conn.controlHandles)
+        {
+            list.Add(handle.RectTransform.anchoredPosition);
         }
 
+        return list.ToArray();
+    }
+
+    SkillConnectionUI CreateConnection(
+    SkillNodeUI from,
+    SkillNodeUI to,
+    ConnectionType type,
+    bool createDefaultHandle)
+    {
+        var go = new GameObject("Connection");
+        go.transform.SetParent(nodeParent, false);
+
+        var conn = go.AddComponent<SkillConnectionUI>();
+        var rt = go.AddComponent<RectTransform>();
+        conn.from = from.RectTransform;
+        conn.to = to.RectTransform;
+        conn.type = type;
+
+        conn.line = Instantiate(linePrefab, go.transform);
+        conn.line.textureMode = LineTextureMode.Tile;
+
+        conn.line.startColor = type == ConnectionType.Prerequisite ? Color.blue : Color.red;
+        conn.line.endColor = conn.line.startColor;
+
+        // Create control point
+        if(createDefaultHandle)
+        {
+            Vector2 mid = (conn.from.anchoredPosition + conn.to.anchoredPosition) * 0.5f;
+            conn.AddHandle(controlHandlePrefab, mid);
+        }
+
+        to.RegisterIncomingConnection(conn);
+        return conn;
     }
 
 }

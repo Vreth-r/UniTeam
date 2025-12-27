@@ -70,7 +70,10 @@ public class SkillTreePanController : MonoBehaviour
             return;
 
         Vector2 delta = ctx.ReadValue<Vector2>();
-        content.anchoredPosition += delta * dragSpeed;
+        if (delta.magnitude > 2f)
+        {
+            content.anchoredPosition += delta * dragSpeed;
+        }
     }
 
     // ----------- ZOOMING -------------------

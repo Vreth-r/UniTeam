@@ -335,6 +335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AnimationTester
   text: {fileID: 1969853164}
   circleParent: {fileID: 1839328141}
+  variant: 1
 --- !u!1 &910234552
 GameObject:
   m_ObjectHideFlags: 0

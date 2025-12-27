@@ -94,9 +94,9 @@ public class SkillNodeInputHandler : MonoBehaviour
         SkillNodeUI node = GetNodeUnderPointer();
         if (node == null) return;
 
-        // Expand/collapse node
-        if (node.data.isExpansionNode)
-            node.ToggleExpansion();
+        // // Expand/collapse node
+        // if (node.data.isExpansionNode)
+        //     node.ToggleExpansion();
     }
 
     // -------------------------

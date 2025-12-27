@@ -50,8 +50,8 @@ public class SkillTooltip : MonoBehaviour
         }
 
         currentNode = node;
-        titleText.text = node.data.name;
-        bodyText.text = node.data.description;
+        titleText.text = node.data.courseCode;
+        bodyText.text = node.data.courseDescription;
 
         PositionTooltip(node.RectTransform);
 

@@ -1612,7 +1612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 316a7a3438682224ebe6ee5e3e9054c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillTreeManager
-  jsonFileName: skilltree.json
+  jsonFileName: PFA.json
   nodePrefab: {fileID: 4099528235683956116, guid: 130cb5b37b3e1f4479675411d54fba6a, type: 3}
   nodeParent: {fileID: 1553658071}
   linePrefab: {fileID: 2703437229274315268, guid: f00ad001f3d28eb4695b27dab0ad3c88, type: 3}
@@ -1620,6 +1620,7 @@ MonoBehaviour:
   inputHandler: {fileID: 1894062246}
   editModeButton: {fileID: 1421045575}
   saveButton: {fileID: 857108438}
+  controlHandlePrefab: {fileID: 7484044991077444705, guid: f103049c52bc8c34d969896853f0a3dd, type: 3}
   editMode: 0
 --- !u!114 &1894062246
 MonoBehaviour:
@@ -1637,8 +1638,8 @@ MonoBehaviour:
   rightClickAction: {fileID: -6954666215509021422, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   pointerPosAction: {fileID: -319188572196012901, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   dragAction: {fileID: 2308584774039953228, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  editModeEnabled: 0
   uiCamera: {fileID: 394834495}
+  editModeEnabled: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
