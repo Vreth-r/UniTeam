@@ -6,7 +6,7 @@ using DG.Tweening;
 using System.Collections;
 using UnityEngine.UI;
 
-public class AnimationTester : MonoBehaviour
+public class QuizAnimationManager : MonoBehaviour
 {
     public TextMeshProUGUI text;
     public Transform circleParent;
@@ -35,10 +35,7 @@ public class AnimationTester : MonoBehaviour
         circleParent.position =  new Vector3(originalPosition.x - 140f, circleParent.position.y, 0);
         circleParent.DOMove(new Vector3(originalPosition.x, circleParent.position.y, 0), 0.5f).SetEase(node_tick_curve);
         lineTransform.DOMove(new Vector3(-1820, lineTransform.position.y, 0), 0.5f).SetEase(Ease.OutSine).From();
-        text.DOFade(0f, 0.5f).From();
-
-
-        
+        //text.DOFade(0f, 0.5f).From();
     }
 
     void LateUpdate()
@@ -50,15 +47,15 @@ public class AnimationTester : MonoBehaviour
     }
 
 
-    void PlayAnimation()
+    public void PlayAnimation()
     {
         float newX = circleParent.position.x + 120f;
         nodeTween = circleParent.DOMove(new Vector3(newX, circleParent.position.y, 0), 0.8f).SetEase(node_tick_curve);
         nodeTween.Play();
-        Sequence TextSequence = DOTween.Sequence();
-        TextSequence.Append(text.DOFade(0f, 0.25f));
-        TextSequence.Append(text.DOFade(1f, 0.25f));
-        StartCoroutine(UpdateText());
+        // Sequence TextSequence = DOTween.Sequence();
+        // TextSequence.Append(text.DOFade(0f, 0.25f));
+        // TextSequence.Append(text.DOFade(1f, 0.25f));
+        //StartCoroutine(UpdateText());
     }
 
     void ResetAnimation()
