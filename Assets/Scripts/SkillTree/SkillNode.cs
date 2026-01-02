@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 [System.Serializable]
 public class SkillTreeJSON
@@ -23,6 +25,14 @@ public enum ConnectionType
 }
 
 [System.Serializable]
+public class ProgramContextData
+{
+    public string Acting;
+    public string Production;
+    public string Dance;
+}
+
+[System.Serializable]
 public class SkillNodeJSON
 {
     // data
@@ -39,4 +49,5 @@ public class SkillNodeJSON
     public bool isStartingNode;
     public bool isExpansionNode;
     public bool startsExpanded;
+    public ProgramContextData context;
 }
