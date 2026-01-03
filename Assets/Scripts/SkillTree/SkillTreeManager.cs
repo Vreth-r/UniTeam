@@ -3,6 +3,13 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Collections;
 using System.IO;
+public enum TreeContext
+{
+    Acting,
+    Dance,
+    Production,
+    All
+}
 
 public class SkillTreeManager : MonoBehaviour
 {
@@ -18,6 +25,15 @@ public class SkillTreeManager : MonoBehaviour
     Dictionary<string, SkillNodeUI> nodeLookup = new();
 
     SkillTreeJSON treeData;
+
+    public TreeContext context = TreeContext.All;
+
+    // other buttons
+
+    public Button allProgramsButton;
+    public Button actingButton;
+    public Button danceButton;
+    public Button productionButton;
 
     // editing:
 
@@ -38,6 +54,10 @@ public class SkillTreeManager : MonoBehaviour
         GenerateTree();
         editModeButton.onClick.AddListener(ToggleEditMode);
         saveButton.onClick.AddListener(SaveTree);
+        allProgramsButton.onClick.AddListener(() => SetContext(TreeContext.All));
+        actingButton.onClick.AddListener(() => SetContext(TreeContext.Acting));
+        danceButton.onClick.AddListener(() => SetContext(TreeContext.Dance));
+        productionButton.onClick.AddListener(() => SetContext(TreeContext.Production));
         SkillNodeInputHandler.Instance.allNodes = nodeLookup;
         ToggleEditMode();
     }
@@ -54,8 +74,8 @@ public class SkillTreeManager : MonoBehaviour
         foreach (var course in treeData.nodes)
         {
             var ui = Instantiate(nodePrefab, nodeParent);
-
             ui.InitializeFromJSON(course);
+            ui.ApplyProgramContext(context);
             ui.RectTransform.anchoredPosition = course.position;
 
             nodeLookup[course.courseCode] = ui;
@@ -140,6 +160,25 @@ public class SkillTreeManager : MonoBehaviour
             }
         }
         */
+    }
+
+    public void SetContext(TreeContext newContext)
+    {
+        if (context == newContext)
+            return;
+
+        context = newContext;
+        ApplyContextToAllNodes();
+    }
+
+    void ApplyContextToAllNodes()
+    {
+        foreach (var kvp in nodeLookup)
+        {
+            var nodeUI = kvp.Value;
+
+            nodeUI.ApplyProgramContext(context);
+        }
     }
 
     void ToggleEditMode()

@@ -11,16 +11,11 @@
             "customrequisites": [],
             "position": {
                 "x": -596.489501953125,
-                "y": 508.21893310546875
+                "y": 508.21893310546877
             },
             "isStartingNode": true,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "required",
-                "Production": "none",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFA 101",
@@ -40,12 +35,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "required",
-                "Production": "none",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFA 110",
@@ -62,12 +52,7 @@
             },
             "isStartingNode": true,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "required",
-                "Production": "none",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFA 111",
@@ -87,12 +72,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "required",
-                "Production": "none",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFA 200",
@@ -112,12 +92,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "none",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFA 201",
@@ -137,12 +112,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "required",
-                "Production": "none",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFA 210",
@@ -162,12 +132,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "none",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFA 211",
@@ -187,12 +152,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "required",
-                "Production": "none",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFA 300",
@@ -212,12 +172,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "required",
-                "Production": "none",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFA 301",
@@ -238,12 +193,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "required",
-                "Production": "none",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFA 310",
@@ -263,12 +213,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "required",
-                "Production": "none",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFA 311",
@@ -289,12 +234,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "required",
-                "Production": "none",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFA 320",
@@ -314,12 +254,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "required",
-                "Production": "none",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFA 321",
@@ -340,12 +275,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "required",
-                "Production": "none",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFA 400",
@@ -366,12 +296,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "required",
-                "Production": "none",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFA 401",
@@ -392,12 +317,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "none",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFA 410",
@@ -418,12 +338,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "none",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFA 411",
@@ -444,12 +359,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "required",
-                "Production": "none",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFA 420",
@@ -470,12 +380,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "none",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFA 421",
@@ -496,12 +401,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "required",
-                "Production": "none",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFC 100",
@@ -518,12 +418,7 @@
             },
             "isStartingNode": true,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "required",
-                "Production": "required",
-                "Dance": "required"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFC 101",
@@ -540,12 +435,7 @@
             },
             "isStartingNode": true,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "required",
-                "Production": "required",
-                "Dance": "required"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFC 111",
@@ -562,12 +452,7 @@
             },
             "isStartingNode": true,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "required",
-                "Production": "required",
-                "Dance": "required"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFC 112",
@@ -586,12 +471,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "required",
-                "Production": "required",
-                "Dance": "required"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFC 216",
@@ -608,12 +488,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "elective",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFC 221",
@@ -630,12 +505,7 @@
             },
             "isStartingNode": true,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "elective"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFC 222",
@@ -654,12 +524,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "elective"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFC 226",
@@ -676,12 +541,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "elective",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFC 236",
@@ -696,12 +556,7 @@
             },
             "isStartingNode": true,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "elective",
-                "Production": "none",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFC 246",
@@ -716,12 +571,7 @@
             },
             "isStartingNode": true,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "elective",
-                "Production": "none",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFC 256",
@@ -736,12 +586,7 @@
             },
             "isStartingNode": true,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "elective",
-                "Production": "none",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFC 300",
@@ -760,12 +605,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "none",
-                "Dance": "elective"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFC 312",
@@ -780,12 +620,7 @@
             },
             "isStartingNode": true,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "none",
-                "Dance": "elective"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFC 322",
@@ -800,12 +635,7 @@
             },
             "isStartingNode": true,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "none",
-                "Dance": "elective"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFC 324",
@@ -826,12 +656,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "elective",
-                "Production": "none",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFC 334",
@@ -846,12 +671,7 @@
             },
             "isStartingNode": true,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "elective",
-                "Production": "none",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFC 340",
@@ -868,12 +688,7 @@
             },
             "isStartingNode": true,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "elective",
-                "Production": "none",
-                "Dance": "elective"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFC 402",
@@ -890,12 +705,7 @@
             },
             "isStartingNode": true,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "elective",
-                "Production": "none",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFC 417",
@@ -917,12 +727,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "elective",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFC 470",
@@ -937,12 +742,7 @@
             },
             "isStartingNode": true,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "elective"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFC 500",
@@ -959,12 +759,7 @@
             },
             "isStartingNode": true,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "none",
-                "Dance": "elective"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFD 100",
@@ -981,12 +776,7 @@
             },
             "isStartingNode": true,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "none",
-                "Dance": "required"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFD 101",
@@ -1005,12 +795,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "none",
-                "Dance": "required"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFD 120",
@@ -1029,12 +814,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "none",
-                "Dance": "required"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFD 200",
@@ -1053,12 +833,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "none",
-                "Dance": "required"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFD 201",
@@ -1077,12 +852,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "none",
-                "Dance": "required"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFD 210",
@@ -1101,12 +871,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "none",
-                "Dance": "required"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFD 300",
@@ -1125,12 +890,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "none",
-                "Dance": "required"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFD 301",
@@ -1149,12 +909,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "none",
-                "Dance": "required"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFD 310",
@@ -1173,12 +928,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "none",
-                "Dance": "required"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFD 331",
@@ -1197,12 +947,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "none",
-                "Dance": "required"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFD 400",
@@ -1221,12 +966,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "none",
-                "Dance": "required"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFD 401",
@@ -1245,12 +985,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "none",
-                "Dance": "required"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFD 404",
@@ -1267,12 +1002,7 @@
             },
             "isStartingNode": true,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "none",
-                "Dance": "required"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFD 800",
@@ -1289,12 +1019,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "none",
-                "Dance": "required"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 100",
@@ -1312,12 +1037,7 @@
             },
             "isStartingNode": true,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "required",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 101",
@@ -1335,12 +1055,7 @@
             },
             "isStartingNode": true,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "required",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 200",
@@ -1357,12 +1072,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "required",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 201",
@@ -1382,12 +1092,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "required",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 202",
@@ -1409,12 +1114,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "required",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 203",
@@ -1433,12 +1133,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "required",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 210",
@@ -1457,12 +1152,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 220",
@@ -1481,12 +1171,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 230",
@@ -1505,12 +1190,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 240",
@@ -1529,12 +1209,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 250",
@@ -1553,12 +1228,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 260",
@@ -1577,12 +1247,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 261",
@@ -1601,12 +1266,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 270",
@@ -1623,12 +1283,7 @@
             },
             "isStartingNode": true,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "required",
-                "Dance": "elective"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 311",
@@ -1648,12 +1303,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 312",
@@ -1673,12 +1323,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 314",
@@ -1698,12 +1343,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 315",
@@ -1723,12 +1363,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 322",
@@ -1747,12 +1382,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 323",
@@ -1769,12 +1399,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 331",
@@ -1793,12 +1418,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 343",
@@ -1819,12 +1439,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 351",
@@ -1844,12 +1459,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 352",
@@ -1868,12 +1478,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 361",
@@ -1892,12 +1497,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 362",
@@ -1917,12 +1517,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 363",
@@ -1942,12 +1537,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 370",
@@ -1964,12 +1554,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "elective"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 371",
@@ -1986,12 +1571,7 @@
             },
             "isStartingNode": true,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 372",
@@ -2010,12 +1590,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 381",
@@ -2030,12 +1605,7 @@
             },
             "isStartingNode": true,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 400",
@@ -2052,12 +1622,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "required",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 401",
@@ -2076,12 +1641,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "required",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 411",
@@ -2101,12 +1661,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 419",
@@ -2126,12 +1681,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 421",
@@ -2150,12 +1700,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 422",
@@ -2174,12 +1719,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 429",
@@ -2198,12 +1738,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 441",
@@ -2222,12 +1757,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 449",
@@ -2248,12 +1778,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 471",
@@ -2270,12 +1795,7 @@
             },
             "isStartingNode": true,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         },
         {
             "courseCode": "PFZ 489",
@@ -2294,12 +1814,7 @@
             },
             "isStartingNode": false,
             "isExpansionNode": false,
-            "startsExpanded": false,
-            "context": {
-                "Acting": "none",
-                "Production": "elective",
-                "Dance": "none"
-            }
+            "startsExpanded": false
         }
     ],
     "connections": [
@@ -2836,8 +2351,8 @@
             "to": "PFA 200",
             "controlPoints": [
                 {
-                    "x": 483.53497314453125,
-                    "y": 35.800323486328125
+                    "x": 483.53497314453127,
+                    "y": 35.800323486328128
                 }
             ],
             "type": 0
@@ -2957,7 +2472,7 @@
             "to": "PFA 210",
             "controlPoints": [
                 {
-                    "x": 218.00303649902344,
+                    "x": 218.00303649902345,
                     "y": -61.04232406616211
                 }
             ],
@@ -3332,7 +2847,7 @@
             "controlPoints": [
                 {
                     "x": 311.0163879394531,
-                    "y": 493.84429931640625
+                    "y": 493.84429931640627
                 }
             ],
             "type": 0
@@ -3342,8 +2857,8 @@
             "to": "PFA 210",
             "controlPoints": [
                 {
-                    "x": -244.99998474121094,
-                    "y": -79.36001586914062
+                    "x": -244.99998474121095,
+                    "y": -79.36001586914063
                 }
             ],
             "type": 0
@@ -3387,7 +2902,7 @@
             "controlPoints": [
                 {
                     "x": 146.46505737304688,
-                    "y": -240.16033935546875
+                    "y": -240.16033935546876
                 }
             ],
             "type": 0
