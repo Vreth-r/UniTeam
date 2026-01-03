@@ -9,19 +9,19 @@ title: Start
 ---
 <<PlaySound "bgm">>
 Hello!
-<<jump Question>>
+<<jump Question1>>
 ===
 
-title: Question
+title: Question1
 ---
-Pick one!
--> Option 1 #delay:0.5 #duration:-1 #vPos:top #hPos:left
+You're watching a live Twitch stream. What element captures your attention the most?
+-> The personality and hosting style of the streamer. #delay:0 #duration:-1 #vPos:top #hPos:left
     <<jump option1>>
--> Option 2 #delay:0.5 #duration:-1 #vPos:top #hPos:right
+-> The set design, lighting, and background atmosphere. #delay:0 #duration:-1 #vPos:top #hPos:right
     <<jump option2>>
--> Option 3 #delay:0.5 #duration:-1 #vPos:bottom #hPos:left
+-> The on-screen graphics, overlays, and branding. #delay:0 #duration:-1 #vPos:bottom #hPos:left
     <<jump option3>>
--> Option 4 #delay:0.5 #duration:-1 #vPos:bottom #hPos:right
+-> The streamer's outfit and personal style. #delay:0 #duration:-1 #vPos:bottom #hPos:right
     <<jump option4>>
 -> default // default option that will semantically never be used but is a good debug safety net
     <<jump Start>>
@@ -30,23 +30,38 @@ Pick one!
 title: option1
 ---
 You picked option 1.
-<<jump Question>>
+<<jump Question2>>
 ===
 
 title: option2
 ---
 You picked option 2.
-<<jump Question>>
+<<jump Question2>>
 ===
 
 title: option3
 ---
 You picked option 3.
-<<jump Question>>
+<<jump Question2>>
 ===
 
 title: option4
 ---
 You picked option 4.
-<<jump Question>>
+<<jump Question2>>
+===
+
+title: Question2
+---
+It's the weekend. How are you spending your free time?
+-> Binge-watching films or analyzing cinematography. #delay:0 #duration:-1 #vPos:top #hPos:left
+    <<jump option1>>
+-> Visiting an art gallery or fashion pop-up. #delay:0 #duration:-1 #vPos:top #hPos:right
+    <<jump option2>>
+-> Going to a concert, play, or live performance. #delay:0 #duration:-1 #vPos:bottom #hPos:left
+    <<jump option3>>
+-> Redecorating my room or re-arranging furniture. #delay:0 #duration:-1 #vPos:bottom #hPos:right
+    <<jump option4>>
+-> default // default option that will semantically never be used but is a good debug safety net
+    <<jump Start>>
 ===
