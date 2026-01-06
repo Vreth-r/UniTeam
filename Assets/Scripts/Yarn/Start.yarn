@@ -13,6 +13,7 @@
 <<declare $imgArtsScore = 0>>
 <<declare $GCMScore = 0>>
 <<declare $intDesignScore = 0>>
+<<delcare $topPrograms = "BRO">>
 
 ===
 
@@ -627,5 +628,5 @@ title: Loading
 ---
 Loading your top schools...
 Insert cool transition here!!!!!
-<<declare $topPrograms = top_three_scores($mediaScore, $journalismScore, $proComScore, $peformScore, $crIndustriesScore, $fashionScore, $imgArtsScore, $GCMScore, $intDesignScore)>>
+<<set $topPrograms = top_three_scores($mediaScore, $journalismScore, $proComScore, $peformScore, $crIndustriesScore, $fashionScore, $imgArtsScore, $GCMScore, $intDesignScore)>>
 ===

@@ -1,6 +1,8 @@
 using UnityEngine;
 using Yarn.Unity;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
 public class CutsceneYarnCommands : MonoBehaviour
 {
@@ -24,7 +26,7 @@ public class CutsceneYarnCommands : MonoBehaviour
         float intDesign
     )
     {
-        var scores = new Dicitonary<string, float>
+        var scores = new Dictionary<string, float>
         {
             { "Media", media },
             { "Journalism", jouranlism },
