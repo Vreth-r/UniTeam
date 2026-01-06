@@ -16,38 +16,54 @@ title: Question1
 ---
 You're watching a live Twitch stream. What element captures your attention the most?
 -> The personality and hosting style of the streamer. #delay:0 #duration:-1 #vPos:top #hPos:left
-    <<jump option1>>
+    <<jump q1option1>>
 -> The set design, lighting, and background atmosphere. #delay:0 #duration:-1 #vPos:top #hPos:right
-    <<jump option2>>
--> The on-screen graphics, overlays, and branding. #delay:0 #duration:-1 #vPos:bottom #hPos:left
-    <<jump option3>>
--> The streamer's outfit and personal style. #delay:0 #duration:-1 #vPos:bottom #hPos:right
-    <<jump option4>>
+    <<jump q1option2>>
+-> The on-screen graphics, overlays, and branding. #delay:0 #duration:-1 #vPos:center #hPos:left
+    <<jump q1option3>>
+-> The streamer's outfit and personal style. #delay:0 #duration:-1 #vPos:center #hPos:right
+    <<jump q1option4>>
+-> The sponsorship deals and business strategy behind it. #delay:0 #duration:-1 #vPos:bottom #hPos:left
+    <<jump q1option5>>
+-> The camera angles and production quality. #delay:0 #duration:-1 #vPos:bottom #hPos:right
+    <<jump q1option6>>
 -> default // default option that will semantically never be used but is a good debug safety net
     <<jump Start>>
 ===
 
-title: option1
+title: q1option1
 ---
 You picked option 1.
 <<jump Question2>>
 ===
 
-title: option2
+title: q1option2
 ---
 You picked option 2.
 <<jump Question2>>
 ===
 
-title: option3
+title: q1option3
 ---
 You picked option 3.
 <<jump Question2>>
 ===
 
-title: option4
+title: q1option4
 ---
 You picked option 4.
+<<jump Question2>>
+===
+
+title: q1option5
+---
+You picked option 5.
+<<jump Question2>>
+===
+
+title: q1option6
+---
+You picked option 6.
 <<jump Question2>>
 ===
 
@@ -55,13 +71,73 @@ title: Question2
 ---
 It's the weekend. How are you spending your free time?
 -> Binge-watching films or analyzing cinematography. #delay:0 #duration:-1 #vPos:top #hPos:left
-    <<jump option1>>
+    <<jump q2option1>>
 -> Visiting an art gallery or fashion pop-up. #delay:0 #duration:-1 #vPos:top #hPos:right
+    <<jump q2option2>>
+-> Going to a concert, play, or live performance. #delay:0 #duration:-1 #vPos:center #hPos:left
+    <<jump q2option3>>
+-> Redecorating my room or re-arranging furniture. #delay:0 #duration:-1 #vPos:center #hPos:right
+    <<jump q2option4>>
+-> Creating content for TikTok or Instagram. #delay:0 #duration:-1 #vPos:bottom #hPos:left
+    <<jump q2option5>>
+-> Reading the news, blogs, or deep-diving into a topic. #delay:0 #duration:-1 #vPos:bottom #hPos:right
+    <<jump q2option6>>
+    
+-> default // default option that will semantically never be used but is a good debug safety net
+    <<jump Start>>
+===
+
+title: q2option1
+---
+You picked option 1.
+<<jump Question3>>
+===
+
+title: q2option2
+---
+You picked option 2.
+<<jump Question3>>
+===
+
+title: q2option3
+---
+You picked option 3.
+<<jump Question3>>
+===
+
+title: q2option4
+---
+You picked option 4.
+<<jump Question3>>
+===
+
+title: q2option5
+---
+You picked option 5.
+<<jump Question3>>
+===
+
+title: q2option6
+---
+You picked option 6.
+<<jump Question3>>
+===
+
+
+title: Question3
+---
+In a creative group project, what role do you naturally take?
+-> The Leader: Organizing the team and managing the vision. #delay:0 #duration:-1 #vPos:top #hPos:left
+    <<jump option1>>
+-> The Presenter: Speaking and pitching the idea. #delay:0 #duration:-1 #vPos:top #hPos:right
     <<jump option2>>
--> Going to a concert, play, or live performance. #delay:0 #duration:-1 #vPos:bottom #hPos:left
+->The Writer: Scripting, editing, and refining the message. #delay:0 #duration:-1 #vPos:bottom #hPos:left
     <<jump option3>>
 -> Redecorating my room or re-arranging furniture. #delay:0 #duration:-1 #vPos:bottom #hPos:right
     <<jump option4>>
+->The Designer: Creating the visuals, slides, or look. #delay:0 #duration:-1 #vPos:bottom #hPos:center
+    <<jump option5>>
+    
 -> default // default option that will semantically never be used but is a good debug safety net
     <<jump Start>>
 ===

@@ -159,8 +159,9 @@ MonoBehaviour:
   swaySpeed: 3
   leftPlacement: -300
   rightPlacement: 300
-  topPlacement: 0
-  bottomPlacement: -200
+  topPlacement: 30
+  midPlacement: -110
+  bottomPlacement: -250
   animManager: {fileID: 664756896}
   runner: {fileID: 23849715}
   showUnavailableOptions: 0
@@ -1012,8 +1013,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 18.5833, y: 190.3}
-  m_SizeDelta: {x: 1152.1074, y: 58.0394}
+  m_AnchoredPosition: {x: 18.5833, y: 197.44576}
+  m_SizeDelta: {x: 1152.1074, y: 72.3309}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1969853164
 MonoBehaviour:
@@ -1073,7 +1074,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 4096
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
