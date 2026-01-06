@@ -1,114 +1,58 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
-using UnityEngine.EventSystems;
-using Unity.VisualScripting;
+using TMPro;
 
 public class SkillNodeUI : MonoBehaviour
 {
     [Header("UI")]
     public Image icon;
     public Image border;
+    public TextMeshProUGUI courseCodeText;
 
     [Header("Colors")]
-    public Color unlockedColor = Color.yellow;
-    public Color lockedColor = Color.gray;
+    public Color baseColor = Color.gray;
+    public Color requiredColor = Color.purple;
+    public Color electiveColor = Color.green;
+    public Color unavailableColor = Color.black;
 
     [Header("Data")]
     public SkillNodeJSON data;
-    public bool unlocked;
-    public bool isExpanded = true;
-    public List<SkillNodeUI> children = new List<SkillNodeUI>();
-    public LineRenderer parentLine;
 
-    public RectTransform RectTransform => (RectTransform)transform;
+    public bool unlocked;
+
+    // GRAPH
+    [Header("Graph")]
+    public List<SkillConnectionUI> incomingConnections = new();
+
+    public RectTransform RectTransform { get; private set; }
+
+    // -------------------------
+    // INITIALIZATION
+    // -------------------------
 
     public void InitializeFromJSON(SkillNodeJSON nodeData)
     {
         data = nodeData;
-        unlocked = nodeData.isStartingNode;
-        border.color = unlocked ? unlockedColor : lockedColor;
-    }
-
-    public void Unlock()
-    {
-        unlocked = true;
-        border.color = unlockedColor;
+        unlocked = data.isStartingNode;
+        border.color = requiredColor;
+        courseCodeText.text = data.courseCode;
+        RectTransform = transform as RectTransform;
     }
 
     // -------------------------
-    // EXPANSION LOGIC
+    // LINES
     // -------------------------
-
-    public void ToggleExpansion()
+    public void RegisterIncomingConnection(SkillConnectionUI connection)
     {
-        if (isExpanded)
-            CollapseRecursively();
-        else
-            Expand();
+        incomingConnections.Add(connection);
     }
 
-    public void Expand()
+    public void SetConnectionsVisible(bool visible)
     {
-        isExpanded = true;
-
-        foreach (var child in children)
-        {
-            child.gameObject.SetActive(true);
-            if (child.parentLine != null)
-                child.parentLine.gameObject.SetActive(true);
-
-            if (child.data.isExpansionNode && child.data.startsExpanded)
-                child.Expand();
-        }
-    }
-
-    public void CollapseRecursively()
-    {
-        isExpanded = false;
-
-        foreach (var child in children)
-        {
-            child.gameObject.SetActive(false);
-            if (child.parentLine != null)
-                child.parentLine.gameObject.SetActive(false);
-
-            child.CollapseRecursively();
-        }
-    }
-
-    public void ExpandImmediate()
-    {
-        isExpanded = true;
-
-        foreach (var child in children)
-        {
-            child.gameObject.SetActive(true);
-            if (child.parentLine != null)
-                child.parentLine.gameObject.SetActive(true);
-
-            if (child.data.isExpansionNode && child.data.startsExpanded)
-                child.ExpandImmediate();
-        }
-    }
-
-    public void CollapseImmediate()
-    {
-        isExpanded = false;
-
-        foreach (var child in children)
-        {
-            child.gameObject.SetActive(false);
-            if (child.parentLine != null)
-                child.parentLine.gameObject.SetActive(false);
-
-            child.CollapseImmediate();
-        }
-    }
-
-    public void AssignChildren(List<SkillNodeUI> childNodes)
-    {
-        children = childNodes;
+        foreach (var c in incomingConnections)
+            if (c != null)
+                c.gameObject.SetActive(visible);
     }
 
     // -------------------------
@@ -118,5 +62,45 @@ public class SkillNodeUI : MonoBehaviour
     public void ShowTooltip()
     {
         SkillTooltip.Instance.Show(this);
+    }
+
+    // -------------------------
+    // CONTEXT SWITCHING
+    // -------------------------
+
+    public void ApplyProgramContext(TreeContext program)
+    {
+        if (program == TreeContext.All || data.context == null)
+        {
+            border.color = baseColor;
+            return;
+        }
+
+        string requirement = program switch
+        {
+            TreeContext.Acting => data.context.Acting,
+            TreeContext.Production => data.context.Production,
+            TreeContext.Dance => data.context.Dance,
+            _ => null
+        };
+
+        if (string.IsNullOrEmpty(requirement) || requirement == "none")
+        {
+            border.color = unavailableColor;
+            return;
+        }
+
+        switch (requirement.ToLower())
+        {
+            case "required":
+                border.color = requiredColor;
+                break;
+            case "elective":
+                border.color = electiveColor;
+                break;
+            default:
+                border.color = unavailableColor;
+                break;
+        }
     }
 }

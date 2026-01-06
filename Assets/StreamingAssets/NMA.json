@@ -1,0 +1,788 @@
+{
+  "nodes": [
+    {
+      "courseCode": "NMA 107",
+      "longTitle": "Creative Processes - New Media",
+      "courseDescription": "This introductory course focuses on principles, theories and practices of creative idea development for a variety of New Media forms. Students explore the development of concepts by exploring processes such as research, brainstorming, rapid prototyping and iterative design. (Formerly RTA 107.)",
+      "prerequisites": null,
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 111",
+      "longTitle": "Introduction to New Media",
+      "courseDescription": "This course provides an introduction to fundamental New Media theories, art movements and creative practices. Students learn to think and write critically about a range of artworks, creative experiments and media forms, drawing from a range of seminal works in New Media fine art, interactive design and video games. (Formerly RTA 111.)",
+      "prerequisites": null,
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 350,
+        "y": 0
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 120",
+      "longTitle": "Video Games and Culture",
+      "courseDescription": "This course explores the intersection of video games and culture. Students will analyze video games as cultural artifacts, studying their evolution and impact on society, and examining the historical, social, and cultural contexts in which video games are created, consumed, and interpreted. Topics covered may include\nrepresentation and diversity in games, gaming communities, and the relationship\nbetween video games and other media. Students may also engage in hands-on activities such as game design and analysis. (Formerly RTA 120.)",
+      "prerequisites": null,
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 700,
+        "y": 0
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 201",
+      "longTitle": "Video Art Production",
+      "courseDescription": "This studio/lab course approaches video as a unique artistic and standard production medium. Students learn about video art and production through making creative video works. Field trips, screenings, readings and critiques augment hands-on learning. Students will familiarize themselves with the concepts, tools and \ntechniques of basic video making. Project development, production and public presentation strategies are aimed at creating a strong foundation in making moving media for broadcast, narrowcast, and virtual spaces. (Formerly RTA 201.)",
+      "prerequisites": null,
+      "antirequisites": [
+        "FCD 920",
+        "RTA 243",
+        "RTA 920"
+      ],
+      "customrequisites": null,
+      "position": {
+        "x": 1050,
+        "y": 0
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 220",
+      "longTitle": "New Media Art History",
+      "courseDescription": "This course locates contemporary art practices within the historical frameworks of analogue and digital cultures. Students consider the digital movements that underpin current new media art culture. The course also explores the influence of digital cultures on 21st century art practices as well as hybrid forms of aesthetics. The historical, theoretical, and practical aspects of the transformation of author and viewer in new media are also investigated. (Formerly RTA 220.)",
+      "prerequisites": null,
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 1400,
+        "y": 0
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 221",
+      "longTitle": "Experiential Media/Interdisciplinary Practice",
+      "courseDescription": "This course introduces students to fundamental theories from a range of disciplines that illuminate how the senses, identity, social context, and physical environment shape our experience of art, design, and popular culture. Students learn how to use theories to examine contemporary art and reflect on relevant issues such as how new media&#39;s computational and networked technologies inform and transform our experience of cultural content. (Formerly RTA 221.)",
+      "prerequisites": [
+        "RTA 101",
+        "NMA 111"
+      ],
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 1750,
+        "y": 0
+      },
+      "isStartingNode": false,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 222",
+      "longTitle": "Intro to Computational Arts",
+      "courseDescription": "This studio class introduces students to fundamental concepts, techniques and strategies of computer programming as an art form by teaching how to code interactive programs. The course investigates the interplay between creative expression and technological capability. Emphasis will be placed on computational literacy as well as constructing and evaluating algorithmic creative forms and artefacts. (Formerly RTA 222.)",
+      "prerequisites": null,
+      "antirequisites": [
+        "FCD 222",
+        "FPN 513"
+      ],
+      "customrequisites": null,
+      "position": {
+        "x": 0,
+        "y": -250
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 223",
+      "longTitle": "Designing Material Experiences",
+      "courseDescription": "This foundational design course introduces students to experience design using a variety of fabricating techniques and materials. Students will gain the necessary skills to model, design, and build physical entities as a pathway to understanding how materials shape and inform experience. Projects will challenge students to develop personal and team-based production skills and to work at a variety of scales and contexts. (Formerly RTA 223.)",
+      "prerequisites": null,
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 350,
+        "y": -250
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 320",
+      "longTitle": "Interactive Storytelling",
+      "courseDescription": "This studio course introduces students to the fundamental concepts and strategies for creating interactive and nonlinear narratives. Students learn classic theories of storytelling and editing, as the foundation to crafting compelling interactive narratives. Through a series of projects, students are introduced to different methodologies for creating interactive narrative experiences, including the creation of storyworlds and narrative maps, and the use of character, perspective and time to build choice and viewer agency into the narrative experience. (Formerly RTA 320.)",
+      "prerequisites": null,
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 700,
+        "y": -250
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 321",
+      "longTitle": "Intro to Tangible Media",
+      "courseDescription": "This studio class introduces students to concepts, techniques and strategies of tangible media. Digital and analog sensor systems, basic electronics and coding for\nmicrocontrollers are introduced. Students will explore modes of interactivity, user\nexperience, agency and systems thinking. The course opens pathways to embodied art practices such as physical interface design, wearables and robotics. Basic programming skills are an important part of this course. (Formerly RTA 321.)",
+      "prerequisites": null,
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 1050,
+        "y": -250
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 322",
+      "longTitle": "Technology, Identity and Creativity",
+      "courseDescription": "This course examines how media technologies relate to racialized, gendered and sexualized bodies.  Students consider scholarly and popular works ranging from the cinematic representation of Frankenstein to current studies of cyborgian bodies in order to produce creative work that responds to modern and postmodern ideas about the body. (Formerly RTA 322.)",
+      "prerequisites": null,
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 1400,
+        "y": -250
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 323",
+      "longTitle": "Contemporary Strategies in New Media",
+      "courseDescription": "This course develops student awareness and fluidity in key terms, concepts, and strategies of practices and theories related to approaches to new media and criticism. As part of the fine arts curriculum, students will explore ways that new media contributes to an ongoing reformulation of the dynamics of contemporary society and culture, by examining exemplars of new media practices, artists, and associated texts. Topics explored will include the changing concepts and narratives of new media. (Formerly RTA 323.)",
+      "prerequisites": null,
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 1750,
+        "y": -250
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 501",
+      "longTitle": "Studio Practice",
+      "courseDescription": "This course provides an opportunity to experience the entire life cycle of New Media project production including brainstorming, research, planning, proposal writing, building, testing, presentation, and documentation. Through written proposals and oral presentations, this course will teach how to develop creative concepts and explain their relevance in a broader social and technological context. (Formerly RTA 501.)",
+      "prerequisites": [
+        "NMA 520"
+      ],
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 0,
+        "y": -500
+      },
+      "isStartingNode": false,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 520",
+      "longTitle": "Public Practice",
+      "courseDescription": "Public Practice introduces students to the rigour and demands of the public presentation of creative works, as well as the level of refinement expected of thesis projects. In this lecture course, students will be introduced to the project management cycle from proposal to funding to project delivery. Issues regarding presentation contexts, professional identity, portfolios, timelines, contracts and artist obligations will be discussed and incorporated into the flow of the term. (Formerly RTA 520.)",
+      "prerequisites": [
+        "NMA 886"
+      ],
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 350,
+        "y": -500
+      },
+      "isStartingNode": false,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 521",
+      "longTitle": "Media for Social Change",
+      "courseDescription": "This course will examine how media technologies inform social change, with a specific focus on the forms of participatory culture that have transpired since the advent of social media. Students will learn about the fundamental cultural shifts of the late 20th century and early 21st century and examine how artists have responded to the changing media landscapes of that period. (Formerly RTA 521.)",
+      "prerequisites": null,
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 700,
+        "y": -500
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 807",
+      "longTitle": "Interactive Design Practice",
+      "courseDescription": "This course introduces students to the rigour and demands of doing client-facing work, as well as the level of refinement expected of thesis projects. Students will be introduced to the project management cycle from proposal to funding to project delivery. Issues regarding stakeholder management, professional identity, timelines, contracts and obligations will be discussed and incorporated into the flow of the term. (Formerly RTA 807.)",
+      "prerequisites": [
+        "NMA 886"
+      ],
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 1050,
+        "y": -500
+      },
+      "isStartingNode": false,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 814",
+      "longTitle": "Interactive Design Studio",
+      "courseDescription": "This course provides students with an opportunity to synthesize the learnings acquired from foundational New Media courses towards the development of a project for a given client design-brief. Topics include client-discovery processes, brainstorming, research, planning, client-demos and sign-offs, building, testing, presentation, and documentation. Through written communication, oral presentations and hands-on making, students learn to apply their creativity to client-driven contexts. (Formerly RTA 814.)",
+      "prerequisites": [
+        "NMA 807"
+      ],
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 1400,
+        "y": -500
+      },
+      "isStartingNode": false,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 818",
+      "longTitle": "Ants, Agents and Automatons",
+      "courseDescription": "Ants, Agents and Automatons examines the human fascination with machines that behave. This studio course amplifies systems thinking as a creative process while pushing back against the dominant narratives of art history. Through the long history of machine, ecological and cybernetic theories, students will engage in creative and conceptual explorations of robotic (hardware) agents, automatons and simulated systems. (Formerly RTA 818.)",
+      "prerequisites": [
+        "NMA 321"
+      ],
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 1750,
+        "y": -500
+      },
+      "isStartingNode": false,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 820",
+      "longTitle": "Game Prototyping and Testing",
+      "courseDescription": "In this course, students will learn how to quickly prototype their own game concepts using a variety of tools and methods. Play-testing, usability testing, and quality assurance will be used to evaluate the gameplay, visuals, and user experience. Through user testing and peer reviews, students will iteratively improve their prototypes. By the end, students will have a playable prototype of their game, with refined mechanics and design, ready for production and marketing. (Formerly RTA 820.)",
+      "prerequisites": [
+        "NMA 997"
+      ],
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 0,
+        "y": -750
+      },
+      "isStartingNode": false,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 821",
+      "longTitle": "New Media Master Class",
+      "courseDescription": "This course provides students with a culminating and integrative experience in new media. This course is an advanced level course and will feature a series of special visiting lecturers who will present and discuss topics from their respective fields of expertise. Students will gain an enhanced understanding of current issues, future opportunities, and technological advances impacting the New Media art world and industry. (Formerly RTA 821.)",
+      "prerequisites": null,
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 350,
+        "y": -750
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 822",
+      "longTitle": "Interfaces for Live Performance",
+      "courseDescription": "Despite the wide variety of control options for computers and video games, digital creation typically comes back to the keyboard and a pointing device (mouse, pen, touchscreen). This production-based course explores the history of unconventional controllers and digital interfaces, examines their use in a creative context, and challenges the student to design and build their own unique controller and creation - whether it be for games, music, dance, drawing, or more. (Formerly RTA 822.)",
+      "prerequisites": [
+        "NMA 321"
+      ],
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 700,
+        "y": -750
+      },
+      "isStartingNode": false,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 824",
+      "longTitle": "Net Zero",
+      "courseDescription": "This course gives students the opportunity to build and reflect upon processes that creatively face global environmental health. Through discussions, research and projects students will create works that strive for net zero consumption. Can we build tangible, electronic art projects without using plugs in the wall? Can we get parts for a project without a trip to the mall? Students will explore material reclamation, dumpster diving, part scavenging and alternate energy sources. (Formerly RTA 824.)",
+      "prerequisites": null,
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 1050,
+        "y": -750
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 825",
+      "longTitle": "Global Experiential Intensive - New Media",
+      "courseDescription": "Students travel to cities such as Amsterdam, Berlin, Banff, Montreal or London where they tour studios, visit exhibitions, meet with new media artists and designers, participate in festivals, or work on collaborative projects to gain a deeper understanding of their field of practice. Coursework includes preliminary research and a post-trip analysis of a specific aspect of new media practice and the role it plays within the broader new media ecosystem. (Tuition doesn&#39;t include travel costs). See teaching department for consent criteria. (Formerly RTA 825.)",
+      "prerequisites": null,
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 1400,
+        "y": -750
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 828",
+      "longTitle": "Special Topics in Game Design",
+      "courseDescription": "This course will allow students to explore leading-edge research, developments and projects in video game design. This workshop will respond to ongoing research or creative work of the instructor. Students will be active participants in the design, development and prediction of the accepted projects. (Formerly RTA 828.)",
+      "prerequisites": [
+        "NMA 928"
+      ],
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 1750,
+        "y": -750
+      },
+      "isStartingNode": false,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 82A/B",
+      "longTitle": "New Media Thesis Project",
+      "courseDescription": "Students create innovative new media productions at an advanced level. Through lectures, workshops and labs, students gain an understanding of the contexts within which work is produced and publicly presented.  Students are expected to demonstrate professional level abilities of critical thinking, proposal writing, project production, and public presentation strategy. Advanced production methods and techniques as they relate specifically to their projects are studied.  In addition, students have the option to pursue more academic research interests. (Formerly RTA 82A.)",
+      "prerequisites": [
+        "NMA 501",
+        "NMA 814",
+        "NMA 997"
+      ],
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 0,
+        "y": -1000
+      },
+      "isStartingNode": false,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 830",
+      "longTitle": "Co-Lab",
+      "courseDescription": "In this advanced studio course, students partner with mentors from a cultural institution to develop real-world solutions to creative challenges. An emphasis will be placed on the collaborative strategies for team based work, iterative design processes and critical evaluation. See teaching department for consent criteria. (Formerly RTA 830.)",
+      "prerequisites": null,
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 350,
+        "y": -1000
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 832",
+      "longTitle": "Cybernetics and Body Centric Technologies",
+      "courseDescription": "This studio course will examine how emerging wearable technologies such as e-textiles and smart materials are influencing the landscape of creative inquiry. From cyborgs and space travel to fashion and fitness, students will explore creating body-centric technologies that extend and augment the human form. (Formerly RTA 832.)",
+      "prerequisites": null,
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 700,
+        "y": -1000
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 835",
+      "longTitle": "Media and Museums",
+      "courseDescription": "Media surrounds and permeates today&#39;s museum. The public discovers events and accesses collections online. The visitor uses audio and interactive digital information to guide their visit and enable accessibility. Exhibitions often feature AR, VR or special-purpose video. In short, media creates an interface between the institution and its audiences. In this course, students will learn about museum communication and develop the critical and design skills relevant to the creation of media-based projects that support it. (Formerly RTA 835.)",
+      "prerequisites": null,
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 1050,
+        "y": -1000
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 838",
+      "longTitle": "Generative Processes",
+      "courseDescription": "This studio course will explore the role of generative algorithmic approaches in New Media artworks. Processes of randomization, feedback, behaviour, mapping and emergence will be related to meaning and structure through the construction of New Media experiences. Students will deepen their understanding of presentation skills and professional practice through the development of individual and collaborative artworks. (Formerly RTA 838.)",
+      "prerequisites": [
+        "NMA 222",
+        "FPN 513",
+        "FCD 222"
+      ],
+      "antirequisites": [
+        "RTA 959"
+      ],
+      "customrequisites": null,
+      "position": {
+        "x": 1400,
+        "y": -1000
+      },
+      "isStartingNode": false,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 842",
+      "longTitle": "Data as Material",
+      "courseDescription": "This studio course will examine how data can be used as a raw material for creative expression. Notions of data capture, storage, filtering, analysis as well as representation strategies will be related to data-driven art practice and its cultural significance. Students will deepen their understanding of presentation skills and professional practice through the development of individual and collaborative artworks. (Formerly RTA 842.)",
+      "prerequisites": [
+        "NMA 222",
+        "FPN 513",
+        "FCD 222"
+      ],
+      "antirequisites": [
+        "RTA 959"
+      ],
+      "customrequisites": null,
+      "position": {
+        "x": 1750,
+        "y": -1000
+      },
+      "isStartingNode": false,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 856",
+      "longTitle": "Strategies in Interactive Design",
+      "courseDescription": "The field of interactive experience design includes opportunities in entertainment, advertising, education, and healthcare. Through case-studies, guest-lectures, project breakdowns, and domain-specific readings, students will explore the process and production-techniques involved in interactive design for applied project development. (Formerly RTA 856.)",
+      "prerequisites": null,
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 0,
+        "y": -1250
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 867",
+      "longTitle": "Game Engines",
+      "courseDescription": "Video game development engines have exploded in popularity and flexibility. Their systems have become so ubiquitous and dynamic that they allow for varying novel uses and adaptations. This course will introduce students to the fundamentals of navigating this software and creating virtual spaces for use in a variety of industries. Students will learn to model objects, environments, and visual effects using a current game engine. (Formerly RTA 867.)",
+      "prerequisites": null,
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 350,
+        "y": -1250
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 886",
+      "longTitle": "Intro to Studio Practice",
+      "courseDescription": "This course provides students with an opportunity to synthesize the learnings acquired from foundational New Media courses towards the development of a self-directed project. Topics include brainstorming, research, planning, building, testing, presentation, and documentation. Through written communication, oral presentations and hands-on making, students develop their individual creative voice. (Formerly RTA 886.)",
+      "prerequisites": [
+        "NMA 867",
+        "NMA 321",
+        "NMA 322"
+      ],
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 700,
+        "y": -1250
+      },
+      "isStartingNode": false,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 891",
+      "longTitle": "Games Industry and Trends",
+      "courseDescription": "Starting with an understanding of the fundamentals of innovation in game design, this course seeks an understanding of how innovators have redefined game design throughout history. This course will take a look at some of the past and present trends in video games, and critically approach some of the trends as part of the discourse surrounding the video games industry. (Formerly RTA 891.)",
+      "prerequisites": null,
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 1050,
+        "y": -1250
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 925",
+      "longTitle": "Making Objects",
+      "courseDescription": "This course will introduce students to basic material practices and physical object production. Students will gain the necessary skills to model, design and build physical entities. Students will be introduced to a variety of fabricating techniques as well as a range of materials. Projects will challenge students to work at a variety of scales and within several contexts. Individual and group projects will require development of personal and team based production skills. See teaching department for consent criteria. (Formerly RTA 925.)",
+      "prerequisites": null,
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 1400,
+        "y": -1250
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 928",
+      "longTitle": "Introduction to Game Design",
+      "courseDescription": "This course offers an introduction to the core elements of game design -- game world, character, interactivity, navigation and the mechanics of gameplay. It provides students with the opportunity to develop creative ideas for personal game projects. Using an iterative design process that involves visual and audience research, paper and digital prototyping, and user testing, students will complete a game design document suitable for further development in production courses, or independently. (Formerly RTA 928.)",
+      "prerequisites": null,
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 1750,
+        "y": -1250
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 933",
+      "longTitle": "Hacking, DIY and Open Source Studio",
+      "courseDescription": "In this studio course, students will develop DIY projects that explore solutions to challenges posed by our toxic ways of life. Students will learn about circular cycles and naturally sustainable processes and experiment with ways to embed them in their work. Projects may range from exploring biodegradable materials, household waste as raw material,up-cycling strategies, or using open source technologies to develop a system that participates in solving a local problem (climate, social, mental health, etc.). (Formerly RTA 933.)",
+      "prerequisites": null,
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 0,
+        "y": -1500
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 934",
+      "longTitle": "Virtual Identities and Communities",
+      "courseDescription": "This survey course examines the role of virtual environments in reshaping early 21st century notions of identity, communities and organizations. Through research projects, students analyze how these practices have altered the nature of mainstream society and question the future of western culture. (Formerly RTA 934.)",
+      "prerequisites": null,
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 350,
+        "y": -1500
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 936",
+      "longTitle": "The Business of Art",
+      "courseDescription": "This course provides a framework for students to apply their creative skills to a business context. The course introduces students to the fundamentals of running a business in the creative fields by covering topics such as marketing, accounting, employment and mental health. Grounded in case studies and real world examples, strategy and operations will be considered: making choices and building the systems it takes to make your passion a business, including non-profits. (Formerly RTA 936.)",
+      "prerequisites": null,
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 700,
+        "y": -1500
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 939",
+      "longTitle": "Indigenous Media",
+      "courseDescription": "This course explores Indigenous media art in the context of the major political and social discourses currently informing contemporary Indigenous communities. Through screenings, readings and guest artists we will examine critically engaged community-based art practices in the context of Indigenous aesthetics. Two-spirit, gender, class and race issues will be seen through the lens of Indigenous artists. The course will compare the function of art from an Indigenous worldview with that of a Western one. (Formerly RTA 939.)",
+      "prerequisites": null,
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 1050,
+        "y": -1500
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 946",
+      "longTitle": "Issues in New Media Theory/History",
+      "courseDescription": "This course will take on different historical and critical approaches to technology and creative practice, looking at mechanical, electronic and digital/interactive platforms. Potential topics to be explored: amateur versus professional practices, creative media practice and domestic space, personal history and media memory, software studies, affect theory and technology, social media and social theory. (Formerly RTA 946.)",
+      "prerequisites": null,
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 1400,
+        "y": -1500
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 948",
+      "longTitle": "Interactive Spaces",
+      "courseDescription": "Interactive Spaces builds upon and extends the fundamentals introduced in Intro to Computational Art. In this course, scripting and programming skills will be developed and integrated with interaction design skills. Students will produce a variety of experiences based on several modes of interactivity. Emphasis is placed on the production of interactive systems that engage participants through unique and dynamic experiences. (Formerly RTA 948.)",
+      "prerequisites": [
+        "NMA 222",
+        "FCD 222",
+        "FPN 513"
+      ],
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 1750,
+        "y": -1500
+      },
+      "isStartingNode": false,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 953",
+      "longTitle": "Mixed and Extended Realities",
+      "courseDescription": "This course will focus on the body as a site of mixed reality through two technological interventions - Virtual Reality (VR) via headset devices and Augmented Reality (AR) via mobile phones. Students will explore the tools required to create pervasive and augmented reality games, spatial art installations, and body engaged virtual experiences. Throughout the course, students will work individually within accessible development frameworks to make two working prototypes - one in VR and one in AR. (Formerly RTA 953.)",
+      "prerequisites": [
+        "NMA 867",
+        "RTA 865"
+      ],
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 0,
+        "y": -1750
+      },
+      "isStartingNode": false,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 954",
+      "longTitle": "Empathy Machines",
+      "courseDescription": "This production course continues upon and extends the fundamentals introduced in Intro to Tangible Media. It emphasizes the role of the interface as a structure for communication. This course examines how inputs and outputs are mediated through the design of physical artistic interfaces. Students will develop, produce and reflect upon tangible works that incorporate elements of traditional, hybridized and physical systems. This course will combine electronics and embedded programming techniques. (Formerly RTA 954.)",
+      "prerequisites": [
+        "NMA 321"
+      ],
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 350,
+        "y": -1750
+      },
+      "isStartingNode": false,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 958",
+      "longTitle": "Networked Art",
+      "courseDescription": "This advanced production studio will introduce students to methods for making art using networks to construct meaning. Mail art, ubiquitous computing, the internet of things and the mobile individual serve as points of departure for creative explorations into social objects and networked spaces. This course provides students the opportunity to blend strategies from tangible media, code based and material practices. (Formerly RTA 958.)",
+      "prerequisites": [
+        "NMA 222",
+        "FCD 222",
+        "FPN 513",
+        "NMA 321"
+      ],
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 700,
+        "y": -1750
+      },
+      "isStartingNode": false,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 962",
+      "longTitle": "Interaction Design",
+      "courseDescription": "In this course, students will learn and define modes of interactivity that are available to create experiences and the qualities required to design interesting interactions. The course will examine the history and development of the dialogue surrounding the modern idea of interaction from its influences in theatre, performance, and kinetic sculpture. Students will also explore creative applications of communication paradigms, including the design implications of alternative modalities and practices with the changing cultures of presentation-reception. (Formerly RTA 962.)",
+      "prerequisites": null,
+      "antirequisites": [
+        "FCD 962"
+      ],
+      "customrequisites": null,
+      "position": {
+        "x": 1050,
+        "y": -1750
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 965",
+      "longTitle": "Advanced New Media Topics",
+      "courseDescription": "This course will allow students to explore leading-edge research, developments and projects in new media. New media practitioners and researchers will be encouraged to submit proposals for this workshop. Collaborative and community-based projects will also be actively sought and encouraged. The particular structure of the workshop will be responsive to the nature of the ongoing projects but the students will be active participants in the design, development and prediction of the accepted projects. See teaching department for consent criteria. (Formerly RTA 965.)",
+      "prerequisites": null,
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 1400,
+        "y": -1750
+      },
+      "isStartingNode": true,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    },
+    {
+      "courseCode": "NMA 997",
+      "longTitle": "Intermediate Game Design: Mechanics",
+      "courseDescription": "Video game mechanics are the core of any interactive experience. This course offers an expansion to the core elements of game design, focusing on the specifics of game mechanics. It provides students with the opportunity to develop game mechanics based on the core ideas for personal game projects previously explored. Using an iterative design process that involves genre and demographics research, students will begin to prototype mechanics as part of the development of their own interactive 3D creations via written or digital productions explored in the first course. (Formerly RTA 997.)",
+      "prerequisites": [
+        "NMA 928"
+      ],
+      "antirequisites": null,
+      "customrequisites": null,
+      "position": {
+        "x": 1750,
+        "y": -1750
+      },
+      "isStartingNode": false,
+      "isExpansionNode": false,
+      "startsExpanded": false
+    }
+  ]
+}

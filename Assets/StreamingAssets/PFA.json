@@ -1,0 +1,3473 @@
+{
+    "nodes": [
+        {
+            "courseCode": "PFA 100",
+            "longTitle": "Foundations of Voice and Body",
+            "courseDescription": "This intensive course introduces foundational techniques for developing the actor’s instrument, focusing on voice, speech, movement, and play. Interrelated classwork fosters an awareness of concentration, stamina, precision, and freedom in the breath, voice, mind, and body.",
+            "prerequisites": [],
+            "antirequisites": [
+                "THA 100"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": -596.489501953125,
+                "y": 508.21893310546875
+            },
+            "isStartingNode": true,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "required",
+                "Production": "none",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFA 101",
+            "longTitle": "Foundations of Voice and Body II",
+            "courseDescription": "This course continues intensive instruction in foundational techniques to develop the instrument of the actor by emphasising voice, speech, movement, and play. All class work is designed to interrelate and further develop awareness of concentration, stamina, precision, and freedom in the breath, voice, mind, and body.",
+            "prerequisites": [
+                "PFA 100",
+                "PFA 110"
+            ],
+            "antirequisites": [
+                "THA 101"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": -432.9300842285156,
+                "y": 71.60064697265625
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "required",
+                "Production": "none",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFA 110",
+            "longTitle": "Foundations of Scene Study",
+            "courseDescription": "This course initiates the concentrated work of training the actor to perform in a role. Students develop script analysis skills through assigned scenes with an understanding of the socio-historical context. Key practice areas include understanding given circumstances, personalization, pursuing objectives, and active listening.",
+            "prerequisites": [],
+            "antirequisites": [
+                "THA 100"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": -121.8074951171875,
+                "y": 647.8424682617188
+            },
+            "isStartingNode": true,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "required",
+                "Production": "none",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFA 111",
+            "longTitle": "Foundations of Scene Study II",
+            "courseDescription": "This course furthers the concentrated work of an actor taking on a role. Students continue to develop script analysis skills through assigned scenes with an understanding of the socio-historical context. Continuing practice areas include understanding given circumstances, personalization, pursuing objectives, and active listening. Course culminates in a Rehearsal Project.",
+            "prerequisites": [
+                "PFA 100",
+                "PFA 110"
+            ],
+            "antirequisites": [
+                "THA 101"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 493.0759582519531,
+                "y": 108.23603057861328
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "required",
+                "Production": "none",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFA 200",
+            "longTitle": "Expanding Voice and Body",
+            "courseDescription": "This course expands upon foundational techniques to develop the instrument of the actor by emphasising voice, speech, movement, and play. All class work increases awareness of concentration, stamina, precision, and freedom in the breath, voice, mind, and body.",
+            "prerequisites": [
+                "PFA 101",
+                "PFA 111"
+            ],
+            "antirequisites": [
+                "THA 200"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1400.0,
+                "y": 0.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "none",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFA 201",
+            "longTitle": "Expanding Voice and Body II",
+            "courseDescription": "This course continues to expand upon foundational techniques to develop the instrument of the actor by emphasising voice, speech, movement, and play. All class work broadens awareness of concentration, stamina, precision, and freedom in the breath, voice, mind, and body.",
+            "prerequisites": [
+                "PFA 200",
+                "PFA 210"
+            ],
+            "antirequisites": [
+                "THA 201"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1750.0,
+                "y": 0.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "required",
+                "Production": "none",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFA 210",
+            "longTitle": "Expanding Scene Study",
+            "courseDescription": "This course expands the concentrated work of an actor taking on a role. Students enrich script analysis skills through assigned global scenes with an understanding of the socio-historical context. Continuing practice areas include understanding given circumstances, personalization of another perspective, pursuing objectives, and active listening. Course culminates in a Rehearsal Project.",
+            "prerequisites": [
+                "PFA 101",
+                "PFA 111"
+            ],
+            "antirequisites": [
+                "THA 200"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": -57.06988525390625,
+                "y": -230.3206787109375
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "none",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFA 211",
+            "longTitle": "Expanding Scene Study II",
+            "courseDescription": "This course continues to expand the concentrated work of an actor taking on a role. Students expand script analysis skills through assigned scenes with an understanding of the socio-historical context. Ongoing practice areas include understanding given circumstances, personalization, pursuing objectives, and active listening. Course culminates in a Rehearsal Project.",
+            "prerequisites": [
+                "PFA 200",
+                "PFA 210"
+            ],
+            "antirequisites": [
+                "THA 201"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 350.0,
+                "y": -250.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "required",
+                "Production": "none",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFA 300",
+            "longTitle": "Integrating Voice and Body",
+            "courseDescription": "This course integrates foundational techniques to develop the instrument of the actor by emphasising voice, speech, movement, and play. All class work broadens awareness of concentration, stamina, precision, and freedom in the breath, voice, mind, and body.",
+            "prerequisites": [
+                "PFA 201",
+                "PFA 211"
+            ],
+            "antirequisites": [
+                "THA 300"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 700.0,
+                "y": -250.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "required",
+                "Production": "none",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFA 301",
+            "longTitle": "Integrating Voice and Body II",
+            "courseDescription": "This course continues to integrate foundational techniques to develop the instrument of the actor by emphasising voice, speech, movement, and play. All class work broadens awareness of concentration, stamina, precision, and freedom in the breath, voice, mind, and body.",
+            "prerequisites": [
+                "PFA 300",
+                "PFA 310",
+                "PFA 320"
+            ],
+            "antirequisites": [
+                "THA 301"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1050.0,
+                "y": -250.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "required",
+                "Production": "none",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFA 310",
+            "longTitle": "Expanded Forms of Acting",
+            "courseDescription": "This course broadens the concentrated work of an actor taking on a role. Students widen script analysis and foundational acting skills through assigned scenes in new mediums with an understanding of the socio-historical context. Various techniques for on-camera and/or voice-over acting will be explored to expand the understanding of acting.",
+            "prerequisites": [
+                "PFA 201",
+                "PFA 211"
+            ],
+            "antirequisites": [
+                "THA 300"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1400.0,
+                "y": -250.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "required",
+                "Production": "none",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFA 311",
+            "longTitle": "Expanded Forms of Acting II",
+            "courseDescription": "This course advances the concentrated work of an actor taking on a role. Students broaden script analysis and foundational acting skills through assigned scenes in new mediums with an understanding of the socio-historical context. Various techniques for on-camera and/or voice-over acting will be explored to expand the understanding of acting.",
+            "prerequisites": [
+                "PFA 300",
+                "PFA 310",
+                "PFA 320"
+            ],
+            "antirequisites": [
+                "THA 301"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1750.0,
+                "y": -250.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "required",
+                "Production": "none",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFA 320",
+            "longTitle": "Case Study: Integrating Acting",
+            "courseDescription": "Students apply foundational acting skills and production knowledge in a structured work environment by examining Shakespeare and integrating basic production elements for 20-minute performances. Through analysis and performance, students decouple Shakespeare from a legacy of Western colonisation and spotlight new\nways of interpreting Shakespeare. The course requires weekly rehearsals (4-20 hours). Course culminates in the Quartet Project.",
+            "prerequisites": [
+                "PFA 201",
+                "PFA 211"
+            ],
+            "antirequisites": [
+                "THA 300"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 0.0,
+                "y": -500.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "required",
+                "Production": "none",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFA 321",
+            "longTitle": "Case Study II: Applying Acting",
+            "courseDescription": "Students apply foundational acting skills and production knowledge in a structured work environment by participating in a repertory festival. Each student is cast in one of two projects. Foundational acting skills are integrated to analyse, interpret and embody a role. Weekly rehearsals adhering to a professional schedule culminate in a public presentation. Course culminates in a performance that is part of the Repertory Festival.",
+            "prerequisites": [
+                "PFA 300",
+                "PFA 310",
+                "PFA 320"
+            ],
+            "antirequisites": [
+                "THA 301"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 350.0,
+                "y": -500.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "required",
+                "Production": "none",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFA 400",
+            "longTitle": "Applying Voice and Body",
+            "courseDescription": "This course expands and bridges foundational acting techniques to the profession. Classes continue to emphasise the fundamentals of voice, speech, movement, and play so that the student has a strong understanding of their own vocal and physical practice. Voice-Over acting is introduced.",
+            "prerequisites": [
+                "PFA 301",
+                "PFA 311",
+                "PFA 321"
+            ],
+            "antirequisites": [
+                "THA 400"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 700.0,
+                "y": -500.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "required",
+                "Production": "none",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFA 401",
+            "longTitle": "Applying Voice and Body II",
+            "courseDescription": "This course continues to bridge foundational acting techniques to the profession. Classes further emphasise the fundamentals of voice, speech, movement, and play so that the student has a strong understanding of their own vocal and physical practice. Voice-Over acting techniques are applied through a demo reel.",
+            "prerequisites": [
+                "PFA 400",
+                "PFA 410",
+                "PFA 420"
+            ],
+            "antirequisites": [
+                "THA 401"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1050.0,
+                "y": -500.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "none",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFA 410",
+            "longTitle": "Expanded Forms of Acting III",
+            "courseDescription": "This course bridges foundational acting techniques to the profession. Students prepare for graduation by building an on-camera acting demo reel and participating in an industry showcase for actors. Various audition techniques will be explored to expand the understanding of the profession. Four hours of class rehearsal per week expected.",
+            "prerequisites": [
+                "PFA 301",
+                "PFA 311",
+                "PFA 321"
+            ],
+            "antirequisites": [
+                "THA 400"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1400.0,
+                "y": -500.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "none",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFA 411",
+            "longTitle": "Expanded Forms of Acting IV",
+            "courseDescription": "This course expands and advances foundational acting techniques to the profession. Students bridge their foundational on-camera acting techniques by making self-tapes and their own demo reels. Various audition techniques continue to be explored. An expanded understanding of performance is introduced through new mediums like motion-capture. Four hours of class rehearsal per week expected.",
+            "prerequisites": [
+                "PFA 400",
+                "PFA 410",
+                "PFA 420"
+            ],
+            "antirequisites": [
+                "THA 401"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1750.0,
+                "y": -500.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "required",
+                "Production": "none",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFA 420",
+            "longTitle": "Performance Field Placement in Acting",
+            "courseDescription": "Students apply foundational acting skills in a work-integrated learning environment with an industry partner. Each student is cast in one of two projects. Foundational acting skills are integrated to analyse, interpret and embody a role in a professional environment. Weekly rehearsals adhering to a professional schedule culminate in a public presentation off-campus.",
+            "prerequisites": [
+                "PFA 301",
+                "PFA 311",
+                "PFA 321"
+            ],
+            "antirequisites": [
+                "THA 400"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 0.0,
+                "y": -750.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "none",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFA 421",
+            "longTitle": "Acting Capstone Festival",
+            "courseDescription": "Each actor is cast in one of three productions presented at the Capstone Festival. Students apply foundational acting skills and collaborate as a smaller ensemble on a text selected by the Director. Opportunities to work in a leadership role with a small budget. Weekly rehearsals adhere to a professional schedule and culminate in a performance that is part of the Capstone Festival.",
+            "prerequisites": [
+                "PFA 400",
+                "PFA 410",
+                "PFA 420"
+            ],
+            "antirequisites": [
+                "THA 401"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 350.0,
+                "y": -750.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "required",
+                "Production": "none",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFC 100",
+            "longTitle": "Global Performance History I",
+            "courseDescription": "This introductory course surveys the development of performance from the prehistoric era through to early modern, neoclassical and romantic periods. Histories of theatre, actors and companies are explored in relation to moving histories, including ritual, court and processional dances (including ballet), and the early American buck and wing tradition. Audiences, stages, genres, culture, theory and representative texts that emphasize the origins and evolution of multiple performance traditions across time, place and space are explored.",
+            "prerequisites": [],
+            "antirequisites": [
+                "THF 200"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 700.0,
+                "y": -750.0
+            },
+            "isStartingNode": true,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "required",
+                "Production": "required",
+                "Dance": "required"
+            }
+        },
+        {
+            "courseCode": "PFC 101",
+            "longTitle": "Global Performance History II",
+            "courseDescription": "This introductory course surveys the development of performance during the 19th and 20th centuries to today by exploring theatrical forms and styles, individual plays, playwrights, designers, choreographers, dancers, and dances. The aim is to consider the influences on performance from different cultural, social, political, and economic contexts. Students will develop their ability to engage with multiple performative styles, grapple with historical texts, and learn how to make connections between techniques, forms, and audiences.",
+            "prerequisites": [],
+            "antirequisites": [
+                "THF 201"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1050.0,
+                "y": -750.0
+            },
+            "isStartingNode": true,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "required",
+                "Production": "required",
+                "Dance": "required"
+            }
+        },
+        {
+            "courseCode": "PFC 111",
+            "longTitle": "Performance Creation I",
+            "courseDescription": "Students will learn about live performance creation, working collaboratively across disciplines. They will investigate the creation of interdisciplinary performance using techniques from devising and creation practices, alongside design and production elements (stagecraft, lighting, sound, costume, etc.). By engaging with a range of tools across diverse perspectives, explored through collaborative group exercises, students will broaden their understanding of the creative process. Students may have the opportunity to support a production.",
+            "prerequisites": [],
+            "antirequisites": [
+                "THF 111"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1400.0,
+                "y": -750.0
+            },
+            "isStartingNode": true,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "required",
+                "Production": "required",
+                "Dance": "required"
+            }
+        },
+        {
+            "courseCode": "PFC 112",
+            "longTitle": "Performance Creation II",
+            "courseDescription": "Students will continue to work collaboratively across disciplines. They will investigate interdisciplinary performance and understanding of live performance production using techniques from devising, creation, and design using production elements. By further engaging with a range of tools across diverse perspectives, students will deepen their applied understanding of the creative process, enabling them to explore new possibilities of performance through experimentation. Students may have the opportunity to support a production.",
+            "prerequisites": [
+                "PFC 111"
+            ],
+            "antirequisites": [
+                "THF 112"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1750.0,
+                "y": -750.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "required",
+                "Production": "required",
+                "Dance": "required"
+            }
+        },
+        {
+            "courseCode": "PFC 216",
+            "longTitle": "Playwriting",
+            "courseDescription": "Introducing the fundamentals of playwriting. Aspects such as dramatic structure, form, plot, world-building, action, dialogue, characterization, and theme are covered. Creative writing exercises develop an individual voice and style. The goal of the course is to understand and apply an individual practice of writing and integrate it through writing exercises culminating in a rough draft of a one-act play.",
+            "prerequisites": [
+                "PFC 112"
+            ],
+            "antirequisites": [],
+            "customrequisites": [],
+            "position": {
+                "x": 0.0,
+                "y": -1000.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "elective",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFC 221",
+            "longTitle": "Performance Creation III",
+            "courseDescription": "A continuation of collaborative and cross-disciplinary work explored previously. Students will deepen their relationship with interdisciplinary performance and understanding of live performance creation using techniques from devising and creation practices alongside design and production techniques (stagecraft, lighting, sound, costume, etc.). By further engaging with a range of tools across diverse perspectives, students will develop more complex ideas and applied understanding of the creative process, enabling them to explore new possibilities of performance through experimentation.",
+            "prerequisites": [],
+            "antirequisites": [
+                "THF221"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 350.0,
+                "y": -1000.0
+            },
+            "isStartingNode": true,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "elective"
+            }
+        },
+        {
+            "courseCode": "PFC 222",
+            "longTitle": "Performance Creation IV",
+            "courseDescription": "A continuation of <a href=\"/content/ryerson/calendar/2025-2026/courses/performance/PFC/221.html\" class=\"qTipCourse\" data-url=\"/content/ryerson/calendar/2025-2026/courses/performance/PFC/221/jcr:content/resCalendarCourseEmbed.json\">PFC 221</a>. Students will continue to work collaboratively across disciplines in interdisciplinary performance creation using techniques from devising and creation practices alongside design and production techniques (stagecraft, lighting, sound, costume, etc). By further engaging with a range of tools across diverse perspectives, students will develop more complex ideas and applied understanding of the creative process, enabling them to explore new possibilities of performance through experimentation.",
+            "prerequisites": [
+                "PFC 221"
+            ],
+            "antirequisites": [
+                "THF 222"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 700.0,
+                "y": -1000.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "elective"
+            }
+        },
+        {
+            "courseCode": "PFC 226",
+            "longTitle": "Directing for the Stage",
+            "courseDescription": "An integrated, practical approach to the process of directing for the stage, with an emphasis on cultivating an empathetic and informed approach with collaborators. Through lecture, discussion, assignments, and in-class exercises, students develop an appreciation for the role directors play in facilitating the work of the team. Students will learn and practise the various languages, techniques, and strategies that directors use to realise a dramatic concept and inspire the team around them.",
+            "prerequisites": [
+                "PCF 112"
+            ],
+            "antirequisites": [],
+            "customrequisites": [],
+            "position": {
+                "x": 1050.0,
+                "y": -1000.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "elective",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFC 236",
+            "longTitle": "Intimacy for Stage and Screen",
+            "courseDescription": "This course introduces the tools needed for aspiring professionals in the performing arts to navigate any situation on stage or screen that involves nudity, simulated sex, or other types of intimate content. Students begin to identify moments of intimacy through script analysis, use consent practices in process, and apply boundaries. Union rights will be discussed along with insider secrets about intimacy work. All students will have the opportunity to apply consent tools through in-class assignments.",
+            "prerequisites": [],
+            "antirequisites": [],
+            "customrequisites": [],
+            "position": {
+                "x": 1400.0,
+                "y": -1000.0
+            },
+            "isStartingNode": true,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "elective",
+                "Production": "none",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFC 246",
+            "longTitle": "Fight for Performers",
+            "courseDescription": "Dive into the world of stage combat, mastering the basic performance techniques required for illusory violence on stage and screen. Learn safe execution of slaps, falls, kicks, and more, in various dramatic contexts. Apply script analysis and weapon handling skills to craft engaging fight sequences that enhance physicality, body awareness, and overall performance on stage and screen. Course will offer steps\ntowards accreditation.",
+            "prerequisites": [],
+            "antirequisites": [],
+            "customrequisites": [],
+            "position": {
+                "x": 1750.0,
+                "y": -1000.0
+            },
+            "isStartingNode": true,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "elective",
+                "Production": "none",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFC 256",
+            "longTitle": "Improvisation for Filmmaking",
+            "courseDescription": "Utilise the power of improvisation for film. This course explores spontaneous character development, ignites truthful moments on camera, and optimises production efficiency. Discover improv techniques, deliver engaging performances, and master on-the-spot shot composition. Cultivate a collaborative environment, adapt to challenges, and develop a forward-thinking mindset for editing. Hone these skills to create captivating narratives, cultivating a strong rapport between filmmakers and actors along the way.",
+            "prerequisites": [],
+            "antirequisites": [],
+            "customrequisites": [],
+            "position": {
+                "x": 0.0,
+                "y": -1250.0
+            },
+            "isStartingNode": true,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "elective",
+                "Production": "none",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFC 300",
+            "longTitle": "Wellness for the Performer",
+            "courseDescription": "This course focuses on anatomy for the movement-based performer and teacher with a primary focus on wellbeing. Stress management; mind-body-heart connection; holistic nutrition; and other physical, mental, and emotional health promotion topics will be covered and contextualized to the performing artist. The knowledge gained in this course will enhance the student&#39;s awareness of how one’s unique embodiment and identity can inform effective goal-setting and interventions for heath-cultivating training, performance, rest, and recovery.",
+            "prerequisites": [
+                "PFC 101"
+            ],
+            "antirequisites": [
+                "THF 300"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 350.0,
+                "y": -1250.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "none",
+                "Dance": "elective"
+            }
+        },
+        {
+            "courseCode": "PFC 312",
+            "longTitle": "Leadership Through Arts-Based Practice",
+            "courseDescription": "This action-based course will engage students in holistic leadership practices that support their contributions to a more caring, just and sustainable world. It aims to challenge default behaviours and expand into new possibilities by centering embodied learning, emotion, language and meaning to help inform relational decision-making and collaborative action. Students will learn to integrate various ways of knowing to make sense of ourselves, each other, and the world around us.",
+            "prerequisites": [],
+            "antirequisites": [],
+            "customrequisites": [],
+            "position": {
+                "x": 700.0,
+                "y": -1250.0
+            },
+            "isStartingNode": true,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "none",
+                "Dance": "elective"
+            }
+        },
+        {
+            "courseCode": "PFC 322",
+            "longTitle": "Branding and Identity for the Artist",
+            "courseDescription": "Discover how branding serves as a powerful tool to express the what, how, and why of your artistic endeavours. Learn to craft a consistent artistic message and identity. Through lectures, discussions, and hands-on projects, delve into the creation, implementation, and maintenance of your artistic brand. By engaging in design\npractices that relate to brand and identity expression, you&#39;ll develop the skills to\nauthentically represent yourself as an artist, forging your path into the creative\nlandscape.",
+            "prerequisites": [],
+            "antirequisites": [],
+            "customrequisites": [],
+            "position": {
+                "x": 1050.0,
+                "y": -1250.0
+            },
+            "isStartingNode": true,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "none",
+                "Dance": "elective"
+            }
+        },
+        {
+            "courseCode": "PFC 324",
+            "longTitle": "Special Topics: Acting",
+            "courseDescription": "The study of a specific topic in performance which is not otherwise covered in regular courses. Topics appropriate to this course may include the following: site-specific performance; immersive performance; land-based performance; community performance; intercultural performance; and performance as a political, social, economic, and spiritual force of change. Under special circumstances, a student may present a plan in independent study for faculty approval as a substitute for this course.",
+            "prerequisites": [
+                "PFA 320",
+                "PFD 201",
+                "PFZ 500"
+            ],
+            "antirequisites": [
+                "THF 313"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1400.0,
+                "y": -1250.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "elective",
+                "Production": "none",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFC 334",
+            "longTitle": "Audio Production for Streaming",
+            "courseDescription": "Beginners can learn how to produce high-quality audio content for podcasts and streaming using cost-effective tools. This course covers fundamental audio production principles, emphasising achieving professional sound without expensive and complicated equipment. Students learn to optimise free software for industry-standard audio creation. Essential topics include microphone techniques, noise suppression, room acoustics, mixing, and more. Much streaming and podcast content lacks quality, impacting audience engagement. This course empowers students to create top-tier audio, enhancing audience satisfaction.",
+            "prerequisites": [],
+            "antirequisites": [],
+            "customrequisites": [],
+            "position": {
+                "x": 1750.0,
+                "y": -1250.0
+            },
+            "isStartingNode": true,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "elective",
+                "Production": "none",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFC 340",
+            "longTitle": "Acting a Song",
+            "courseDescription": "This course helps students develop a musical performance that includes the presentation and articulation of a song through the embodiment of a character. Students will be introduced to vocal technique and sound production with encouragement to bring truth and specificity to both the song and the role. Class\nmaterial may include solo performance, duet, or group scenes. The course is appropriate for both the professional and aspiring singing performer.",
+            "prerequisites": [],
+            "antirequisites": [
+                "THF 340"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 0.0,
+                "y": -1500.0
+            },
+            "isStartingNode": true,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "elective",
+                "Production": "none",
+                "Dance": "elective"
+            }
+        },
+        {
+            "courseCode": "PFC 402",
+            "longTitle": "Script Analysis",
+            "courseDescription": "Explore foundational storytelling principles applicable to popular scripts across theatre, film, television, and other mediums. Through theoretical synthesis and practical application, students will learn to identify and dissect themes, structures, characters, and action in relation to industry standards. Effective communication of concepts is emphasised, fostering collaborative dialogue and ethical storytelling considerations. With a mix of theory, exercises, and writing, students will begin to critically analyse popular scripts with precision and sensitivity.",
+            "prerequisites": [],
+            "antirequisites": [
+                "THF402"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 350.0,
+                "y": -1500.0
+            },
+            "isStartingNode": true,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "elective",
+                "Production": "none",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFC 417",
+            "longTitle": "Advanced Playwriting",
+            "courseDescription": "This course advances the foundations of playwriting and deepens students&#39; understanding of dramatic structure, form, plot, world-building, action, dialogue, characterization, and theme. Writing is shared in class to sharpen the development of individual voice and style. Individual practices of writing are strengthened through the development and editing of the first draft of a play.",
+            "prerequisites": [
+                "PFC 222",
+                "PFC 216",
+                "PFC 226",
+                "PFC 402"
+            ],
+            "antirequisites": [
+                "THF 417"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 700.0,
+                "y": -1500.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "elective",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFC 470",
+            "longTitle": "Black Creative Practices",
+            "courseDescription": "What do jazz pianist Oscar Peterson, dancer and choreographer Len Gibson, actor and playwright Trey Anthony, hip-hop artist Kardinal Offishall, and Caribbean carnivals across the country have in common? They are all rooted in a Black creative practice, historical and contemporary. Black Creative Practices will expose students to case studies of creatives across multiple genres (music, dance, theatre, carnival, media, and the visual arts) unpacking their origins, form, and style, as well as contributions.",
+            "prerequisites": [],
+            "antirequisites": [],
+            "customrequisites": [],
+            "position": {
+                "x": 1050.0,
+                "y": -1500.0
+            },
+            "isStartingNode": true,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "elective"
+            }
+        },
+        {
+            "courseCode": "PFC 500",
+            "longTitle": "Dance on Film",
+            "courseDescription": "This course studies the interrelationships between dance, film/TV, and the performing arts. Students will examine the works of dance filmmakers and discuss how these can inspire and shape their own filmmaking endeavours. The students will study elements of pre-production, production and post-production such as directing/choreography, casting, story-boarding, performance, editing etc. This will culminate in an end-of-term project.",
+            "prerequisites": [],
+            "antirequisites": [
+                "THF 500"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1400.0,
+                "y": -1500.0
+            },
+            "isStartingNode": true,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "none",
+                "Dance": "elective"
+            }
+        },
+        {
+            "courseCode": "PFD 100",
+            "longTitle": "Dance: Building Foundations I",
+            "courseDescription": "This course is designed for students pursuing a professional dance career. It provides foundational physical instruction in ballet, modern, jazz, and West African dance forms. Daily classes synthesize technical, physical, artistic, improvisational, and theoretical elements into embodied practice.",
+            "prerequisites": [],
+            "antirequisites": [
+                "THD 100"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1750.0,
+                "y": -1500.0
+            },
+            "isStartingNode": true,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "none",
+                "Dance": "required"
+            }
+        },
+        {
+            "courseCode": "PFD 101",
+            "longTitle": "Dance: Building Foundations II",
+            "courseDescription": "This course is designed for students pursuing a professional dance career. It builds on concepts introduced in <a href=\"/content/ryerson/calendar/2025-2026/courses/performance/PFD/100.html\" class=\"qTipCourse\" data-url=\"/content/ryerson/calendar/2025-2026/courses/performance/PFD/100/jcr:content/resCalendarCourseEmbed.json\">PFD 100</a> with additional training in various street styles. Daily classes synthesize technical, physical, artistic, improvisational, and theoretical elements into embodied practice. Additional hours of warm-up may be required.",
+            "prerequisites": [
+                "PFD 100"
+            ],
+            "antirequisites": [
+                "THD 101"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 0.0,
+                "y": -1750.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "none",
+                "Dance": "required"
+            }
+        },
+        {
+            "courseCode": "PFD 120",
+            "longTitle": "Music for Dancers: Introduction",
+            "courseDescription": "This course is designed to give dance students a working knowledge of the language of music. The development of the system of notation of music, while presented in an accessible historical context, is geared to developing the student&#39;s reading and listening skills through the study of rhythm, melody, harmony, tempos, dynamics, musical forms, and score reading.",
+            "prerequisites": [
+                "PFD 101"
+            ],
+            "antirequisites": [
+                "THF 120"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 350.0,
+                "y": -1750.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "none",
+                "Dance": "required"
+            }
+        },
+        {
+            "courseCode": "PFD 200",
+            "longTitle": "Dance: Integrating Technique I",
+            "courseDescription": "This course is designed for students pursuing a professional dance career. It provides continued education in ballet, modern, West African, jazz, and street styles on a more advanced level, with introductory training in contemporary dance. Daily classes synthesize technical, physical, artistic, improvisational, and theoretical elements\ninto embodied practice. Emphasis is on integrating technical and artistic elements across all forms. Additional hours of warm-up may be required.",
+            "prerequisites": [
+                "PFD 101"
+            ],
+            "antirequisites": [
+                "THD 200"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 700.0,
+                "y": -1750.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "none",
+                "Dance": "required"
+            }
+        },
+        {
+            "courseCode": "PFD 201",
+            "longTitle": "Dance: Integrating Technique II",
+            "courseDescription": "This course is designed for students pursuing a professional dance career. It continues to integrate concepts explored in previous semesters. Daily classes synthesize technical, physical, artistic, improvisational, and theoretical elements into embodied practice. Emphasis is on integrating technical and artistic elements across all forms. Additional hours of warm-up may be required.",
+            "prerequisites": [
+                "PFD 200"
+            ],
+            "antirequisites": [
+                "THD 201"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1050.0,
+                "y": -1750.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "none",
+                "Dance": "required"
+            }
+        },
+        {
+            "courseCode": "PFD 210",
+            "longTitle": "Anatomy of Movement and Lifestyle I",
+            "courseDescription": "This course will cover the basic anatomy of the human body and physiology related to posture and body mechanics required for the dancer/performer. Students will learn the theory and practice of postural alignment, muscular synergy, breathing, movement principles, and injury prevention. Stress management, mind-body-heart connection, holistic nutrition, and other topics related to health promotion will also be introduced. Students will apply class learning and experiential research to develop a holistic care program.",
+            "prerequisites": [
+                "PFD 101"
+            ],
+            "antirequisites": [
+                "THF 100"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1400.0,
+                "y": -1750.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "none",
+                "Dance": "required"
+            }
+        },
+        {
+            "courseCode": "PFD 300",
+            "longTitle": "Dance: Expanding Practice I",
+            "courseDescription": "This course is designed for students pursuing a professional dance career. It expands the practice of various dance forms on an advanced level with emphasis on developing a range of performance skills. Daily classes synthesize technical, physical, artistic, improvisational, and theoretical elements into embodied practice. Additional hours of warm-up may be required.",
+            "prerequisites": [
+                "PFD 201"
+            ],
+            "antirequisites": [
+                "THD 300"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1750.0,
+                "y": -1750.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "none",
+                "Dance": "required"
+            }
+        },
+        {
+            "courseCode": "PFD 301",
+            "longTitle": "Dance: Expanding Practice II",
+            "courseDescription": "This course is designed for students pursuing a professional dance career and builds on concepts explored in <a href=\"/content/ryerson/calendar/2025-2026/courses/performance/PFD/300.html\" class=\"qTipCourse\" data-url=\"/content/ryerson/calendar/2025-2026/courses/performance/PFD/300/jcr:content/resCalendarCourseEmbed.json\">PFD 300</a>. It continues to expand the practice of various dance forms on an advanced level with emphasis on developing a range of performance skills. Daily classes synthesize technical, physical, artistic, improvisational, and theoretical elements into embodied practice. Additional hours of warm-up may be required.",
+            "prerequisites": [
+                "PFD 300"
+            ],
+            "antirequisites": [
+                "THD 301"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 0.0,
+                "y": -2000.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "none",
+                "Dance": "required"
+            }
+        },
+        {
+            "courseCode": "PFD 310",
+            "longTitle": "Professional Preparation for Dancers",
+            "courseDescription": "This course is designed to impart industry information pertinent to an emerging\ndance artist’s success in the professional workforce. In the final year of study, students\nwill strategically analyze the various career paths available to them in the dance sector. Students will learn how to create professional portfolio materials, write grants, create application material, and seek agency representation. Additionally, students will study the many Canadian arts service organizations.",
+            "prerequisites": [
+                "PFD 301"
+            ],
+            "antirequisites": [
+                "THF 310"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 350.0,
+                "y": -2000.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "none",
+                "Dance": "required"
+            }
+        },
+        {
+            "courseCode": "PFD 331",
+            "longTitle": "Choreographic Practice",
+            "courseDescription": "This course examines the artistic practices of choreography, dramaturgical studies, and performance interpretation. Through physical research in the studio, students will experience a variety of creation methods that contribute to our current understanding of dance. While examining and interacting with many performance tools and techniques, this class will encourage students to question the motivation behind their creative curiosity. This class asks the student to question, “What do I have to say as an artist?”",
+            "prerequisites": [
+                "PFD 200"
+            ],
+            "antirequisites": [
+                "THF 331"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 700.0,
+                "y": -2000.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "none",
+                "Dance": "required"
+            }
+        },
+        {
+            "courseCode": "PFD 400",
+            "longTitle": "Dance: Bridging to Profession I",
+            "courseDescription": "This course is designed for students pursuing a professional dance\ncareer and provides professional-level education in multiple dance forms. In their final\nyear of study, students will synthesize and embody technical, artistic, physical, and\ntheoretical elements at a professional level. Additional hours of warm-up may be required.",
+            "prerequisites": [
+                "PFD 301"
+            ],
+            "antirequisites": [
+                "THD 400"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1050.0,
+                "y": -2000.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "none",
+                "Dance": "required"
+            }
+        },
+        {
+            "courseCode": "PFD 401",
+            "longTitle": "Dance: Bridging to Profession II",
+            "courseDescription": "This course is designed for students pursuing a professional dance career and builds on concepts explored in <a href=\"/content/ryerson/calendar/2025-2026/courses/performance/PFD/400.html\" class=\"qTipCourse\" data-url=\"/content/ryerson/calendar/2025-2026/courses/performance/PFD/400/jcr:content/resCalendarCourseEmbed.json\">PFD 400</a>. In this final semester, students deepen their practice and become more independent as they prepare to transition into their careers or continued education. Additional hours of warm-up may be required.",
+            "prerequisites": [
+                "PFD 400"
+            ],
+            "antirequisites": [
+                "THD 401"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1400.0,
+                "y": -2000.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "none",
+                "Dance": "required"
+            }
+        },
+        {
+            "courseCode": "PFD 404",
+            "longTitle": "Landmarks in Choreography",
+            "courseDescription": "This course studies a selection of dance innovators, choreographic works, and collaborations that have significantly influenced the development of choreography, styles, and trends in dance. Emphasis will be placed on the twentieth century when dance experienced an explosion of new talent and directions. Students will investigate the emerging innovative concepts of technique, form, style, and content.",
+            "prerequisites": [],
+            "antirequisites": [
+                "THF 404"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1750.0,
+                "y": -2000.0
+            },
+            "isStartingNode": true,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "none",
+                "Dance": "required"
+            }
+        },
+        {
+            "courseCode": "PFD 800",
+            "longTitle": "Independent Study/Capstone",
+            "courseDescription": "This course allows students to reflect upon accumulated academic and creative experiences, synthesize skills, and use creative and practical research in the context of an in-depth project of their design. Students may work independently or as part of a group in a chosen area of concentration, leading to a focused body of work and/or presentation. This course has a “Creative Practice” requirement, which entails participation in at least five dance productions over four years.",
+            "prerequisites": [
+                "PFD 400"
+            ],
+            "antirequisites": [],
+            "customrequisites": [],
+            "position": {
+                "x": 0.0,
+                "y": -2250.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "none",
+                "Dance": "required"
+            }
+        },
+        {
+            "courseCode": "PFZ 100",
+            "longTitle": "Performance Foundation I",
+            "courseDescription": "This course introduces the creative, practical, and business aspects of performing arts production. Through lectures, labs, and attendance at several professional performance productions, students explore design and production elements across various disciplines. Students develop critical observation skills, engage in reflective writing, and identify personal interests within material and technological design practices. The course examines interconnections between production roles, preparing\nstudents for future specialisations in Performance Design and Production.",
+            "prerequisites": [],
+            "antirequisites": [
+                "THP 101",
+                "THF 101"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 350.0,
+                "y": -2250.0
+            },
+            "isStartingNode": true,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "required",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 101",
+            "longTitle": "Performance Foundation II",
+            "courseDescription": "This course deepens students&#39; understanding of performing arts production, focusing on practical aspects and emerging industry trends. Students attend several professional performances to analyze design and production elements, particularly in relation to inclusion, sustainability, and decolonization. The course covers health and safety considerations, business aspects of performance, and marketing strategies. Through creative exercises and reflective journaling, students develop critical perspectives on diverse performance models and industry practices.",
+            "prerequisites": [],
+            "antirequisites": [
+                "THP 102",
+                "THF 102"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 700.0,
+                "y": -2250.0
+            },
+            "isStartingNode": true,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "required",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 200",
+            "longTitle": "Process and Methods",
+            "courseDescription": "This course explores collaborative practices in performance design, emphasizing innovative creation processes. Working with an external visionary artist/creator, students will develop and test bold design ideas. The course encourages experimentation and constructive risk-taking, fostering a deep understanding of the\niterative nature of creative work. Students conduct research to inform their designs and reflect on their collaborative experiences and communication practices.",
+            "prerequisites": [
+                "PFZ 101"
+            ],
+            "antirequisites": [],
+            "customrequisites": [],
+            "position": {
+                "x": 1050.0,
+                "y": -2250.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "required",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 201",
+            "longTitle": "Material Practice",
+            "courseDescription": "This foundational course offers students hands-on experimentation with fabrication techniques in costumes, scenic construction, props, paints, and other physical elements of stage production. Through workshops and projects, students will gain experience with various materials and develop the skills to create innovative\ndesigns for 2D and 3D applications. This course serves as a prerequisite for further study in Material Practice in the Performance Design and Production program.",
+            "prerequisites": [
+                "PFZ 101"
+            ],
+            "antirequisites": [
+                "THP 101",
+                "THP 201"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1400.0,
+                "y": -2250.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "required",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 202",
+            "longTitle": "Technological Practice",
+            "courseDescription": "This foundational course introduces students to the technological aspects of stage production, including lighting, sound, video, and emerging media. Through lectures and hands-on workshops, students will learn the principles of visual and audio design, gain experience with digital media production software, and develop a critical understanding of the role of technology in contemporary performance. This course serves as a prerequisite for further study in Technological Practice in the Performance Design and Production program.",
+            "prerequisites": [
+                "PFZ 101",
+                "RTA 104",
+                "BPM 201"
+            ],
+            "antirequisites": [
+                "THP 101",
+                "THP 201"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1750.0,
+                "y": -2250.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "required",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 203",
+            "longTitle": "Foundations in Communication",
+            "courseDescription": "This course offers an introduction to professional communication in performance. Students will learn about best practices in oral and written professional communication, reading and interpreting a variety of design media including collages,\ndrawings, texts, multimedia, drafting and models, and understanding production\nschedules and documentation.",
+            "prerequisites": [
+                "PFZ 100"
+            ],
+            "antirequisites": [
+                "THT 100"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 0.0,
+                "y": -2500.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "required",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 210",
+            "longTitle": "Intro to Costume Design and Technique",
+            "courseDescription": "Building upon the foundational skills acquired in <a href=\"/content/ryerson/calendar/2025-2026/courses/performance/PFZ/201.html\" class=\"qTipCourse\" data-url=\"/content/ryerson/calendar/2025-2026/courses/performance/PFZ/201/jcr:content/resCalendarCourseEmbed.json\">PFZ 201</a>, this course introduces students to the principles of costume design for live performance. Students will learn about the design process, from concept development to rendering and presentation. The course covers topics such as character analysis, period styles, and fabric selection. Through hands-on workshops and projects, students will gain practical\nexperience in creating and presenting costume designs.",
+            "prerequisites": [
+                "PFZ 201"
+            ],
+            "antirequisites": [
+                "THT 418"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 350.0,
+                "y": -2500.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 220",
+            "longTitle": "Intro to Scenic Design and Technique",
+            "courseDescription": "This course introduces students to the fundamentals of scenic design for live performance, building upon the skills acquired in <a href=\"/content/ryerson/calendar/2025-2026/courses/performance/PFZ/201.html\" class=\"qTipCourse\" data-url=\"/content/ryerson/calendar/2025-2026/courses/performance/PFZ/201/jcr:content/resCalendarCourseEmbed.json\">PFZ 201</a>. Students will learn about the design process, from concept development to drafting and model-making. The\ncourse covers topics such as spatial analysis, scale, and materials. Through hands-on\nworkshops and projects, students will gain practical experience in creating and presenting set designs for various performance contexts.",
+            "prerequisites": [
+                "PFZ 201"
+            ],
+            "antirequisites": [
+                "THT 418"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 700.0,
+                "y": -2500.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 230",
+            "longTitle": "Intro to Lighting Design",
+            "courseDescription": "This course introduces students to the fundamentals of lighting design for live performance, building upon the skills acquired in <a href=\"/content/ryerson/calendar/2025-2026/courses/performance/PFZ/202.html\" class=\"qTipCourse\" data-url=\"/content/ryerson/calendar/2025-2026/courses/performance/PFZ/202/jcr:content/resCalendarCourseEmbed.json\">PFZ 202</a>. Students will explore the design process from concept development to industry-standard documentation. The course covers basic lighting technology, colour theory, and the application of design principles in various performance contexts. Through hands-on workshops and projects, students will gain practical experience in creating and implementing lighting designs.",
+            "prerequisites": [
+                "PFZ 202"
+            ],
+            "antirequisites": [
+                "THP 337"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1050.0,
+                "y": -2500.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 240",
+            "longTitle": "Intro to Sound Design",
+            "courseDescription": "Further studies focusing on designing with sound for performance, including comprehensive practice in using sound tools to practice ideation, sound creation, and the skills required to collaborate across disciplines in the live performance context. Students will gain an advanced knowledge of theatre-specific audio software and will further expand their skills in sound system operation. By course end, participants will emerge equipped with a nuanced understanding of how sound enhances storytelling in a live performance context.",
+            "prerequisites": [
+                "PFZ 202"
+            ],
+            "antirequisites": [
+                "THT 383"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1400.0,
+                "y": -2500.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 250",
+            "longTitle": "Intro to Projection Design",
+            "courseDescription": "This course introduces students to the fundamentals of projection design for live performance, building upon the skills acquired in <a href=\"/content/ryerson/calendar/2025-2026/courses/performance/PFZ/202.html\" class=\"qTipCourse\" data-url=\"/content/ryerson/calendar/2025-2026/courses/performance/PFZ/202/jcr:content/resCalendarCourseEmbed.json\">PFZ 202</a>. Students will explore the creative possibilities of integrating digital media into performance, learning about content creation, system design, and programming. Through hands-on workshops\nand projects, students will gain practical experience in developing and implementing\nprojection designs for various performance contexts.",
+            "prerequisites": [
+                "PFZ 202"
+            ],
+            "antirequisites": [
+                "THP 350"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1750.0,
+                "y": -2500.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 260",
+            "longTitle": "Intro to Stage Management",
+            "courseDescription": "This course introduces students to the role of the stage manager in various performance contexts, including theatre, dance, and circus. Students will learn\nessential skills such as script analysis, rehearsal management, and communication\nstrategies. Through hands-on exercises and case studies, students will gain practical\nexperience in stage management processes and develop the skills necessary for\nadvanced stage management courses.",
+            "prerequisites": [
+                "PFC 100"
+            ],
+            "antirequisites": [
+                "THM 300"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 0.0,
+                "y": -2750.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 261",
+            "longTitle": "Theatre Safety and Occupational Health",
+            "courseDescription": "This course provides an introduction to health and safety aspects of the performance industry. Students will explore legal requirements, regulations, and recommended safety standards specific to the entertainment industry. Topics include hazardous materials, risk assessment, and best practices for maintaining a safe working environment.",
+            "prerequisites": [
+                "PFZ 101"
+            ],
+            "antirequisites": [
+                "THP 515"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 350.0,
+                "y": -2750.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 270",
+            "longTitle": "Creative Producing I",
+            "courseDescription": "This course introduces the role of the creative producer in the performing arts. Explore the collaborative process of developing new work, from concept to production. Topics include script analysis, budgeting, fundraising, team building, and navigating the artistic development process. Gain practical skills in project management, contract negotiation, and fostering a supportive environment for artistic risk-taking.",
+            "prerequisites": [],
+            "antirequisites": [
+                "THP 500"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 700.0,
+                "y": -2750.0
+            },
+            "isStartingNode": true,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "required",
+                "Dance": "elective"
+            }
+        },
+        {
+            "courseCode": "PFZ 311",
+            "longTitle": "Costume Technique I",
+            "courseDescription": "This advanced course delves into the technical aspects of costume design and construction. Students will learn about pattern drafting, costume cutting, and advanced construction techniques. The course also covers wardrobe department organization, procedures, maintenance, and production running. Through hands-on projects and potential involvement in actual productions, students will gain practical experience in costume design and construction.",
+            "prerequisites": [
+                "PFZ 201",
+                "FSN 303"
+            ],
+            "antirequisites": [
+                "THP 325"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1050.0,
+                "y": -2750.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 312",
+            "longTitle": "Make-Up and Special Effects",
+            "courseDescription": "This course introduces students to the art of make-up and special effects. Students will learn about various make-up materials, equipment, and techniques, as well as the structure and maintenance of hairpieces, modern wigs, and period wigs. Through hands-on workshops and projects, students will gain practical experience in creating designs for live performance.",
+            "prerequisites": [
+                "PFZ 201",
+                "FSN 303"
+            ],
+            "antirequisites": [
+                "THP 312"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1400.0,
+                "y": -2750.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 314",
+            "longTitle": "Costume Design",
+            "courseDescription": "This course offers advanced studies in costume design for live performance. Students will further develop their skills in creating cohesive and compelling costume designs across performance contexts. The course may include opportunities to design costumes and related items for actual productions.",
+            "prerequisites": [
+                "PFZ 201",
+                "FSN 303"
+            ],
+            "antirequisites": [
+                "THT 419"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1750.0,
+                "y": -2750.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 315",
+            "longTitle": "Corsetry: History and Construction",
+            "courseDescription": "This course offers an in-depth exploration of the history and construction of theatrical corsets. Students will learn about the historical context of corsetry and its evolution over time. Through hands-on workshops, students will gain practical experience in constructing corsets using various methods and materials. Students may have the opportunity to apply their skills to actual productions.",
+            "prerequisites": [
+                "PFZ 201",
+                "FSN 303"
+            ],
+            "antirequisites": [
+                "THP 315"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 0.0,
+                "y": -3000.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 322",
+            "longTitle": "Props: Design and Construction",
+            "courseDescription": "This course introduces students to the world of theatrical properties. Students will learn about various materials and methods used in prop-making, combining\ntraditional craftsmanship with digital fabrication techniques. Through hands-on\nworkshops and projects, students will gain practical experience in designing and\nconstructing props for various performance contexts.",
+            "prerequisites": [
+                "PFZ 220"
+            ],
+            "antirequisites": [
+                "THP 538"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 350.0,
+                "y": -3000.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 323",
+            "longTitle": "Puppetry Design and Technique",
+            "courseDescription": "This course introduces students to the art of puppetry design and construction. Students will explore various types of puppets, such as hand puppets, rod puppets, and marionettes, learning about their unique design considerations and construction techniques. Through hands-on workshops and projects, students will gain practical experience in creating expressive and functional puppets for live performance.",
+            "prerequisites": [
+                "PFZ 201"
+            ],
+            "antirequisites": [],
+            "customrequisites": [],
+            "position": {
+                "x": 700.0,
+                "y": -3000.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 331",
+            "longTitle": "Lighting Design I",
+            "courseDescription": "This course introduces students to the unique requirements and methods of lighting design for special events. Students will explore topics such as intelligent lighting systems, video media servers, and emerging lighting technologies.",
+            "prerequisites": [
+                "PFZ 230"
+            ],
+            "antirequisites": [
+                "THP 404"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1050.0,
+                "y": -3000.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 343",
+            "longTitle": "Sound Design and Technique II",
+            "courseDescription": "This intermediate level course delves into the basic technical intricacies of sound for live performance, focusing on sound system design, measurement, and networked sound technologies essential for live performance contexts. Students will learn the art of sound system tuning and other critical technical skills necessary for creating and operating sound systems in theatre. Through practical exercises and theoretical study, participants will gain proficiency in ensuring optimal sound quality and coverage for diverse live performance productions.",
+            "prerequisites": [
+                "PFZ 202",
+                "RTA 104",
+                "BPM 201"
+            ],
+            "antirequisites": [
+                "THT 383"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1400.0,
+                "y": -3000.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 351",
+            "longTitle": "Creative Technology in Performance",
+            "courseDescription": "This course explores advanced applications of technology in live performance. Students will examine current and emerging technologies, learning how to integrate them into their creative practice. Through hands-on projects and collaborations, students will explore the integration of systems such as robotics, AI, mixed reality, and reactive systems within a performance context.",
+            "prerequisites": [
+                "PFZ 201",
+                "PFZ 202"
+            ],
+            "antirequisites": [
+                "THP 660"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1750.0,
+                "y": -3000.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 352",
+            "longTitle": "Show Systems Engineering",
+            "courseDescription": "Building upon the foundational skills acquired in <a href=\"/content/ryerson/calendar/2025-2026/courses/performance/PFZ/202.html\" class=\"qTipCourse\" data-url=\"/content/ryerson/calendar/2025-2026/courses/performance/PFZ/202/jcr:content/resCalendarCourseEmbed.json\">PFZ 202</a>, this advanced course explores the application of networking and show control systems in the performance industry. Students will learn about the integration of lighting, sound, projection, rigging, and motorized elements, as well as the use of system control languages. Students will gain practical experience in designing and implementing complex show control systems.",
+            "prerequisites": [
+                "PFZ 202"
+            ],
+            "antirequisites": [
+                "THT 582"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 0.0,
+                "y": -3250.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 361",
+            "longTitle": "Stage Management for Live Events",
+            "courseDescription": "This advanced course explores the role of the stage manager in various live performance contexts, including theatre, events, and opera. Students will learn about rehearsal and production procedures, scheduling, blocking notation, and prompt book and paperwork systems. The course covers the provisions of the Canadian Theatre Agreement and other relevant industry agreements. Students will gain practical\nexperience in managing the complex logistics of live events.",
+            "prerequisites": [
+                "PFZ 260"
+            ],
+            "antirequisites": [
+                "THM 114"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 350.0,
+                "y": -3250.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 362",
+            "longTitle": "Production Management for Performance",
+            "courseDescription": "This advanced course explores the role of the production manager in live performance. Students will learn about the duties, responsibilities, methods, and\nprocedures involved in organising, planning, scheduling, costing, budgeting, and\nmanaging all production components. The course covers staff supervision and\nmanagement techniques, as well as strategies for effective communication and\ncollaboration. Through case studies and practical exercises, students will gain the skills necessary to successfully oversee the production process from concept to realisation.",
+            "prerequisites": [
+                "PFZ 201",
+                "PFZ 202"
+            ],
+            "antirequisites": [
+                "THM 401"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 700.0,
+                "y": -3250.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 363",
+            "longTitle": "Technical Direction",
+            "courseDescription": "This advanced course delves into the duties, responsibilities, methods, and procedures of the technical director. Students will learn about organisation, scheduling, planning, and supervision of technical set-up and running production personnel. The course emphasises creative problem-solving skills, exploring solutions to scenic and technical challenges while considering factors such as affordability, safety, and artistic integrity. Through case studies and practical exercises, students will gain the skills necessary to effectively manage technical aspects of live productions.",
+            "prerequisites": [
+                "PFZ 201",
+                "PFZ 202"
+            ],
+            "antirequisites": [
+                "THM 301"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1050.0,
+                "y": -3250.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 370",
+            "longTitle": "Creative Producing II",
+            "courseDescription": "Building on the foundations of <a href=\"/content/ryerson/calendar/2025-2026/courses/performance/PFZ/270.html\" class=\"qTipCourse\" data-url=\"/content/ryerson/calendar/2025-2026/courses/performance/PFZ/270/jcr:content/resCalendarCourseEmbed.json\">PFZ 270</a>, this course delves deeper into producing innovative and experimental works within dance, theatre, and music. Examine strategies for securing venue spaces, marketing non-traditional performance formats, audience engagement, and building partnerships within the community. Develop an understanding of intellectual property, artist rights, and advocacy for cutting-edge performance.",
+            "prerequisites": [
+                "PFZ 270"
+            ],
+            "antirequisites": [],
+            "customrequisites": [],
+            "position": {
+                "x": 1400.0,
+                "y": -3250.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "elective"
+            }
+        },
+        {
+            "courseCode": "PFZ 371",
+            "longTitle": "Arts and Cultural Management",
+            "courseDescription": "This course introduces students to the fundamental principles and practices of managing arts and cultural organisations. Through case studies and industry guest speakers, students will explore topics such as strategic planning, fundraising, audience development, marketing, and communications. The course emphasises the unique challenges faced by non-profit arts institutions and provides students with a behind-the-scenes understanding of how successful productions and cultural events are realised.",
+            "prerequisites": [],
+            "antirequisites": [
+                "THM 327"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1750.0,
+                "y": -3250.0
+            },
+            "isStartingNode": true,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 372",
+            "longTitle": "Tour and Company Management",
+            "courseDescription": "An in-depth exploration of tour and company management in not-for-profit and commercial sectors, with a focus on Canadian and international markets. Students will learn about financial and contractual aspects of touring, strategies for identifying potential markets, booking tours, and working with government granting agencies. The course covers practical aspects of organising and implementing tours, including logistics, travel arrangements, and personnel management. Students will gain valuable insights into the challenges and opportunities of managing touring productions.",
+            "prerequisites": [
+                "PFZ 270"
+            ],
+            "antirequisites": [
+                "THM 503"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 0.0,
+                "y": -3500.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 381",
+            "longTitle": "Global Performance Studio (International)",
+            "courseDescription": "In this studio course, students will engage in research, analysis, and synthesis pertaining to site-specific and international performance creation. Students attend seminars, workshops, rehearsals, and performances in predetermined international sites. Lectures will support each individual project. See teaching department for consent criteria.",
+            "prerequisites": [],
+            "antirequisites": [],
+            "customrequisites": [],
+            "position": {
+                "x": 350.0,
+                "y": -3500.0
+            },
+            "isStartingNode": true,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 400",
+            "longTitle": "Professional Aspects of Performance",
+            "courseDescription": "This course provides students with a contemporary overview of the issues and opportunities in the live performance sector. Topics include pursuing graduate studies, portfolio presentation, interview and job preparedness. Students will learn how to apply their studies and experience toward career paths in the creative industries that are in flux and subject to economic, social and cultural shifts. The completion of Creative\nPractice hours is a requirement of this course. This course is graded on a pass/fail basis.",
+            "prerequisites": [
+                "PFZ 200"
+            ],
+            "antirequisites": [],
+            "customrequisites": [],
+            "position": {
+                "x": 700.0,
+                "y": -3500.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "required",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 401",
+            "longTitle": "Independent Study/Capstone Seminar",
+            "courseDescription": "In this course, students synthesize the theoretical and practical studies of the program by engaging in a major independent project - individually or as part of a group - of their own choice, examining a creative, technical and/or managerial aspect relating to the performing arts. Students will have the opportunity to present their project at an end-of-term event. As well, the completion of the student’s Creative Practice hours are a requirement of this course.",
+            "prerequisites": [
+                "PFZ 200"
+            ],
+            "antirequisites": [
+                "THP 800"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1050.0,
+                "y": -3500.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "required",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 411",
+            "longTitle": "Costume Technique II",
+            "courseDescription": "An extension of <a href=\"/content/ryerson/calendar/2025-2026/courses/performance/PFZ/311.html\" class=\"qTipCourse\" data-url=\"/content/ryerson/calendar/2025-2026/courses/performance/PFZ/311/jcr:content/resCalendarCourseEmbed.json\">PFZ 311</a> for students who have demonstrated unusual talent, skill, and achievement in the areas of costume design and pattern manipulation through draping and cutting. Students will work closely with a faculty member and guest artists to assume responsibility for the research, design, and construction of period costume for the stage. Students will also engage in class discussions, presentation of design concepts, and advanced construction techniques. Enrolment will be shared among Performance and Fashion students.",
+            "prerequisites": [
+                "PFZ 311",
+                "FSN 303"
+            ],
+            "antirequisites": [
+                "THP 845"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1400.0,
+                "y": -3500.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 419",
+            "longTitle": "Special Topics: Costume",
+            "courseDescription": "This advanced course focuses on specialized topics within costume design and construction. Students will explore the design and creation of specific costume elements such as jewellery, dancewear, period costumes, surface embellishment and accessories. Through hands-on workshops and projects, students will gain practical experience in bringing these detailed elements to life. Students may have the opportunity to apply their skills to actual productions.",
+            "prerequisites": [
+                "PFZ 201",
+                "FSN 303"
+            ],
+            "antirequisites": [
+                "THP 333"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1750.0,
+                "y": -3500.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 421",
+            "longTitle": "Scenography",
+            "courseDescription": "Building upon the principles introduced in <a href=\"/content/ryerson/calendar/2025-2026/courses/performance/PFZ/220.html\" class=\"qTipCourse\" data-url=\"/content/ryerson/calendar/2025-2026/courses/performance/PFZ/220/jcr:content/resCalendarCourseEmbed.json\">PFZ 220</a>, this course further develops scenic design communication skills through advanced drafting and three-dimensional model building. Students will create a full set of drawings and a detailed model for a selected play, refining their ability to visually communicate complex design ideas. Through critique sessions and collaboration with faculty and peers, students will gain practical experience in presenting and refining their designs.",
+            "prerequisites": [
+                "PFZ 220"
+            ],
+            "antirequisites": [
+                "THT 318"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 0.0,
+                "y": -3750.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 422",
+            "longTitle": "Scenic Painting",
+            "courseDescription": "This course introduces students to the art of scenic painting. Students will explore various colours, paints, materials, and techniques used to create faux finishes and textures for theatrical scenery. Students may have the opportunity to apply their skills to actual productions.",
+            "prerequisites": [
+                "PFZ 220"
+            ],
+            "antirequisites": [
+                "THP 422"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 350.0,
+                "y": -3750.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 429",
+            "longTitle": "Special Topics: Scenic Construction",
+            "courseDescription": "This advanced course focuses on specialised topics within scenic construction. Students will learn about welding and metalworking techniques commonly used in the creation of theatrical scenery and properties. Through hands-on workshops and projects, students will gain practical experience in working with metal and other\nadvanced materials. Students may have the opportunity to apply their skills to actual\nproductions.",
+            "prerequisites": [
+                "PFZ 201"
+            ],
+            "antirequisites": [
+                "THP 648"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 700.0,
+                "y": -3750.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 441",
+            "longTitle": "Recording as Practice",
+            "courseDescription": "This course delves into the art of mapping, exploring, and intervening in the environment using sound, using recording strategies as dynamic tools for understanding and engaging with urban spaces. Students learn to operate portable\nrecording devices to interpret the soundscape and consider ways in which it offers\ninspiration and possibility in a creative context. Participants gain insight into the\nmultifaceted role of recording in shaping our perception of space and experience.",
+            "prerequisites": [
+                "PFZ 202",
+                "RTA 104",
+                "BPM 201"
+            ],
+            "antirequisites": [],
+            "customrequisites": [],
+            "position": {
+                "x": 1050.0,
+                "y": -3750.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 449",
+            "longTitle": "Special Topics: Sound",
+            "courseDescription": "Advanced studies in sound design and sonic arts. Offers a broad exploration of sound&#39;s creative and scholarly possibilities and will explore storytelling through a variety of sound practices. Through practical projects, reflective writing, and discussions, students develop a nuanced understanding of sound&#39;s role in shaping our\nperceptions and experiences and its possibilities for communicating research and\ncreative ideas. Students are required to have intermediate skills working with digital\naudio.",
+            "prerequisites": [
+                "PFZ 240",
+                "RTA 104",
+                "BPM 201"
+            ],
+            "antirequisites": [
+                "THT 893"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1400.0,
+                "y": -3750.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 471",
+            "longTitle": "Commercial Theatre",
+            "courseDescription": "Uncover the inner workings of the commercial theatre industry, from Broadway to national tours and regional productions. Explore the role of the producer in developing, financing, and marketing large-scale productions. Analyse case studies of successful (and failed) shows, examine contracts and royalties, understand theatrical unions, and learn the key strategies for launching and sustaining a commercially viable theatrical venture.",
+            "prerequisites": [],
+            "antirequisites": [
+                "THM 303"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 1750.0,
+                "y": -3750.0
+            },
+            "isStartingNode": true,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        },
+        {
+            "courseCode": "PFZ 489",
+            "longTitle": "Special Topics: Production Innovation",
+            "courseDescription": "This advanced course is focused on the creation of innovative productions. Students will explore cutting-edge artistic design and production elements for live events, developing their creative problem-solving skills and expanding their understanding of the possibilities within their chosen discipline. Through hands-on projects and collaboration with faculty and guest artists, students will push the boundaries of current production practices.",
+            "prerequisites": [
+                "PFC 112"
+            ],
+            "antirequisites": [
+                "THP 683"
+            ],
+            "customrequisites": [],
+            "position": {
+                "x": 0.0,
+                "y": -4000.0
+            },
+            "isStartingNode": false,
+            "isExpansionNode": false,
+            "startsExpanded": false,
+            "context": {
+                "Acting": "none",
+                "Production": "elective",
+                "Dance": "none"
+            }
+        }
+    ],
+    "connections": [
+        {
+            "from": "PFC 226",
+            "to": "PFC 417",
+            "controlPoints": [
+                {
+                    "x": 875.0,
+                    "y": -1250.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 230",
+            "to": "PFZ 331",
+            "controlPoints": [
+                {
+                    "x": 1050.0,
+                    "y": -2750.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 420",
+            "to": "PFA 401",
+            "controlPoints": [
+                {
+                    "x": 525.0,
+                    "y": -625.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFC 111",
+            "to": "PFC 112",
+            "controlPoints": [
+                {
+                    "x": 1575.0,
+                    "y": -750.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 311",
+            "to": "PFA 410",
+            "controlPoints": [
+                {
+                    "x": 1575.0,
+                    "y": -375.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 311",
+            "to": "PFA 400",
+            "controlPoints": [
+                {
+                    "x": 1225.0,
+                    "y": -375.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 240",
+            "to": "PFZ 449",
+            "controlPoints": [
+                {
+                    "x": 1400.0,
+                    "y": -3125.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFC 216",
+            "to": "PFC 417",
+            "controlPoints": [
+                {
+                    "x": 350.0,
+                    "y": -1250.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 201",
+            "to": "PFZ 220",
+            "controlPoints": [
+                {
+                    "x": 1050.0,
+                    "y": -2375.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 201",
+            "to": "PFZ 363",
+            "controlPoints": [
+                {
+                    "x": 1225.0,
+                    "y": -2750.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 200",
+            "to": "PFA 201",
+            "controlPoints": [
+                {
+                    "x": 1575.0,
+                    "y": 0.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFC 100",
+            "to": "PFZ 260",
+            "controlPoints": [
+                {
+                    "x": 350.0,
+                    "y": -1750.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 320",
+            "to": "PFA 311",
+            "controlPoints": [
+                {
+                    "x": 875.0,
+                    "y": -375.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 101",
+            "to": "PFZ 200",
+            "controlPoints": [
+                {
+                    "x": 875.0,
+                    "y": -2250.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFD 101",
+            "to": "PFD 200",
+            "controlPoints": [
+                {
+                    "x": 350.0,
+                    "y": -1750.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 202",
+            "to": "PFZ 240",
+            "controlPoints": [
+                {
+                    "x": 1575.0,
+                    "y": -2375.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFD 300",
+            "to": "PFD 301",
+            "controlPoints": [
+                {
+                    "x": 875.0,
+                    "y": -1875.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 200",
+            "to": "PFA 211",
+            "controlPoints": [
+                {
+                    "x": 875.0,
+                    "y": -125.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 101",
+            "to": "PFZ 261",
+            "controlPoints": [
+                {
+                    "x": 525.0,
+                    "y": -2500.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 270",
+            "to": "PFZ 370",
+            "controlPoints": [
+                {
+                    "x": 1050.0,
+                    "y": -3000.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 200",
+            "to": "PFZ 400",
+            "controlPoints": [
+                {
+                    "x": 875.0,
+                    "y": -2875.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 321",
+            "to": "PFA 400",
+            "controlPoints": [
+                {
+                    "x": 525.0,
+                    "y": -500.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 410",
+            "to": "PFA 421",
+            "controlPoints": [
+                {
+                    "x": 875.0,
+                    "y": -625.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFD 201",
+            "to": "PFD 300",
+            "controlPoints": [
+                {
+                    "x": 1400.0,
+                    "y": -1750.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 301",
+            "to": "PFA 410",
+            "controlPoints": [
+                {
+                    "x": 1225.0,
+                    "y": -375.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 202",
+            "to": "PFZ 351",
+            "controlPoints": [
+                {
+                    "x": 1750.0,
+                    "y": -2625.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 201",
+            "to": "PFZ 419",
+            "controlPoints": [
+                {
+                    "x": 1575.0,
+                    "y": -2875.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFD 400",
+            "to": "PFD 800",
+            "controlPoints": [
+                {
+                    "x": 525.0,
+                    "y": -2125.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 301",
+            "to": "PFA 400",
+            "controlPoints": [
+                {
+                    "x": 875.0,
+                    "y": -375.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 201",
+            "to": "PFA 310",
+            "controlPoints": [
+                {
+                    "x": 1575.0,
+                    "y": -125.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 202",
+            "to": "PFZ 250",
+            "controlPoints": [
+                {
+                    "x": 1750.0,
+                    "y": -2375.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 101",
+            "to": "PFZ 201",
+            "controlPoints": [
+                {
+                    "x": 1050.0,
+                    "y": -2250.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 400",
+            "to": "PFA 411",
+            "controlPoints": [
+                {
+                    "x": 1225.0,
+                    "y": -500.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 201",
+            "to": "PFA 320",
+            "controlPoints": [
+                {
+                    "x": 875.0,
+                    "y": -250.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 202",
+            "to": "PFZ 441",
+            "controlPoints": [
+                {
+                    "x": 1400.0,
+                    "y": -3000.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 310",
+            "to": "PFA 311",
+            "controlPoints": [
+                {
+                    "x": 1575.0,
+                    "y": -250.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 201",
+            "to": "PFZ 429",
+            "controlPoints": [
+                {
+                    "x": 1050.0,
+                    "y": -3000.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFC 222",
+            "to": "PFC 417",
+            "controlPoints": [
+                {
+                    "x": 700.0,
+                    "y": -1250.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 111",
+            "to": "PFA 200",
+            "controlPoints": [
+                {
+                    "x": 946.5379638671875,
+                    "y": 54.11801528930664
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFC 112",
+            "to": "PFC 216",
+            "controlPoints": [
+                {
+                    "x": 875.0,
+                    "y": -875.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 310",
+            "to": "PFA 301",
+            "controlPoints": [
+                {
+                    "x": 1225.0,
+                    "y": -250.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFC 101",
+            "to": "PFC 300",
+            "controlPoints": [
+                {
+                    "x": 700.0,
+                    "y": -1000.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 260",
+            "to": "PFZ 361",
+            "controlPoints": [
+                {
+                    "x": 175.0,
+                    "y": -3000.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 320",
+            "to": "PFA 301",
+            "controlPoints": [
+                {
+                    "x": 525.0,
+                    "y": -375.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 202",
+            "to": "PFZ 343",
+            "controlPoints": [
+                {
+                    "x": 1575.0,
+                    "y": -2625.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 300",
+            "to": "PFA 301",
+            "controlPoints": [
+                {
+                    "x": 875.0,
+                    "y": -250.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 101",
+            "to": "PFZ 202",
+            "controlPoints": [
+                {
+                    "x": 1225.0,
+                    "y": -2250.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 301",
+            "to": "PFA 420",
+            "controlPoints": [
+                {
+                    "x": 525.0,
+                    "y": -500.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 101",
+            "to": "PFA 200",
+            "controlPoints": [
+                {
+                    "x": 483.53497314453125,
+                    "y": 35.800323486328125
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 201",
+            "to": "PFZ 315",
+            "controlPoints": [
+                {
+                    "x": 700.0,
+                    "y": -2625.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 311",
+            "to": "PFZ 411",
+            "controlPoints": [
+                {
+                    "x": 1225.0,
+                    "y": -3125.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFD 100",
+            "to": "PFD 101",
+            "controlPoints": [
+                {
+                    "x": 875.0,
+                    "y": -1625.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 211",
+            "to": "PFA 300",
+            "controlPoints": [
+                {
+                    "x": 525.0,
+                    "y": -250.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 270",
+            "to": "PFZ 372",
+            "controlPoints": [
+                {
+                    "x": 350.0,
+                    "y": -3125.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 400",
+            "to": "PFA 421",
+            "controlPoints": [
+                {
+                    "x": 525.0,
+                    "y": -625.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 200",
+            "to": "PFZ 401",
+            "controlPoints": [
+                {
+                    "x": 1050.0,
+                    "y": -2875.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFD 201",
+            "to": "PFC 324",
+            "controlPoints": [
+                {
+                    "x": 1225.0,
+                    "y": -1500.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 202",
+            "to": "PFZ 352",
+            "controlPoints": [
+                {
+                    "x": 875.0,
+                    "y": -2750.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFD 101",
+            "to": "PFD 120",
+            "controlPoints": [
+                {
+                    "x": 175.0,
+                    "y": -1750.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 111",
+            "to": "PFA 210",
+            "controlPoints": [
+                {
+                    "x": 218.00303649902344,
+                    "y": -61.04232406616211
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 202",
+            "to": "PFZ 363",
+            "controlPoints": [
+                {
+                    "x": 1400.0,
+                    "y": -2750.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 300",
+            "to": "PFA 311",
+            "controlPoints": [
+                {
+                    "x": 1225.0,
+                    "y": -250.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 400",
+            "to": "PFA 401",
+            "controlPoints": [
+                {
+                    "x": 875.0,
+                    "y": -500.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 202",
+            "to": "PFZ 230",
+            "controlPoints": [
+                {
+                    "x": 1400.0,
+                    "y": -2375.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 110",
+            "to": "PFA 101",
+            "controlPoints": [
+                {
+                    "x": 311.0163879394531,
+                    "y": 167.7301483154297
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 321",
+            "to": "PFA 420",
+            "controlPoints": [
+                {
+                    "x": 175.0,
+                    "y": -625.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 321",
+            "to": "PFA 410",
+            "controlPoints": [
+                {
+                    "x": 875.0,
+                    "y": -500.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 201",
+            "to": "PFZ 362",
+            "controlPoints": [
+                {
+                    "x": 1050.0,
+                    "y": -2750.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 201",
+            "to": "PFA 300",
+            "controlPoints": [
+                {
+                    "x": 1225.0,
+                    "y": -125.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFC 221",
+            "to": "PFC 222",
+            "controlPoints": [
+                {
+                    "x": 525.0,
+                    "y": -1000.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 410",
+            "to": "PFA 401",
+            "controlPoints": [
+                {
+                    "x": 1225.0,
+                    "y": -500.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 201",
+            "to": "PFZ 311",
+            "controlPoints": [
+                {
+                    "x": 1225.0,
+                    "y": -2500.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 201",
+            "to": "PFZ 351",
+            "controlPoints": [
+                {
+                    "x": 1575.0,
+                    "y": -2625.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 110",
+            "to": "PFA 111",
+            "controlPoints": [
+                {
+                    "x": 715.8475952148438,
+                    "y": 804.2150268554688
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 220",
+            "to": "PFZ 422",
+            "controlPoints": [
+                {
+                    "x": 525.0,
+                    "y": -3125.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFD 400",
+            "to": "PFD 401",
+            "controlPoints": [
+                {
+                    "x": 1225.0,
+                    "y": -2000.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 311",
+            "to": "PFA 420",
+            "controlPoints": [
+                {
+                    "x": 875.0,
+                    "y": -500.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFD 301",
+            "to": "PFD 310",
+            "controlPoints": [
+                {
+                    "x": 175.0,
+                    "y": -2000.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFC 112",
+            "to": "PFZ 489",
+            "controlPoints": [
+                {
+                    "x": 875.0,
+                    "y": -2375.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 100",
+            "to": "PFZ 203",
+            "controlPoints": [
+                {
+                    "x": 175.0,
+                    "y": -2375.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 420",
+            "to": "PFA 421",
+            "controlPoints": [
+                {
+                    "x": 175.0,
+                    "y": -750.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 220",
+            "to": "PFZ 421",
+            "controlPoints": [
+                {
+                    "x": 350.0,
+                    "y": -3125.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 201",
+            "to": "PFZ 210",
+            "controlPoints": [
+                {
+                    "x": 875.0,
+                    "y": -2375.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFD 200",
+            "to": "PFD 331",
+            "controlPoints": [
+                {
+                    "x": 700.0,
+                    "y": -1875.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 420",
+            "to": "PFA 411",
+            "controlPoints": [
+                {
+                    "x": 875.0,
+                    "y": -625.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 201",
+            "to": "PFZ 323",
+            "controlPoints": [
+                {
+                    "x": 1050.0,
+                    "y": -2625.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 202",
+            "to": "PFZ 362",
+            "controlPoints": [
+                {
+                    "x": 1225.0,
+                    "y": -2750.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 201",
+            "to": "PFZ 314",
+            "controlPoints": [
+                {
+                    "x": 1575.0,
+                    "y": -2500.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 300",
+            "to": "PFA 321",
+            "controlPoints": [
+                {
+                    "x": 525.0,
+                    "y": -375.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 220",
+            "to": "PFZ 322",
+            "controlPoints": [
+                {
+                    "x": 525.0,
+                    "y": -2750.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 211",
+            "to": "PFA 310",
+            "controlPoints": [
+                {
+                    "x": 875.0,
+                    "y": -250.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 320",
+            "to": "PFA 321",
+            "controlPoints": [
+                {
+                    "x": 175.0,
+                    "y": -500.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 211",
+            "to": "PFA 320",
+            "controlPoints": [
+                {
+                    "x": 175.0,
+                    "y": -375.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 100",
+            "to": "PFA 111",
+            "controlPoints": [
+                {
+                    "x": 311.0163879394531,
+                    "y": 493.84429931640625
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 101",
+            "to": "PFA 210",
+            "controlPoints": [
+                {
+                    "x": -244.99998474121094,
+                    "y": -79.36001586914062
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFD 301",
+            "to": "PFD 400",
+            "controlPoints": [
+                {
+                    "x": 525.0,
+                    "y": -2000.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFC 402",
+            "to": "PFC 417",
+            "controlPoints": [
+                {
+                    "x": 525.0,
+                    "y": -1500.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 210",
+            "to": "PFA 201",
+            "controlPoints": [
+                {
+                    "x": 846.465087890625,
+                    "y": -115.16033935546875
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 210",
+            "to": "PFA 211",
+            "controlPoints": [
+                {
+                    "x": 146.46505737304688,
+                    "y": -240.16033935546875
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 100",
+            "to": "PFA 101",
+            "controlPoints": [
+                {
+                    "x": -957.7294921875,
+                    "y": 228.0648651123047
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 320",
+            "to": "PFC 324",
+            "controlPoints": [
+                {
+                    "x": 700.0,
+                    "y": -875.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFZ 201",
+            "to": "PFZ 312",
+            "controlPoints": [
+                {
+                    "x": 1400.0,
+                    "y": -2500.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 410",
+            "to": "PFA 411",
+            "controlPoints": [
+                {
+                    "x": 1575.0,
+                    "y": -500.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFA 310",
+            "to": "PFA 321",
+            "controlPoints": [
+                {
+                    "x": 875.0,
+                    "y": -375.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFD 101",
+            "to": "PFD 210",
+            "controlPoints": [
+                {
+                    "x": 700.0,
+                    "y": -1750.0
+                }
+            ],
+            "type": 0
+        },
+        {
+            "from": "PFD 200",
+            "to": "PFD 201",
+            "controlPoints": [
+                {
+                    "x": 875.0,
+                    "y": -1750.0
+                }
+            ],
+            "type": 0
+        }
+    ]
+}

@@ -19,6 +19,14 @@ public class CustomOptionsPresenter : DialoguePresenterBase
     public Transform? optionViewParent;
     public float swayAmplitude = 10f;
     public float swaySpeed = 3f;
+    public float leftPlacement = -300f;
+    public float rightPlacement = 300f;
+    public float topPlacement = 40f;
+    public float midPlacement = -100f;
+    public float bottomPlacement = -200f;
+
+
+    public QuizAnimationManager animManager;
 
     [SerializeField] private DialogueRunner? runner;
 
@@ -127,6 +135,7 @@ public class CustomOptionsPresenter : DialoguePresenterBase
 
     public override async YarnTask<DialogueOption?> RunOptionsAsync(DialogueOption[] dialogueOptions, CancellationToken cancellationToken)
     {
+        animManager.PlayAnimation();
         Debug.Log($"{optionViews.Count}");
         // Ensure enough option views exist
         while (dialogueOptions.Length-1 > optionViews.Count)
@@ -225,6 +234,7 @@ public class CustomOptionsPresenter : DialoguePresenterBase
         }
 
         Debug.Log($"returning option: {completedOption}");
+        AudioEvents.Play("click1");
         return completedOption;
     }
 
@@ -283,7 +293,7 @@ public class CustomOptionsPresenter : DialoguePresenterBase
         switch (hPos.ToLowerInvariant())
         {
             case "left":
-                pos.x = -(Screen.width * 0.5f) + (size.x * rt.pivot.x) + 65f;
+                pos.x = leftPlacement;;
                 break;
 
             case "center":
@@ -291,7 +301,7 @@ public class CustomOptionsPresenter : DialoguePresenterBase
                 break;
 
             case "right":
-                pos.x = (Screen.width * 0.5f) - (size.x * (1f - rt.pivot.x)) - 65f;
+                pos.x = rightPlacement;
                 break;
         }
 
@@ -299,15 +309,15 @@ public class CustomOptionsPresenter : DialoguePresenterBase
         switch (vPos.ToLowerInvariant())
         {
             case "top":
-                pos.y = (Screen.height * 0.5f) - (size.y * (1f - rt.pivot.y)) - 15f;
+                pos.y = topPlacement;
                 break;
 
             case "center":
-                pos.y = 0f;
+                pos.y = midPlacement;
                 break;
 
             case "bottom":
-                pos.y = -(Screen.height * 0.5f) + (size.y * rt.pivot.y) + 20f;
+                pos.y = bottomPlacement;
                 break;
         }
 

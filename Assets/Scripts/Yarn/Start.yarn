@@ -3,27 +3,652 @@
 <<declare $optionsTimer = 0>>
 // set quiz variables here
 <<declare $prototypeQuizVar = 0>>
+
+<<declare $mediaScore = 0>>
+<<declare $journalismScore = 0>>
+<<declare $proComScore = 0>>
+<<declare $peformScore = 0>>
+<<declare $crIndustriesScore = 0>>
+<<declare $fashionScore = 0>>
+<<declare $imgArtsScore = 0>>
+<<declare $GCMScore = 0>>
+<<declare $intDesignScore = 0>>
+
 ===
 
 title: Start
 ---
-Pick one!
--> Option 1 #delay:0.5 #duration:-1 #vPos:top #hPos:left
-    <<jump option1>>
--> Option 2 #delay:0.5 #duration:-1 #vPos:top #hPos:right
-    <<jump option2>>
+<<PlaySound "bgm">>
+Hello!
+<<jump Question1>>
+===
+
+title: Question1
+---
+You're watching a live Twitch stream. What element captures your attention the most?
+-> The personality and hosting style of the streamer. #delay:0 #duration:-1 #vPos:top #hPos:left
+    <<jump q1option1>>
+-> The set design, lighting, and background atmosphere. #delay:0 #duration:-1 #vPos:top #hPos:right
+    <<jump q1option2>>
+-> The on-screen graphics, overlays, and branding. #delay:0 #duration:-1 #vPos:center #hPos:left
+    <<jump q1option3>>
+-> The streamer's outfit and personal style. #delay:0 #duration:-1 #vPos:center #hPos:right
+    <<jump q1option4>>
+-> The sponsorship deals and business strategy behind it. #delay:0 #duration:-1 #vPos:bottom #hPos:left
+    <<jump q1option5>>
+-> The camera angles and production quality. #delay:0 #duration:-1 #vPos:bottom #hPos:right
+    <<jump q1option6>>
 -> default // default option that will semantically never be used but is a good debug safety net
     <<jump Start>>
 ===
 
-title: option1
+title: q1option1
 ---
 You picked option 1.
-<<jump Start>>
+
+<<set $mediaScore = $mediaScore + 1>>
+<<set $journalismScore = $journalismScore + 1>>
+<<set $proComScore = $proComScore + 1>>
+
+<<jump Question2>>
 ===
 
-title: option2
+title: q1option2
 ---
 You picked option 2.
-<<jump Start>>
+
+<<set $peformScore = $peformScore + 1>>
+<<set $intDesignScore = $intDesignScore + 1>>
+<<set $imgArtsScore = $imgArtsScore + 1>>
+
+<<jump Question2>>
+===
+
+title: q1option3
+---
+You picked option 3.
+
+<<set $GCMScore = $GCMScore + 1>>
+<<set $mediaScore = $mediaScore + 1>>
+<<set $crIndustriesScore = $crIndustriesScore + 1>>
+
+<<jump Question2>>
+===
+
+title: q1option4
+---
+You picked option 4.
+
+<<set $fashionScore = $fashionScore + 1>>
+<<set $imgArtsScore = $imgArtsScore + 1>>
+
+<<jump Question2>>
+===
+
+title: q1option5
+---
+You picked option 5.
+
+<<set $crIndustriesScore = $crIndustriesScore + 1>>
+<<set $proComScore = $proComScore + 1>>
+
+<<jump Question2>>
+===
+
+title: q1option6
+---
+You picked option 6.
+
+<<set $imgArtsScore = $imgArtsScore + 1>>
+<<set $mediaScore = $mediaScore + 1>>
+<<set $peformScore = $peformScore + 1>>
+
+<<jump Question2>>
+===
+
+title: Question2
+---
+It's the weekend. How are you spending your free time?
+-> Binge-watching films or analyzing cinematography. #delay:0 #duration:-1 #vPos:top #hPos:left
+    <<jump q2option1>>
+-> Visiting an art gallery or fashion pop-up. #delay:0 #duration:-1 #vPos:top #hPos:right
+    <<jump q2option2>>
+-> Going to a concert, play, or live performance. #delay:0 #duration:-1 #vPos:center #hPos:left
+    <<jump q2option3>>
+-> Redecorating my room or re-arranging furniture. #delay:0 #duration:-1 #vPos:center #hPos:right
+    <<jump q2option4>>
+-> Creating content for TikTok or Instagram. #delay:0 #duration:-1 #vPos:bottom #hPos:left
+    <<jump q2option5>>
+-> Reading the news, blogs, or deep-diving into a topic. #delay:0 #duration:-1 #vPos:bottom #hPos:right
+    <<jump q2option6>>
+    
+-> default // default option that will semantically never be used but is a good debug safety net
+    <<jump Start>>
+===
+
+title: q2option1
+---
+You picked option 1.
+
+<<set $imgArtsScore = $imgArtsScore + 1>>
+<<set $mediaScore = $mediaScore + 1>>
+
+<<jump Question3>>
+===
+
+title: q2option2
+---
+You picked option 2.
+
+<<set $fashionScore = $fashionScore + 1>>
+<<set $imgArtsScore = $imgArtsScore + 1>>
+<<set $intDesignScore = $intDesignScore + 1>>
+
+<<jump Question3>>
+===
+
+title: q2option3
+---
+You picked option 3.
+
+<<set $peformScore = $peformScore + 1>>
+<<set $proComScore = $proComScore + 1>>
+
+<<jump Question3>>
+===
+
+title: q2option4
+---
+You picked option 4.
+
+<<set $intDesignScore = $intDesignScore + 1>>
+<<set $GCMScore = $GCMScore + 1>>
+
+<<jump Question3>>
+===
+
+title: q2option5
+---
+You picked option 5.
+
+<<set $proComScore = $proComScore + 1>>
+<<set $mediaScore = $mediaScore + 1>>
+<<set $crIndustriesScore = $crIndustriesScore + 1>>
+
+<<jump Question3>>
+===
+
+title: q2option6
+---
+You picked option 6.
+
+<<set $journalismScore = $journalismScore + 1>>
+<<set $proComScore = $proComScore + 1>>
+
+<<jump Question3>>
+===
+
+
+title: Question3
+---
+In a creative group project, what role do you naturally take?
+-> The Leader: Organizing the team and managing the vision. #delay:0 #duration:-1 #vPos:top #hPos:left
+    <<jump q3option1>>
+-> The Presenter: Speaking and pitching the idea. #delay:0 #duration:-1 #vPos:top #hPos:right
+    <<jump q3option2>>
+->The Writer: Scripting, editing, and refining the message. #delay:0 #duration:-1 #vPos:center #hPos:left
+    <<jump q3option3>>
+-> Redecorating my room or re-arranging furniture. #delay:0 #duration:-1 #vPos:center #hPos:right
+    <<jump q3option4>>
+->The Designer: Creating the visuals, slides, or look. #delay:0 #duration:-1 #vPos:bottom #hPos:center
+    <<jump q3option5>>
+    
+-> default // default option that will semantically never be used but is a good debug safety net
+    <<jump Start>>
+===
+
+title: q3option1
+---
+You picked option 1.
+
+<<set $crIndustriesScore = $crIndustriesScore + 1>>
+<<set $proComScore = $proComScore + 1>>
+<<set $GCMScore = $GCMScore + 1>>
+
+<<jump Question4>>
+===
+
+title: q3option2
+---
+You picked option 2.
+
+<<set $peformScore = $peformScore + 1>>
+<<set $mediaScore = $mediaScore + 1>>
+<<set $journalismScore = $journalismScore + 1>>
+
+<<jump Question4>>
+===
+
+title: q3option3
+---
+You picked option 3.
+
+<<set $journalismScore = $journalismScore + 1>>
+<<set $proComScore = $proComScore + 1>>
+
+<<jump Question4>>
+===
+
+title: q3option4
+---
+You picked option 4.
+
+<<set $GCMScore = $GCMScore + 1>>
+<<set $imgArtsScore = $imgArtsScore + 1>>
+<<set $fashionScore = $fashionScore + 1>>
+
+<<jump Question4>>
+===
+
+title: q3option5
+---
+You picked option 5.
+
+<<set $intDesignScore = $intDesignScore + 1>>
+<<set $peformScore = $peformScore + 1>>
+<<set $fashionScore = $fashionScore + 1>>
+
+
+<<jump Question4>>
+===
+
+title: Question4
+---
+Pick your ideal creative workspace.
+-> A high-tech TV studio or radio booth. #delay:0 #duration:-1 #vPos:top #hPos:left
+    <<jump q4option1>>
+-> Backstage in a theater or on a film set. #delay:0 #duration:-1 #vPos:top #hPos:right
+    <<jump q4option2>>
+-> A bright, open design atelier with fabrics and samples. #delay:0 #duration:-1 #vPos:center #hPos:left
+    <<jump q4option3>>
+-> A bustling newsroom or editorial office. #delay:0 #duration:-1 #vPos:center #hPos:right
+    <<jump q4option4>>
+-> A modern agency office or co-working space. #delay:0 #duration:-1 #vPos:bottom #hPos:left
+    <<jump q4option5>>
+-> A print lab or digital production studio. #delay:0 #duration:-1 #vPos:bottom #hPos:right
+    <<jump q4option6>>
+    
+-> default // default option that will semantically never be used but is a good debug safety net
+    <<jump Start>>
+===
+
+title: q4option1
+---
+You picked option 1.
+
+<<set $mediaScore = $mediaScore + 1>>
+<<set $journalismScore = $journalismScore + 1>>
+
+<<jump Question5>>
+===
+
+title: q4option2
+---
+You picked option 2.
+
+<<set $peformScore = $peformScore + 1>>
+<<set $imgArtsScore = $imgArtsScore + 1>>
+
+<<jump Question5>>
+===
+
+title: q4option3
+---
+You picked option 3.
+
+<<set $fashionScore = $fashionScore + 1>>
+<<set $intDesignScore = $intDesignScore + 1>>
+
+<<jump Question5>>
+===
+
+title: q4option4
+---
+You picked option 4.
+
+<<set $journalismScore = $journalismScore + 1>>
+<<set $proComScore = $proComScore + 1>>
+
+<<jump Question5>>
+===
+
+title: q4option5
+---
+You picked option 5.
+
+<<set $crIndustriesScore = $crIndustriesScore + 1>>
+<<set $proComScore = $proComScore + 1>>
+<<set $GCMScore = $GCMScore + 1>>
+
+<<jump Question5>>
+===
+
+title: q4option6
+---
+You picked option 6.
+
+<<set $GCMScore = $GCMScore + 1>>
+<<set $imgArtsScore = $imgArtsScore + 1>>
+
+<<jump Question5>>
+===
+
+title: Question5
+---
+You're at Fashion Week. What are you doing?
+-> Designing the collection being showcased. #delay:0 #duration:-1 #vPos:top #hPos:left
+    <<jump q5option1>>
+-> Walking the runway or performing in the show. #delay:0 #duration:-1 #vPos:top #hPos:right
+    <<jump q5option2>>
+-> Photographing the looks for a magazine. #delay:0 #duration:-1 #vPos:center #hPos:left
+    <<jump q5option3>>
+-> Reporting on the trends for a blog or outlet. #delay:0 #duration:-1 #vPos:center #hPos:right
+    <<jump q5option4>>
+-> Organizing the event logistics and PR. #delay:0 #duration:-1 #vPos:bottom #hPos:left
+    <<jump q5option5>>
+-> Designing the runway set and lighting. #delay:0 #duration:-1 #vPos:bottom #hPos:right
+    <<jump q5option6>>
+    
+-> default // default option that will semantically never be used but is a good debug safety net
+    <<jump Start>>
+===
+
+title: q5option1
+---
+You picked option 1.
+<<jump Question6>>
+===
+
+title: q5option2
+---
+You picked option 2.
+<<jump Question6>>
+===
+
+title: q5option3
+---
+You picked option 3.
+<<jump Question6>>
+===
+
+title: q5option4
+---
+You picked option 4.
+<<jump Question6>>
+===
+
+title: q5option5
+---
+You picked option 5.
+<<jump Question6>>
+===
+
+title: q5option6
+---
+You picked option 6.
+<<jump Question6>>
+===
+
+title: Question6
+---
+Which tool would you reach for first to solve a problem?
+-> A Camera. #delay:0 #duration:-1 #vPos:top #hPos:left
+    <<jump q6option1>>
+-> A Microphone. #delay:0 #duration:-1 #vPos:top #hPos:right
+    <<jump q6option2>>
+-> A Sketchbook or Tablet. #delay:0 #duration:-1 #vPos:center #hPos:left
+    <<jump q6option3>>
+-> A Spreadsheet or Planner. #delay:0 #duration:-1 #vPos:center #hPos:right
+    <<jump q6option4>>
+-> Sewing Machine or Building Tools. #delay:0 #duration:-1 #vPos:bottom #hPos:left
+    <<jump q6option5>>
+-> Editing Software. #delay:0 #duration:-1 #vPos:bottom #hPos:right
+    <<jump q6option6>>
+    
+-> default // default option that will semantically never be used but is a good debug safety net
+    <<jump Start>>
+===
+
+title: q6option1
+---
+You picked option 1.
+<<jump Question7>>
+===
+
+title: q6option2
+---
+You picked option 2.
+<<jump Question7>>
+===
+
+title: q6option3
+---
+You picked option 3.
+<<jump Question7>>
+===
+
+title: q6option4
+---
+You picked option 4.
+<<jump Question7>>
+===
+
+title: q6option5
+---
+You picked option 5.
+<<jump Question7>>
+===
+
+title: q6option6
+---
+You picked option 6.
+<<jump Question7>>
+===
+
+title: Question7
+---
+What kind of impact do you want your work to have?
+-> To entertain and move an audience emotionally. #delay:0 #duration:-1 #vPos:top #hPos:left
+    <<jump q7option1>>
+-> To inform people and uncover the truth. #delay:0 #duration:-1 #vPos:top #hPos:right
+    <<jump q7option2>>
+-> To make the world more beautiful and functional. #delay:0 #duration:-1 #vPos:center #hPos:left
+    <<jump q7option3>>
+-> To innovate business and lead creative teams. #delay:0 #duration:-1 #vPos:center #hPos:right
+    <<jump q7option4>>
+-> To connect people and build communities. #delay:0 #duration:-1 #vPos:bottom #hPos:center
+    <<jump q7option5>>
+    
+-> default // default option that will semantically never be used but is a good debug safety net
+    <<jump Start>>
+===
+
+title: q7option1
+---
+You picked option 1.
+<<jump Question8>>
+===
+
+title: q7option2
+---
+You picked option 2.
+<<jump Question8>>
+===
+
+title: q7option3
+---
+You picked option 3.
+<<jump Question8>>
+===
+
+title: q7option4
+---
+You picked option 4.
+<<jump Question8>>
+===
+
+title: q7option5
+---
+You picked option 5.
+<<jump Question8>>
+===
+
+title: Question8
+---
+If you started a YouTube channel, what would it be about?
+-> Short films, skits, or visual storytelling. #delay:0 #duration:-1 #vPos:top #hPos:left
+    <<jump q8option1>>
+-> Video essays, news commentary, or interviews. #delay:0 #duration:-1 #vPos:top #hPos:right
+    <<jump q8option2>>
+-> Fashion hauls, styling tips, or sewing tutorials. #delay:0 #duration:-1 #vPos:center #hPos:left
+    <<jump q8option3>>
+-> Home makeovers, DIY, or tour videos. #delay:0 #duration:-1 #vPos:center #hPos:right
+    <<jump q8option4>>
+-> Music covers, acting reels, or dance. #delay:0 #duration:-1 #vPos:bottom #hPos:left
+    <<jump q8option5>>
+-> Business tips, 'day in the life' of an entrepreneur. #delay:0 #duration:-1 #vPos:bottom #hPos:right
+    <<jump q8option6>>
+    
+-> default // default option that will semantically never be used but is a good debug safety net
+    <<jump Start>>
+===
+
+title: q8option1
+---
+You picked option 1.
+<<jump Question9>>
+===
+
+title: q8option2
+---
+You picked option 2.
+<<jump Question9>>
+===
+
+title: q8option3
+---
+You picked option 3.
+<<jump Question9>>
+===
+
+title: q8option4
+---
+You picked option 4.
+<<jump Question9>>
+===
+
+title: q8option5
+---
+You picked option 5.
+<<jump Question9>>
+===
+
+title: q8option6
+---
+You picked option 6.
+<<jump Question9>>
+===
+
+title: Question9
+---
+Pick a word that describes your vibe.
+-> Expressive. #delay:0 #duration:-1 #vPos:top #hPos:left
+    <<jump q9option1>>
+-> Strategic. #delay:0 #duration:-1 #vPos:top #hPos:right
+    <<jump q9option2>>
+-> Inquisitive. #delay:0 #duration:-1 #vPos:center #hPos:left
+    <<jump q9option3>>
+-> Visual. #delay:0 #duration:-1 #vPos:center #hPos:right
+    <<jump q9option4>>
+-> Collaborative. #delay:0 #duration:-1 #vPos:bottom #hPos:center
+    <<jump q9option5>>
+    
+-> default // default option that will semantically never be used but is a good debug safety net
+    <<jump Start>>
+===
+
+title: q9option1
+---
+You picked option 1.
+<<jump Question10>>
+===
+
+title: q9option2
+---
+You picked option 2.
+<<jump Question10>>
+===
+
+title: q9option3
+---
+You picked option 3.
+<<jump Question10>>
+===
+
+title: q9option4
+---
+You picked option 4.
+<<jump Question10>>
+===
+
+title: q9option5
+---
+You picked option 5.
+<<jump Question10>>
+===
+
+title: Question10
+---
+Finally, what drives you the most?
+-> Being in the spotlight. #delay:0 #duration:-1 #vPos:top #hPos:left
+    <<jump q10option1>>
+-> Creating behind the scenes. #delay:0 #duration:-1 #vPos:top #hPos:right
+    <<jump q10option2>>
+-> Managing the big picture. #delay:0 #duration:-1 #vPos:center #hPos:left
+    <<jump q10option3>>
+-> Sharing stories and information. #delay:0 #duration:-1 #vPos:center #hPos:right
+    <<jump q10option4>>
+    
+-> default // default option that will semantically never be used but is a good debug safety net
+    <<jump Start>>
+===
+
+title: q10option1
+---
+You picked option 1.
+<<jump Loading>>
+===
+
+title: q10option2
+---
+You picked option 2.
+<<jump Loading>>
+===
+
+title: q10option3
+---
+You picked option 3.
+<<jump Loading>>
+===
+
+title: q10option4
+---
+You picked option 4.
+<<jump Loading>>
+===
+
+title: Loading
+---
+Loading your top schools...
+Insert cool transition here!!!!!
 ===
