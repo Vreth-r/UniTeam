@@ -22,6 +22,7 @@ public class CustomOptionsPresenter : DialoguePresenterBase
     public float leftPlacement = -300f;
     public float rightPlacement = 300f;
     public float topPlacement = 40f;
+    public float midPlacement = -100f;
     public float bottomPlacement = -200f;
 
 
@@ -312,7 +313,7 @@ public class CustomOptionsPresenter : DialoguePresenterBase
                 break;
 
             case "center":
-                pos.y = 0f;
+                pos.y = midPlacement;
                 break;
 
             case "bottom":
