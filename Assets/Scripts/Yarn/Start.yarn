@@ -3,6 +3,17 @@
 <<declare $optionsTimer = 0>>
 // set quiz variables here
 <<declare $prototypeQuizVar = 0>>
+
+<<declare $mediaScore = 0>>
+<<declare $journalismScore = 0>>
+<<declare $proComScore = 0>>
+<<declare $peformScore = 0>>
+<<declare $crIndustriesScore = 0>>
+<<declare $fashionScore = 0>>
+<<declare $imgArtsScore = 0>>
+<<declare $GCMScore = 0>>
+<<declare $intDesignScore = 0>>
+
 ===
 
 title: Start
@@ -34,36 +45,64 @@ You're watching a live Twitch stream. What element captures your attention the m
 title: q1option1
 ---
 You picked option 1.
+
+<<set $mediaScore = $mediaScore + 1>>
+<<set $journalismScore = $journalismScore + 1>>
+<<set $proComScore = $proComScore + 1>>
+
 <<jump Question2>>
 ===
 
 title: q1option2
 ---
 You picked option 2.
+
+<<set $peformScore = $peformScore + 1>>
+<<set $intDesignScore = $intDesignScore + 1>>
+<<set $imgArtsScore = $imgArtsScore + 1>>
+
 <<jump Question2>>
 ===
 
 title: q1option3
 ---
 You picked option 3.
+
+<<set $GCMScore = $GCMScore + 1>>
+<<set $mediaScore = $mediaScore + 1>>
+<<set $crIndustriesScore = $crIndustriesScore + 1>>
+
 <<jump Question2>>
 ===
 
 title: q1option4
 ---
 You picked option 4.
+
+<<set $fashionScore = $fashionScore + 1>>
+<<set $imgArtsScore = $imgArtsScore + 1>>
+
 <<jump Question2>>
 ===
 
 title: q1option5
 ---
 You picked option 5.
+
+<<set $crIndustriesScore = $crIndustriesScore + 1>>
+<<set $proComScore = $proComScore + 1>>
+
 <<jump Question2>>
 ===
 
 title: q1option6
 ---
 You picked option 6.
+
+<<set $imgArtsScore = $imgArtsScore + 1>>
+<<set $mediaScore = $mediaScore + 1>>
+<<set $peformScore = $peformScore + 1>>
+
 <<jump Question2>>
 ===
 
@@ -90,36 +129,62 @@ It's the weekend. How are you spending your free time?
 title: q2option1
 ---
 You picked option 1.
+
+<<set $imgArtsScore = $imgArtsScore + 1>>
+<<set $mediaScore = $mediaScore + 1>>
+
 <<jump Question3>>
 ===
 
 title: q2option2
 ---
 You picked option 2.
+
+<<set $fashionScore = $fashionScore + 1>>
+<<set $imgArtsScore = $imgArtsScore + 1>>
+<<set $intDesignScore = $intDesignScore + 1>>
+
 <<jump Question3>>
 ===
 
 title: q2option3
 ---
 You picked option 3.
+
+<<set $peformScore = $peformScore + 1>>
+<<set $proComScore = $proComScore + 1>>
+
 <<jump Question3>>
 ===
 
 title: q2option4
 ---
 You picked option 4.
+
+<<set $intDesignScore = $intDesignScore + 1>>
+<<set $GCMScore = $GCMScore + 1>>
+
 <<jump Question3>>
 ===
 
 title: q2option5
 ---
 You picked option 5.
+
+<<set $proComScore = $proComScore + 1>>
+<<set $mediaScore = $mediaScore + 1>>
+<<set $crIndustriesScore = $crIndustriesScore + 1>>
+
 <<jump Question3>>
 ===
 
 title: q2option6
 ---
 You picked option 6.
+
+<<set $journalismScore = $journalismScore + 1>>
+<<set $proComScore = $proComScore + 1>>
+
 <<jump Question3>>
 ===
 
@@ -145,30 +210,55 @@ In a creative group project, what role do you naturally take?
 title: q3option1
 ---
 You picked option 1.
+
+<<set $crIndustriesScore = $crIndustriesScore + 1>>
+<<set $proComScore = $proComScore + 1>>
+<<set $GCMScore = $GCMScore + 1>>
+
 <<jump Question4>>
 ===
 
 title: q3option2
 ---
 You picked option 2.
+
+<<set $peformScore = $peformScore + 1>>
+<<set $mediaScore = $mediaScore + 1>>
+<<set $journalismScore = $journalismScore + 1>>
+
 <<jump Question4>>
 ===
 
 title: q3option3
 ---
 You picked option 3.
+
+<<set $journalismScore = $journalismScore + 1>>
+<<set $proComScore = $proComScore + 1>>
+
 <<jump Question4>>
 ===
 
 title: q3option4
 ---
 You picked option 4.
+
+<<set $GCMScore = $GCMScore + 1>>
+<<set $imgArtsScore = $imgArtsScore + 1>>
+<<set $fashionScore = $fashionScore + 1>>
+
 <<jump Question4>>
 ===
 
 title: q3option5
 ---
 You picked option 5.
+
+<<set $intDesignScore = $intDesignScore + 1>>
+<<set $peformScore = $peformScore + 1>>
+<<set $fashionScore = $fashionScore + 1>>
+
+
 <<jump Question4>>
 ===
 
@@ -195,36 +285,61 @@ Pick your ideal creative workspace.
 title: q4option1
 ---
 You picked option 1.
+
+<<set $mediaScore = $mediaScore + 1>>
+<<set $journalismScore = $journalismScore + 1>>
+
 <<jump Question5>>
 ===
 
 title: q4option2
 ---
 You picked option 2.
+
+<<set $peformScore = $peformScore + 1>>
+<<set $imgArtsScore = $imgArtsScore + 1>>
+
 <<jump Question5>>
 ===
 
 title: q4option3
 ---
 You picked option 3.
+
+<<set $fashionScore = $fashionScore + 1>>
+<<set $intDesignScore = $intDesignScore + 1>>
+
 <<jump Question5>>
 ===
 
 title: q4option4
 ---
 You picked option 4.
+
+<<set $journalismScore = $journalismScore + 1>>
+<<set $proComScore = $proComScore + 1>>
+
 <<jump Question5>>
 ===
 
 title: q4option5
 ---
 You picked option 5.
+
+<<set $crIndustriesScore = $crIndustriesScore + 1>>
+<<set $proComScore = $proComScore + 1>>
+<<set $GCMScore = $GCMScore + 1>>
+
 <<jump Question5>>
 ===
 
 title: q4option6
 ---
 You picked option 6.
+
+<<set $GCMScore = $GCMScore + 1>>
+<<set $imgArtsScore = $imgArtsScore + 1>>
+
 <<jump Question5>>
 ===
 
