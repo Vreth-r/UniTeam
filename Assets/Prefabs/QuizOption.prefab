@@ -82,12 +82,12 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 0}
   text: {fileID: 7429995666205885915}
-  selectionImage: {fileID: 0}
+  selectionImage: {fileID: 8839588074947242430}
   normal:
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: fa70e73515a5b844b87241c78ca80e26, type: 3}
     colour: {r: 1, g: 1, b: 1, a: 1}
   selected:
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: 43225f00aee36e049b51ffa645bdbff0, type: 3}
     colour: {r: 1, g: 1, b: 1, a: 1}
   disabled:
     sprite: {fileID: 0}
