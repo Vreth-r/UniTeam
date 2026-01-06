@@ -302,7 +302,6 @@ title: q4option4
 title: q4option5
 ---
 
-
 <<set $crIndustriesScore = $crIndustriesScore + 1>>
 <<set $proComScore = $proComScore + 1>>
 <<set $GCMScore = $GCMScore + 1>>
@@ -312,7 +311,6 @@ title: q4option5
 
 title: q4option6
 ---
-
 
 <<set $GCMScore = $GCMScore + 1>>
 <<set $imgArtsScore = $imgArtsScore + 1>>
@@ -342,37 +340,44 @@ You're at Fashion Week. What are you doing?
 
 title: q5option1
 ---
+<<set $fashionScore = $fashionScore + 1>>
 
 <<jump Question6>>
 ===
 
 title: q5option2
 ---
-
+<<set $peformScore = $peformScore + 1>>
+<<set $fashionScore = $fashionScore + 1>>
 <<jump Question6>>
 ===
 
 title: q5option3
 ---
-
+<<set $imgArtsScore = $imgArtsScore + 1>>
+<<set $fashionScore = $fashionScore + 1>>
 <<jump Question6>>
 ===
 
 title: q5option4
 ---
-
+<<set $journalismScore = $journalismScore + 1>>
+<<set $mediaScore = $mediaScore + 1>>
+<<set $fashionScore = $fashionScore + 1>>
 <<jump Question6>>
 ===
 
 title: q5option5
 ---
-
+<<set $crIndustriesScore = $crIndustriesScore + 1>>
+<<set $proComScore = $proComScore + 1>>
 <<jump Question6>>
 ===
 
 title: q5option6
 ---
-
+<<set $intDesignScore = $intDesignScore + 1>>
+<<set $peformScore = $peformScore + 1>>
 <<jump Question6>>
 ===
 
@@ -398,36 +403,52 @@ Which tool would you reach for first to solve a problem?
 
 title: q6option1
 ---
+<<set $imgArtsScore = $imgArtsScore + 1>>
+<<set $journalismScore = $journalismScore + 1>>
 
 <<jump Question7>>
 ===
 
 title: q6option2
 ---
+<<set $mediaScore = $mediaScore + 1>>
+<<set $peformScore = $peformScore + 1>>
+<<set $proComScore = $proComScore + 1>>
 
 <<jump Question7>>
 ===
 
 title: q6option3
 ---
+<<set $fashionScore = $fashionScore + 1>>
+<<set $intDesignScore = $intDesignScore + 1>>
+<<set $GCMScore = $GCMScore + 1>>
 
 <<jump Question7>>
 ===
 
 title: q6option4
 ---
+<<set $crIndustriesScore = $crIndustriesScore + 1>>
+<<set $GCMScore = $GCMScore + 1>>
 
 <<jump Question7>>
 ===
 
 title: q6option5
 ---
+<<set $fashionScore = $fashionScore + 1>>
+<<set $peformScore = $peformScore + 1>>
+<<set $intDesignScore = $intDesignScore + 1>>
 
 <<jump Question7>>
 ===
 
 title: q6option6
 ---
+<<set $mediaScore = $mediaScore + 1>>
+<<set $imgArtsScore = $imgArtsScore + 1>>
+<<set $GCMScore = $GCMScore + 1>>
 
 <<jump Question7>>
 ===
@@ -452,18 +473,26 @@ What kind of impact do you want your work to have?
 
 title: q7option1
 ---
+<<set $peformScore = $peformScore + 1>>
+<<set $mediaScore = $mediaScore + 1>>
+<<set $imgArtsScore = $imgArtsScore + 1>>
 
 <<jump Question8>>
 ===
 
 title: q7option2
 ---
+<<set $journalismScore = $journalismScore + 1>>
+<<set $proComScore = $proComScore + 1>>
 
 <<jump Question8>>
 ===
 
 title: q7option3
 ---
+<<set $intDesignScore = $intDesignScore + 1>>
+<<set $fashionScore = $fashionScore + 1>>
+<<set $GCMScore = $GCMScore + 1>>
 
 <<jump Question8>>
 ===
@@ -471,11 +500,17 @@ title: q7option3
 title: q7option4
 ---
 
+<<set $crIndustriesScore = $crIndustriesScore + 1>>
+<<set $GCMScore = $GCMScore + 1>>
+
 <<jump Question8>>
 ===
 
 title: q7option5
 ---
+
+<<set $proComScore = $proComScore + 1>>
+<<set $mediaScore = $mediaScore + 1>>
 
 <<jump Question8>>
 ===
@@ -503,11 +538,16 @@ If you started a YouTube channel, what would it be about?
 title: q8option1
 ---
 
+<<set $imgArtsScore = $imgArtsScore + 1>>
+<<set $mediaScore = $mediaScore + 1>>
+
 <<jump Question9>>
 ===
 
 title: q8option2
 ---
+<<set $journalismScore = $journalismScore + 1>>
+<<set $proComScore = $proComScore + 1>>
 
 <<jump Question9>>
 ===
@@ -515,23 +555,31 @@ title: q8option2
 title: q8option3
 ---
 
+<<set $fashionScore = $fashionScore + 1>>
+
 <<jump Question9>>
 ===
 
 title: q8option4
 ---
+<<set $intDesignScore = $intDesignScore + 1>>
+<<set $GCMScore = $GCMScore + 1>>
 
 <<jump Question9>>
 ===
 
 title: q8option5
 ---
+<<set $peformScore = $peformScore + 1>>
+<<set $proComScore = $proComScore + 1>>
 
 <<jump Question9>>
 ===
 
 title: q8option6
 ---
+<<set $crIndustriesScore = $crIndustriesScore + 1>>
+<<set $proComScore = $proComScore + 1>>
 
 <<jump Question9>>
 ===
@@ -556,30 +604,44 @@ Pick a word that describes your vibe.
 
 title: q9option1
 ---
+<<set $peformScore = $peformScore + 1>>
+<<set $fashionScore = $fashionScore + 1>>
+<<set $imgArtsScore = $imgArtsScore + 1>>
 
 <<jump Question10>>
 ===
 
 title: q9option2
 ---
+<<set $crIndustriesScore = $crIndustriesScore + 1>>
+<<set $GCMScore = $GCMScore + 1>>
+<<set $proComScore = $proComScore + 1>>
 
 <<jump Question10>>
 ===
 
 title: q9option3
 ---
+<<set $journalismScore = $journalismScore + 1>>
+<<set $mediaScore = $mediaScore + 1>>
 
 <<jump Question10>>
 ===
 
 title: q9option4
 ---
+<<set $intDesignScore = $intDesignScore + 1>>
+<<set $imgArtsScore = $imgArtsScore + 1>>
+<<set $GCMScore = $GCMScore + 1>>
 
 <<jump Question10>>
 ===
 
 title: q9option5
 ---
+<<set $proComScore = $proComScore + 1>>
+<<set $crIndustriesScore = $crIndustriesScore + 1>>
+<<set $peformScore = $peformScore + 1>>
 
 <<jump Question10>>
 ===
@@ -602,24 +664,34 @@ Finally, what drives you the most?
 
 title: q10option1
 ---
+<<set $peformScore = $peformScore + 1>>
+<<set $mediaScore = $mediaScore + 1>>
 
 <<jump Loading>>
 ===
 
 title: q10option2
 ---
+<<set $imgArtsScore = $imgArtsScore + 1>>
+<<set $fashionScore = $fashionScore + 1>>
+<<set $intDesignScore = $intDesignScore + 1>>
 
 <<jump Loading>>
 ===
 
 title: q10option3
 ---
+<<set $crIndustriesScore = $crIndustriesScore + 1>>
+<<set $GCMScore = $GCMScore + 1>>
 
 <<jump Loading>>
 ===
 
 title: q10option4
 ---
+<<set $journalismScore = $journalismScore + 1>>
+<<set $proComScore = $proComScore + 1>>
+<<set $mediaScore = $mediaScore + 1>>
 
 <<jump Loading>>
 ===
@@ -627,6 +699,6 @@ title: q10option4
 title: Loading
 ---
 Loading your top schools...
-Insert cool transition here!!!!!
 <<set $topPrograms = top_three_scores($mediaScore, $journalismScore, $proComScore, $peformScore, $crIndustriesScore, $fashionScore, $imgArtsScore, $GCMScore, $intDesignScore)>>
+Your top schools are {$topPrograms}!
 ===
