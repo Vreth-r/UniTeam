@@ -176,7 +176,6 @@ public class SkillTreeManager : MonoBehaviour
         foreach (var kvp in nodeLookup)
         {
             var nodeUI = kvp.Value;
-
             nodeUI.ApplyProgramContext(context);
         }
     }
@@ -326,5 +325,4 @@ public class SkillTreeManager : MonoBehaviour
         to.RegisterIncomingConnection(conn);
         return conn;
     }
-
 }

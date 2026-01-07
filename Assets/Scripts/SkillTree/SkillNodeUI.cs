@@ -52,7 +52,7 @@ public class SkillNodeUI : MonoBehaviour
     {
         foreach (var c in incomingConnections)
             if (c != null)
-                c.gameObject.SetActive(visible);
+                c.SetVisible(visible);
     }
 
     // -------------------------
@@ -65,6 +65,37 @@ public class SkillNodeUI : MonoBehaviour
     }
 
     // -------------------------
+    // VISIBILITY
+    // -------------------------
+
+    public void SetVisible(bool visible)
+    {
+        float alpha = visible ? 1f : 0f;
+        SetImageAlpha(icon, alpha);
+        SetImageAlpha(border, alpha);
+
+        // Fade all graphics
+        var graphics = GetComponentsInChildren<Graphic>(true);
+        foreach (var g in graphics)
+        {
+            var c = g.color;
+            c.a = alpha;
+            g.color = c;
+
+            // Disable interaction
+            g.raycastTarget = visible;
+        }
+    }
+
+    void SetImageAlpha(Image img, float a)
+    {
+        if (!img) return;
+        var c = img.color;
+        c.a = a;
+        img.color = c;
+    }
+
+    // -------------------------
     // CONTEXT SWITCHING
     // -------------------------
 
@@ -73,6 +104,8 @@ public class SkillNodeUI : MonoBehaviour
         if (program == TreeContext.All || data.context == null)
         {
             border.color = baseColor;
+            SetVisible(true);
+            SetConnectionsVisible(true);
             return;
         }
 
@@ -87,6 +120,8 @@ public class SkillNodeUI : MonoBehaviour
         if (string.IsNullOrEmpty(requirement) || requirement == "none")
         {
             border.color = unavailableColor;
+            SetVisible(false);
+            SetConnectionsVisible(false);
             return;
         }
 
@@ -94,12 +129,18 @@ public class SkillNodeUI : MonoBehaviour
         {
             case "required":
                 border.color = requiredColor;
+                SetVisible(true);
+                SetConnectionsVisible(true);
                 break;
             case "elective":
                 border.color = electiveColor;
+                SetVisible(true);
+                SetConnectionsVisible(true);
                 break;
             default:
                 border.color = unavailableColor;
+                SetVisible(false);
+                SetConnectionsVisible(false);
                 break;
         }
     }

@@ -289,8 +289,10 @@ MonoBehaviour:
   icon: {fileID: 6838413550799967729}
   border: {fileID: 6838413550799967729}
   courseCodeText: {fileID: 1875171006717360268}
+  baseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   requiredColor: {r: 0.4515438, g: 0, b: 0.735849, a: 1}
   electiveColor: {r: 0, g: 1, b: 0, a: 1}
+  unavailableColor: {r: 0, g: 0, b: 0, a: 1}
   data:
     courseCode: 
     longTitle: 
@@ -302,6 +304,10 @@ MonoBehaviour:
     isStartingNode: 0
     isExpansionNode: 0
     startsExpanded: 0
+    context:
+      Acting: 
+      Production: 
+      Dance: 
   unlocked: 0
   incomingConnections: []
 --- !u!1 &8426817399208513015

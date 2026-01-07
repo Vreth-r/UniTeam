@@ -18,10 +18,18 @@ public class SkillConnectionUI : MonoBehaviour
 
     RectTransform parentRT;
 
+    // -------------------------
+    // INIT
+    // -------------------------
+
     void Awake()
     {
         parentRT = transform.parent as RectTransform;
     }
+
+    // -------------------------
+    // MOVING
+    // -------------------------
 
     void LateUpdate()
     {
@@ -61,6 +69,10 @@ public class SkillConnectionUI : MonoBehaviour
         arrowHead.rotation = Quaternion.Euler(0, 0, angle);
     }
 
+    // -------------------------
+    // HANDLES
+    // -------------------------
+
     public void AddHandle(GameObject handlePrefab, Vector2 localPos)
     {
         var handle = Instantiate(handlePrefab, transform);
@@ -77,5 +89,48 @@ public class SkillConnectionUI : MonoBehaviour
     {
         controlHandles.Remove(handle);
         DestroyImmediate(handle.gameObject);
+    }
+
+    // -------------------------
+    // VISIBILITY
+    // -------------------------
+
+    public void SetVisible(bool visible)
+    {
+        float a = visible ? 1f : 0f;
+
+        SetLineAlpha(a);
+        SetArrowAlpha(a);
+
+        // foreach (var handle in controlHandles)
+        // {
+        //     handle.gameObject.SetActive(visible);
+        // }
+    }
+
+    void SetLineAlpha(float a)
+    {
+        if (!line) return;
+
+        var sc = line.startColor;
+        var ec = line.endColor;
+
+        sc.a = a;
+        ec.a = a;
+
+        line.startColor = sc;
+        line.endColor = ec;
+    }
+
+    void SetArrowAlpha(float a)
+    {
+        if (!arrowHead) return;
+
+        var img = arrowHead.GetComponent<UnityEngine.UI.Image>();
+        if (!img) return;
+
+        var c = img.color;
+        c.a = a;
+        img.color = c;
     }
 }
