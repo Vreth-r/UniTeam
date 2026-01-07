@@ -106,7 +106,7 @@ public class SkillNodeInputHandler : MonoBehaviour
     private void OnRightClickPerformed(InputAction.CallbackContext ctx)
     {
         SkillNodeUI node = GetNodeUnderPointer();
-        if (node == null) return;
+        if (node == null || !node.isVisible) return;
 
         node.ShowTooltip();
     }

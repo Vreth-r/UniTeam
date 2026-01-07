@@ -9,6 +9,7 @@ public class SkillNodeUI : MonoBehaviour
     public Image icon;
     public Image border;
     public TextMeshProUGUI courseCodeText;
+    public bool isVisible = true;
 
     [Header("Colors")]
     public Color baseColor = Color.gray;
@@ -70,6 +71,7 @@ public class SkillNodeUI : MonoBehaviour
 
     public void SetVisible(bool visible)
     {
+        isVisible = visible;
         float alpha = visible ? 1f : 0f;
         SetImageAlpha(icon, alpha);
         SetImageAlpha(border, alpha);
