@@ -22,6 +22,19 @@ public class SkillNodeUI : MonoBehaviour
 
     public bool unlocked;
 
+    [Header("Hooks")]
+    public GameObject textPanelGO;
+    public GameObject courseCodeGO;
+
+    [Header("Hover Animation")]
+    public float hoverAnimSpeed = 12f;
+
+    CanvasGroup textPanelCG;
+    CanvasGroup courseCodeCG;
+    bool isHovered;
+    Vector2 targetSize;
+
+
     // GRAPH
     [Header("Graph")]
     public List<SkillConnectionUI> incomingConnections = new();
@@ -38,7 +51,26 @@ public class SkillNodeUI : MonoBehaviour
         unlocked = data.isStartingNode;
         border.color = requiredColor;
         courseCodeText.text = data.courseCode;
+    }
+
+    public void Awake()
+    {
         RectTransform = transform as RectTransform;
+        textPanelCG = GetOrAddCanvasGroup(textPanelGO);
+        courseCodeCG = GetOrAddCanvasGroup(courseCodeGO);
+
+        textPanelCG.alpha = 0f;
+        courseCodeCG.alpha = 0f;
+
+        targetSize = RectTransform.sizeDelta;
+    }
+
+    CanvasGroup GetOrAddCanvasGroup(GameObject go)
+    {
+        if (!go) return null;
+        var cg = go.GetComponent<CanvasGroup>();
+        if (!cg) cg = go.AddComponent<CanvasGroup>();
+        return cg;
     }
 
     // -------------------------
@@ -54,6 +86,57 @@ public class SkillNodeUI : MonoBehaviour
         foreach (var c in incomingConnections)
             if (c != null)
                 c.SetVisible(visible);
+    }
+
+    // -------------------------
+    // HOVER
+    // -------------------------
+
+    public void HoverEnter(Vector2 size)
+    {
+        targetSize = size;
+        isHovered = true;
+
+        textPanelGO.SetActive(true);
+        courseCodeGO.SetActive(true);
+    }
+
+    public void HoverExit(Vector2 size)
+    {
+        targetSize = size;
+        isHovered = false;
+    }
+
+    void AnimateHover()
+    {
+        // smoove
+        RectTransform.sizeDelta = Vector2.Lerp(RectTransform.sizeDelta, targetSize, Time.deltaTime * hoverAnimSpeed);
+        float targetAlpha = isHovered ? 1f : 0f;
+        if (textPanelCG)
+        {
+            textPanelCG.alpha = Mathf.Lerp(textPanelCG.alpha, targetAlpha, Time.deltaTime * hoverAnimSpeed);
+        }
+
+        if (courseCodeCG)
+        {
+            courseCodeCG.alpha = Mathf.Lerp(courseCodeCG.alpha, targetAlpha, Time.deltaTime * hoverAnimSpeed);
+        }
+
+        // hide when faded
+        if (!isHovered && textPanelCG && textPanelCG.alpha < 0.01f)
+        {
+            textPanelGO.SetActive(false);
+            courseCodeGO.SetActive(false);
+        }
+    }
+
+    // -------------------------
+    // UPDATE
+    // -------------------------
+
+    void Update()
+    {
+        AnimateHover();
     }
 
     // -------------------------

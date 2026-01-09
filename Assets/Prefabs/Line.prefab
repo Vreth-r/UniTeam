@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 832810199331674946}
   - component: {fileID: 2703437229274315268}
+  - component: {fileID: 4776076498407512126}
   m_Layer: 5
   m_Name: Line
   m_TagString: Untagged
@@ -146,3 +147,11 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!222 &4776076498407512126
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7971784259254158121}
+  m_CullTransparentMesh: 1

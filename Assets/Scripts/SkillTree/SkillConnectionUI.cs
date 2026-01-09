@@ -16,6 +16,8 @@ public class SkillConnectionUI : MonoBehaviour
 
     public int segments = 20;
 
+    public RectTransform clickTarget; // assign at runtime
+
     RectTransform parentRT;
 
     // -------------------------
@@ -57,6 +59,7 @@ public class SkillConnectionUI : MonoBehaviour
         }
 
         UpdateArrow(p2, p1);
+        UpdateClickTarget();
     }
 
     void UpdateArrow(Vector3 tip, Vector3 from)
@@ -67,6 +70,16 @@ public class SkillConnectionUI : MonoBehaviour
         Vector3 dir = (tip - from).normalized;
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         arrowHead.rotation = Quaternion.Euler(0, 0, angle);
+    }
+
+    void UpdateClickTarget()
+    {
+        if (!clickTarget) return;
+
+        int midIndex = segments / 2;
+        Vector3 midPos = line.GetPosition(midIndex);
+
+        clickTarget.anchoredPosition = midPos;
     }
 
     // -------------------------
@@ -132,5 +145,15 @@ public class SkillConnectionUI : MonoBehaviour
         var c = img.color;
         c.a = a;
         img.color = c;
+    }
+
+    // -------------------------
+    // EDITING
+    // -------------------------
+    public void RequestDelete()
+    {
+        if (SkillTreeManager.Instance == null) return;
+        if (!SkillTreeManager.Instance.editMode) return;
+        SkillTreeManager.Instance.TryDeleteConnection(this);
     }
 }

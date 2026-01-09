@@ -18,6 +18,12 @@ public class SkillNodeInputHandler : MonoBehaviour
     [Header("Editor Mode Dragging")]
     public bool editModeEnabled = false;
 
+    [Header("Hover")]
+    public Vector2 normalSize = new Vector2(25, 25);
+    public Vector2 hoverSize = new Vector2(150, 150);
+
+    private SkillNodeUI hoveredNode = null;
+
     [Header("Assigned From SkillTree Generator")]
     public Dictionary<string, SkillNodeUI> allNodes = new Dictionary<string, SkillNodeUI>();
 
@@ -56,6 +62,33 @@ public class SkillNodeInputHandler : MonoBehaviour
     }
 
     // -------------------------
+    // HOVER
+    // -------------------------
+
+    private void UpdateHover()
+    {
+        SkillNodeUI nodeUnderPointer = GetNodeUnderPointer();
+
+        // if changed
+        if (hoveredNode != nodeUnderPointer)
+        {
+            // reset prev
+            if (hoveredNode != null)
+            {
+                hoveredNode.HoverExit(normalSize);
+            }
+
+            hoveredNode = nodeUnderPointer;
+
+            // apply hover size
+            if (hoveredNode != null && hoveredNode.isVisible)
+            {
+                hoveredNode.HoverEnter(hoverSize);
+            }
+        }
+    }
+
+    // -------------------------
     // LEFT CLICK (drag + expand)
     // -------------------------
 
@@ -65,6 +98,13 @@ public class SkillNodeInputHandler : MonoBehaviour
 
         SkillNodeUI node = GetNodeUnderPointer();
         if (node == null) return;
+
+        // line mode
+        if (SkillTreeManager.Instance.lineEditMode == LineEditMode.AddLine)
+        {
+            SkillTreeManager.Instance.TrySelectNodeForConnection(node);
+            return;
+        }
 
         // Start dragging this node
         draggingNode = node;
@@ -117,6 +157,8 @@ public class SkillNodeInputHandler : MonoBehaviour
 
     private void Update()
     {
+        UpdateHover();
+
         if (!editModeEnabled || draggingNode == null)
             return;
 

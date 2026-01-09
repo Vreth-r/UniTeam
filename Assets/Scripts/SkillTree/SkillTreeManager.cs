@@ -11,12 +11,21 @@ public enum TreeContext
     All
 }
 
+public enum LineEditMode
+{
+    None,
+    AddLine,
+    DeleteLine
+}
+
 public class SkillTreeManager : MonoBehaviour
 {
+    public static SkillTreeManager Instance { get; private set; }
     public string jsonFileName = "NMA.json";
     public SkillNodeUI nodePrefab;
     public RectTransform nodeParent;
     public LineRenderer linePrefab;
+    public GameObject connectionClickTargetPrefab;
 
     public SkillTreePanController panController;
     public SkillNodeInputHandler inputHandler;
@@ -43,9 +52,23 @@ public class SkillTreeManager : MonoBehaviour
     public bool editMode = true;
     string jsonPath;
 
+    // line editing
+    public Button addLineButton;
+    public Button deleteLineButton;
+    [HideInInspector]
+    public LineEditMode lineEditMode = LineEditMode.None;
+    SkillNodeUI pendingFromNode;
+
     void Awake()
     {
         jsonPath = Path.Combine(Application.streamingAssetsPath, jsonFileName);
+        if (Instance != null)
+        {
+            Debug.LogError("Multiple SkillTreeManagers in scene! Only one allowed.");
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
     }
 
     void Start()
@@ -58,6 +81,15 @@ public class SkillTreeManager : MonoBehaviour
         actingButton.onClick.AddListener(() => SetContext(TreeContext.Acting));
         danceButton.onClick.AddListener(() => SetContext(TreeContext.Dance));
         productionButton.onClick.AddListener(() => SetContext(TreeContext.Production));
+        addLineButton.onClick.AddListener(() =>
+        {
+            lineEditMode = LineEditMode.AddLine;
+            pendingFromNode = null;
+        });
+        deleteLineButton.onClick.AddListener(() =>
+        {
+            lineEditMode = LineEditMode.DeleteLine;
+        });
         SkillNodeInputHandler.Instance.allNodes = nodeLookup;
         ToggleEditMode();
     }
@@ -112,54 +144,6 @@ public class SkillTreeManager : MonoBehaviour
         {
             AutoGenerateConnections();
         }
-        // foreach (var course in treeData.nodes)
-        // {
-        //     var toUI = nodeLookup[course.courseCode];
-
-        //     // ----- Prerequisites (blue solid lines) -----
-        //     if (course.prerequisites != null)
-        //     {
-        //         foreach (var prereq in course.prerequisites)
-        //         {
-        //             if (nodeLookup.TryGetValue(prereq, out var fromUI))
-        //             {
-        //                 var line = CreateConnection(fromUI, toUI, ConnectionType.Prerequisite);
-        //             }
-        //         }
-        //     }
-
-        //     // ----- Antirequisites (red lines) -----
-        //     if (course.antirequisites != null)
-        //     {
-        //         foreach (var antireq in course.antirequisites)
-        //         {
-        //             if (nodeLookup.TryGetValue(antireq, out var fromUI))
-        //             {
-        //                 var line = CreateConnection(fromUI, toUI, ConnectionType.Antirequisite);
-        //             }
-        //         }
-        //     }
-        // }
-
-        /* will deal with this later
-        // 4) Apply initial expand/collapse state
-        foreach (var course in treeData.nodes)
-        {
-            var ui = nodeLookup[course.courseCode];
-
-            if (ui.data.isExpansionNode)
-            {
-                if (ui.data.startsExpanded)
-                    ui.ExpandImmediate();
-                else
-                    ui.CollapseImmediate();
-            }
-            else if (!ui.data.isStartingNode)
-            {
-                ui.gameObject.SetActive(false);
-            }
-        }
-        */
     }
 
     public void SetContext(TreeContext newContext)
@@ -184,6 +168,12 @@ public class SkillTreeManager : MonoBehaviour
     {
         editMode = !editMode;
 
+        if (!editMode)
+        {
+            lineEditMode = LineEditMode.None;
+            pendingFromNode = null;
+        }
+
         inputHandler.editModeEnabled = editMode;
 
         panController.editMode = editMode;
@@ -192,10 +182,11 @@ public class SkillTreeManager : MonoBehaviour
 
         foreach (var conn in FindObjectsByType<SkillConnectionUI>(FindObjectsSortMode.None))
         {
+            if (conn.clickTarget)
+                conn.clickTarget.gameObject.SetActive(editMode);
+
             foreach (var handle in conn.controlHandles)
-            {
                 handle.gameObject.SetActive(editMode);
-            }
         }
     }
 
@@ -250,6 +241,43 @@ public class SkillTreeManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void TrySelectNodeForConnection(SkillNodeUI node)
+    {
+        if (lineEditMode != LineEditMode.AddLine)
+        {
+            return;
+        }
+
+        if (pendingFromNode == null)
+        {
+            pendingFromNode = node;
+            Debug.Log("Selected FROM node: " + node.data.courseCode);
+            return;
+        }
+
+        if (pendingFromNode == node)
+        {
+            return;
+        }
+
+        // create con
+        CreateConnection(pendingFromNode, node, ConnectionType.Prerequisite, true);
+
+        pendingFromNode = null;
+        lineEditMode = LineEditMode.None;
+    }
+
+    public void TryDeleteConnection(SkillConnectionUI conn)
+    {
+        if (lineEditMode != LineEditMode.DeleteLine)
+        {
+            return;
+        }
+
+        DestroyImmediate(conn.gameObject);
+        lineEditMode = LineEditMode.None;
     }
 
     void AutoGenerateConnections()
@@ -321,6 +349,15 @@ public class SkillTreeManager : MonoBehaviour
             Vector2 mid = (conn.from.anchoredPosition + conn.to.anchoredPosition) * 0.5f;
             conn.AddHandle(controlHandlePrefab, mid);
         }
+
+        var clickGO = Instantiate(connectionClickTargetPrefab, go.transform);
+        var clickRT = clickGO.GetComponent<RectTransform>();
+        conn.clickTarget = clickRT;
+
+        var clickUI = clickGO.GetComponent<ConnectionClickTargetUI>();
+        clickUI.Initialize(conn);
+
+        clickGO.SetActive(editMode);
 
         to.RegisterIncomingConnection(conn);
         return conn;
