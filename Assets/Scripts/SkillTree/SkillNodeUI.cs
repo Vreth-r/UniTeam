@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using System.Collections;
 using TMPro;
 
 public class SkillNodeUI : MonoBehaviour
@@ -33,6 +34,8 @@ public class SkillNodeUI : MonoBehaviour
     CanvasGroup courseCodeCG;
     bool isHovered;
     Vector2 targetSize;
+
+    Dictionary<Image, Coroutine> fadeRoutines = new();
 
 
     // GRAPH
@@ -156,8 +159,8 @@ public class SkillNodeUI : MonoBehaviour
     {
         isVisible = visible;
         float alpha = visible ? 1f : 0f;
-        SetImageAlpha(icon, alpha);
-        SetImageAlpha(border, alpha);
+        // SetImageAlpha(icon, alpha);
+        // SetImageAlpha(border, alpha);
 
         // Fade all graphics
         var graphics = GetComponentsInChildren<Graphic>(true);
@@ -172,11 +175,32 @@ public class SkillNodeUI : MonoBehaviour
         }
     }
 
-    void SetImageAlpha(Image img, float a)
+    void SetImageAlpha(Image img, float a, float duration = 0.15f)
     {
         if (!img) return;
-        var c = img.color;
-        c.a = a;
+        if (fadeRoutines.TryGetValue(img, out var running))
+        StopCoroutine(running);
+
+        fadeRoutines[img] = StartCoroutine(FadeImage(img, a, duration));
+    }
+
+    IEnumerator FadeImage(Image img, float target, float duration)
+    {
+        float start = img.color.a;
+        float t = 0f;
+
+        Color c = img.color;
+
+        while (t < duration)
+        {
+            t += Time.unscaledDeltaTime;
+            float a = Mathf.Lerp(start, target, t / duration);
+            c.a = a;
+            img.color = c;
+            yield return null;
+        }
+
+        c.a = target;
         img.color = c;
     }
 

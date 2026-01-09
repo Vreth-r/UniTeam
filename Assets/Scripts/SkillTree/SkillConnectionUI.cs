@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using System.Collections;
 using UnityEngine.EventSystems;
 
 [ExecuteAlways]
@@ -9,7 +10,10 @@ public class SkillConnectionUI : MonoBehaviour
     public RectTransform from;
     public RectTransform to;
     public LineRenderer line;
-    public RectTransform arrowHead;
+    public RectTransform arrowHead; // yeah bro where
+
+    Coroutine fadeRoutine;
+    float currentAlpha = 1f;
 
     public List<ConnectionHandle> controlHandles = new();
     public ConnectionType type;
@@ -108,17 +112,50 @@ public class SkillConnectionUI : MonoBehaviour
     // VISIBILITY
     // -------------------------
 
-    public void SetVisible(bool visible)
+    public void SetVisible(bool visible, float duration = 0.2f)
     {
-        float a = visible ? 1f : 0f;
+        float target = visible ? 1f : 0f;
 
+        if (fadeRoutine != null)
+            StopCoroutine(fadeRoutine);
+
+        fadeRoutine = StartCoroutine(FadeConnection(target, duration));
+    }
+
+    void ApplyAlpha(float a)
+    {
         SetLineAlpha(a);
         SetArrowAlpha(a);
 
-        // foreach (var handle in controlHandles)
-        // {
-        //     handle.gameObject.SetActive(visible);
-        // }
+        // Optional: edit-mode click target
+        if (clickTarget)
+        {
+            var img = clickTarget.GetComponent<UnityEngine.UI.Image>();
+            if (img)
+            {
+                var c = img.color;
+                c.a = a;
+                img.color = c;
+            }
+        }
+    }
+
+    IEnumerator FadeConnection(float target, float duration)
+    {
+        float start = currentAlpha;
+        float t = 0f;
+
+        while (t < duration)
+        {
+            t += Time.unscaledDeltaTime;
+            currentAlpha = Mathf.Lerp(start, target, t / duration);
+
+            ApplyAlpha(currentAlpha);
+            yield return null;
+        }
+
+        currentAlpha = target;
+        ApplyAlpha(currentAlpha);
     }
 
     void SetLineAlpha(float a)
@@ -135,6 +172,7 @@ public class SkillConnectionUI : MonoBehaviour
         line.endColor = ec;
     }
 
+
     void SetArrowAlpha(float a)
     {
         if (!arrowHead) return;
@@ -146,6 +184,7 @@ public class SkillConnectionUI : MonoBehaviour
         c.a = a;
         img.color = c;
     }
+
 
     // -------------------------
     // EDITING
