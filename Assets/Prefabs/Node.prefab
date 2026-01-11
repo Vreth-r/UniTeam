@@ -291,10 +291,10 @@ MonoBehaviour:
   border: {fileID: 6838413550799967729}
   courseCodeText: {fileID: 1875171006717360268}
   isVisible: 1
-  baseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  baseColor: {r: 0, g: 0, b: 0, a: 1}
   requiredColor: {r: 0.4515438, g: 0, b: 0.735849, a: 1}
   electiveColor: {r: 0, g: 1, b: 0, a: 1}
-  unavailableColor: {r: 0, g: 0, b: 0, a: 1}
+  unavailableColor: {r: 0.754717, g: 0.754717, b: 0.754717, a: 1}
   data:
     courseCode: 
     longTitle: 

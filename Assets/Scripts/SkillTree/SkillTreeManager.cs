@@ -340,7 +340,7 @@ public class SkillTreeManager : MonoBehaviour
         conn.line = Instantiate(linePrefab, go.transform);
         conn.line.textureMode = LineTextureMode.Tile;
 
-        conn.line.startColor = Color.grey;
+        conn.line.startColor = Color.hotPink;
         conn.line.endColor = conn.line.startColor;
 
         // Create control point
