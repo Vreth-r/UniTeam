@@ -9,6 +9,8 @@ public class SkillNodeUI : MonoBehaviour
     [Header("UI")]
     public Image icon;
     public Image border;
+    public Sprite thiccBorder;
+    public Sprite thinBorder; 
     public TextMeshProUGUI courseCodeText;
     public bool isVisible = true;
 
@@ -99,6 +101,7 @@ public class SkillNodeUI : MonoBehaviour
     {
         targetSize = size;
         isHovered = true;
+        border.sprite = thinBorder;
 
         textPanelGO.SetActive(true);
         courseCodeGO.SetActive(true);
@@ -108,6 +111,7 @@ public class SkillNodeUI : MonoBehaviour
     {
         targetSize = size;
         isHovered = false;
+        border.sprite = thiccBorder;
     }
 
     void AnimateHover()

@@ -141,7 +141,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -469155181429731597, guid: f5143130c66cf314b937f8ea1c53d908, type: 3}
+  m_Sprite: {fileID: -6060535032945745090, guid: 63192d514ce1d7e41bbaad4dfb253bf5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -289,6 +289,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillNodeUI
   icon: {fileID: 6838413550799967729}
   border: {fileID: 6838413550799967729}
+  thiccBorder: {fileID: -6060535032945745090, guid: 63192d514ce1d7e41bbaad4dfb253bf5, type: 3}
+  thinBorder: {fileID: 21300000, guid: 099d4aeaf4bd6d148aaf34dd6ac56126, type: 3}
   courseCodeText: {fileID: 1875171006717360268}
   isVisible: 1
   baseColor: {r: 0, g: 0, b: 0, a: 1}
