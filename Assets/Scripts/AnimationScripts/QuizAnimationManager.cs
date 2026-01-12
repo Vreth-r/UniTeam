@@ -49,7 +49,7 @@ public class QuizAnimationManager : MonoBehaviour
 
     public void PlayAnimation()
     {
-        float newX = circleParent.position.x + 380f;
+        float newX = circleParent.position.x + 180f;
         nodeTween = circleParent.DOMove(new Vector3(newX, circleParent.position.y, 0), 0.8f).SetEase(node_tick_curve);
         nodeTween.Play();
         // Sequence TextSequence = DOTween.Sequence();
