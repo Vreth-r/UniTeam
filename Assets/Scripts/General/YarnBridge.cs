@@ -3,6 +3,7 @@ using Yarn.Unity;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine.SceneManagement; 
 
 public class CutsceneYarnCommands : MonoBehaviour
 {
@@ -11,6 +12,18 @@ public class CutsceneYarnCommands : MonoBehaviour
     public static void PlaySound(string soundId)
     {
         AudioEvents.Play(soundId);
+    }
+
+    [YarnCommand("AnimTrigger")]
+    public static void AnimTrigger(string triggerId)
+    {
+        QuizAnimationManager.Instance.animator.SetTrigger(triggerId);
+    }
+
+    [YarnCommand("ChangeScene")]
+    public static void ChangeScene(string sceneId)
+    {
+        SceneManager.LoadScene(sceneId);
     }
 
     [YarnFunction("top_three_scores")]

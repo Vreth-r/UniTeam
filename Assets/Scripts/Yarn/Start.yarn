@@ -1,4 +1,4 @@
-title: Setup
+﻿title: Setup
 ---
 <<declare $optionsTimer = 0>>
 // set quiz variables here
@@ -13,7 +13,7 @@ title: Setup
 <<declare $imgArtsScore = 0>>
 <<declare $GCMScore = 0>>
 <<declare $intDesignScore = 0>>
-<<delcare $topPrograms = "BRO">>
+<<declare $topPrograms = "BRO">>
 
 ===
 
@@ -699,9 +699,14 @@ title: q10option4
 title: Loading
 ---
 // start the animation
+<<AnimTrigger "start">>
 Loading your top schools...
+<<wait 1.5>>
 <<set $topPrograms = top_three_scores($mediaScore, $journalismScore, $proComScore, $peformScore, $crIndustriesScore, $fashionScore, $imgArtsScore, $GCMScore, $intDesignScore)>>
 // should be where the loading part is
-Your top schools is... 
+Your top schools are... 
+<<wait 1.5>>
 Performance!
+<<wait 1>>
+<<ChangeScene "Sandbox">>
 ===

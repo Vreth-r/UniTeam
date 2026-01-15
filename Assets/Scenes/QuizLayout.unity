@@ -438,6 +438,7 @@ MonoBehaviour:
   circleParent: {fileID: 1839328141}
   lineImage: {fileID: 1123018666}
   lineTransform: {fileID: 1600118868}
+  animator: {fileID: 664756897}
   node_tick_curve:
     serializedVersion: 2
     m_Curve:
@@ -903,7 +904,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1336183617
 Transform:
   m_ObjectHideFlags: 0

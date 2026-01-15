@@ -8,11 +8,12 @@ using UnityEngine.UI;
 
 public class QuizAnimationManager : MonoBehaviour
 {
+    public static QuizAnimationManager Instance;
     public TextMeshProUGUI text;
     public Transform circleParent;
     public Image lineImage;
     public Transform lineTransform;
-    private Animator animator;
+    public Animator animator;
 
     private Color redColor = new Color(228f, 0, 114f);
     int questionCount = 2;
@@ -22,6 +23,18 @@ public class QuizAnimationManager : MonoBehaviour
     Tween nodeTween;
     Tween resetTween;
     float elapsedTime = 0;
+
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(Instance);
+        }
+    }
     void Start()
     {
         resumeAction = InputSystem.actions.FindAction("Next");

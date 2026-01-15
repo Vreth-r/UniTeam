@@ -16,7 +16,7 @@ public class SkillTooltip : MonoBehaviour
 
     [Header("Settings")]
     public float fadeDuration = 0.15f;
-    public Vector2 defaultOffset = new Vector2(150f, 50f);
+    public Vector2 defaultOffset = new Vector2(150f, 0f);
     public Vector2 edgeMargin = new Vector2(20f, 20f);
 
     private RectTransform rect;
@@ -44,7 +44,6 @@ public class SkillTooltip : MonoBehaviour
     {
         if (currentNode == node)
         {
-            // Toggle off if same node
             Hide();
             return;
         }
@@ -53,12 +52,21 @@ public class SkillTooltip : MonoBehaviour
         titleText.text = node.data.courseCode;
         bodyText.text = node.data.courseDescription;
 
+        gameObject.SetActive(true);
+
+        RebuildLayout(); // ensures panel resizes b4 positioning
+
         PositionTooltip(node.RectTransform);
 
-        gameObject.SetActive(true);
         isVisible = true;
         StopAllCoroutines();
         StartCoroutine(FadeIn());
+    }
+
+    private void RebuildLayout()
+    {
+        Canvas.ForceUpdateCanvases();
+        LayoutRebuilder.ForceRebuildLayoutImmediate(rect);
     }
 
     public void Hide()
@@ -73,31 +81,32 @@ public class SkillTooltip : MonoBehaviour
 
     private void PositionTooltip(RectTransform target)
     {
-        // Get node position in canvas local space
-        Vector2 localPos;
+        RectTransform canvasRect = canvas.transform as RectTransform;
+
+        // Get node world corners
+        Vector3[] nodeCorners = new Vector3[4];
+        target.GetWorldCorners(nodeCorners);
+
+        // Top-right corner of node (screen space)
+        Vector2 nodeTopRightScreen =
+            RectTransformUtility.WorldToScreenPoint(canvas.worldCamera, nodeCorners[2]);
+
+        // Initial desired screen position (to the right of node)
+        Vector2 desiredScreenPos = nodeTopRightScreen + defaultOffset;
+
+        // Convert screen position to canvas local position
         RectTransformUtility.ScreenPointToLocalPointInRectangle(
-            canvas.transform as RectTransform,
-            RectTransformUtility.WorldToScreenPoint(canvas.worldCamera, target.position),
+            canvasRect,
+            desiredScreenPos,
             canvas.worldCamera,
-            out localPos
+            out Vector2 localPos
         );
 
-        Vector2 pos = localPos + defaultOffset;
+        // Tooltip uses top-left pivot
+        rect.anchoredPosition = localPos;
 
-        // Get canvas size
-        RectTransform canvasRect = canvas.transform as RectTransform;
-        Vector2 canvasSize = canvasRect.sizeDelta;
-        Vector2 tooltipSize = rect.sizeDelta;
-
-        // Flip X if off right edge
-        if (pos.x + tooltipSize.x + edgeMargin.x > canvasSize.x / 2f)
-            pos.x = localPos.x - tooltipSize.x - defaultOffset.x;
-
-        // Flip Y if off top edge
-        if (pos.y + tooltipSize.y + edgeMargin.y > canvasSize.y / 2f)
-            pos.y = localPos.y - tooltipSize.y - defaultOffset.y;
-
-        rect.anchoredPosition = pos;
+        // Clamp tooltip fully inside canvas
+        ClampToCanvas(canvasRect);
     }
 
     private IEnumerator FadeIn()
@@ -125,6 +134,26 @@ public class SkillTooltip : MonoBehaviour
         canvasGroup.alpha = 0;
         gameObject.SetActive(false);
     }
+
+    private void ClampToCanvas(RectTransform canvasRect)
+    {
+        Vector2 canvasSize = canvasRect.rect.size;
+        Vector2 tooltipSize = rect.rect.size;
+
+        Vector2 pos = rect.anchoredPosition;
+
+        float minX = -canvasSize.x / 2f + edgeMargin.x;
+        float maxX =  canvasSize.x / 2f - tooltipSize.x - edgeMargin.x;
+
+        float maxY =  canvasSize.y / 2f - edgeMargin.y;
+        float minY = -canvasSize.y / 2f + tooltipSize.y + edgeMargin.y;
+
+        pos.x = Mathf.Clamp(pos.x, minX, maxX);
+        pos.y = Mathf.Clamp(pos.y, minY, maxY);
+
+        rect.anchoredPosition = pos;
+    }
+
 
     [Header("New Input System")]
     public InputActionReference clickAction; // Assign SkillTree/Click
