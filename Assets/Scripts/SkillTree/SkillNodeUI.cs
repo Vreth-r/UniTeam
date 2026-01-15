@@ -9,8 +9,11 @@ public class SkillNodeUI : MonoBehaviour
     [Header("UI")]
     public Image icon;
     public Image border;
+    public Sprite thiccBorder;
+    public Sprite thinBorder; 
     public TextMeshProUGUI courseCodeText;
     public bool isVisible = true;
+    private RectTransform currentNode;
 
     [Header("Colors")]
     public Color baseColor = Color.gray;
@@ -66,6 +69,7 @@ public class SkillNodeUI : MonoBehaviour
         courseCodeCG.alpha = 0f;
 
         targetSize = RectTransform.sizeDelta;
+        currentNode = GetComponent<RectTransform>();
     }
 
     CanvasGroup GetOrAddCanvasGroup(GameObject go)
@@ -99,15 +103,18 @@ public class SkillNodeUI : MonoBehaviour
     {
         targetSize = size;
         isHovered = true;
+        border.sprite = thinBorder;
 
         textPanelGO.SetActive(true);
         courseCodeGO.SetActive(true);
+        currentNode.SetAsLastSibling();
     }
 
     public void HoverExit(Vector2 size)
     {
         targetSize = size;
         isHovered = false;
+        border.sprite = thiccBorder;
     }
 
     void AnimateHover()
