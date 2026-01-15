@@ -193,18 +193,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 247705415}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1839328141}
+  m_Father: {fileID: 1336183617}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -2.2699919}
+  m_AnchoredPosition: {x: -0.6059809, y: -26.205935}
   m_SizeDelta: {x: 22.7618, y: 22.7618}
-  m_Pivot: {x: 0.5, y: 1.9686899}
+  m_Pivot: {x: 0.4733779, y: 0.9178902}
 --- !u!114 &247705417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -888,6 +888,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1123018664}
   m_CullTransparentMesh: 1
+--- !u!1 &1336183616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1336183617}
+  m_Layer: 5
+  m_Name: Triangle-parent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1336183617
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336183616}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0.928064, w: 0.3724209}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 247705416}
+  m_Father: {fileID: 1839328141}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 136.27}
 --- !u!1 &1530299601
 GameObject:
   m_ObjectHideFlags: 0
@@ -999,7 +1031,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 515427672}
-  - {fileID: 247705416}
+  - {fileID: 1336183617}
   m_Father: {fileID: 910234553}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1969853162
@@ -1071,7 +1103,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080
   m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
