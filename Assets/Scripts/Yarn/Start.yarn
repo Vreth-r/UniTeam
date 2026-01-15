@@ -1,4 +1,4 @@
-﻿title: Setup
+title: Setup
 ---
 <<declare $optionsTimer = 0>>
 // set quiz variables here
@@ -13,6 +13,7 @@
 <<declare $imgArtsScore = 0>>
 <<declare $GCMScore = 0>>
 <<declare $intDesignScore = 0>>
+<<delcare $topPrograms = "BRO">>
 
 ===
 
@@ -44,8 +45,6 @@ You're watching a live Twitch stream. What element captures your attention the m
 
 title: q1option1
 ---
-You picked option 1.
-
 <<set $mediaScore = $mediaScore + 1>>
 <<set $journalismScore = $journalismScore + 1>>
 <<set $proComScore = $proComScore + 1>>
@@ -55,8 +54,6 @@ You picked option 1.
 
 title: q1option2
 ---
-You picked option 2.
-
 <<set $peformScore = $peformScore + 1>>
 <<set $intDesignScore = $intDesignScore + 1>>
 <<set $imgArtsScore = $imgArtsScore + 1>>
@@ -66,8 +63,6 @@ You picked option 2.
 
 title: q1option3
 ---
-You picked option 3.
-
 <<set $GCMScore = $GCMScore + 1>>
 <<set $mediaScore = $mediaScore + 1>>
 <<set $crIndustriesScore = $crIndustriesScore + 1>>
@@ -77,8 +72,6 @@ You picked option 3.
 
 title: q1option4
 ---
-You picked option 4.
-
 <<set $fashionScore = $fashionScore + 1>>
 <<set $imgArtsScore = $imgArtsScore + 1>>
 
@@ -87,8 +80,6 @@ You picked option 4.
 
 title: q1option5
 ---
-You picked option 5.
-
 <<set $crIndustriesScore = $crIndustriesScore + 1>>
 <<set $proComScore = $proComScore + 1>>
 
@@ -97,8 +88,6 @@ You picked option 5.
 
 title: q1option6
 ---
-You picked option 6.
-
 <<set $imgArtsScore = $imgArtsScore + 1>>
 <<set $mediaScore = $mediaScore + 1>>
 <<set $peformScore = $peformScore + 1>>
@@ -128,8 +117,6 @@ It's the weekend. How are you spending your free time?
 
 title: q2option1
 ---
-You picked option 1.
-
 <<set $imgArtsScore = $imgArtsScore + 1>>
 <<set $mediaScore = $mediaScore + 1>>
 
@@ -138,8 +125,6 @@ You picked option 1.
 
 title: q2option2
 ---
-You picked option 2.
-
 <<set $fashionScore = $fashionScore + 1>>
 <<set $imgArtsScore = $imgArtsScore + 1>>
 <<set $intDesignScore = $intDesignScore + 1>>
@@ -149,8 +134,6 @@ You picked option 2.
 
 title: q2option3
 ---
-You picked option 3.
-
 <<set $peformScore = $peformScore + 1>>
 <<set $proComScore = $proComScore + 1>>
 
@@ -159,8 +142,6 @@ You picked option 3.
 
 title: q2option4
 ---
-You picked option 4.
-
 <<set $intDesignScore = $intDesignScore + 1>>
 <<set $GCMScore = $GCMScore + 1>>
 
@@ -169,8 +150,6 @@ You picked option 4.
 
 title: q2option5
 ---
-You picked option 5.
-
 <<set $proComScore = $proComScore + 1>>
 <<set $mediaScore = $mediaScore + 1>>
 <<set $crIndustriesScore = $crIndustriesScore + 1>>
@@ -180,8 +159,6 @@ You picked option 5.
 
 title: q2option6
 ---
-You picked option 6.
-
 <<set $journalismScore = $journalismScore + 1>>
 <<set $proComScore = $proComScore + 1>>
 
@@ -209,7 +186,7 @@ In a creative group project, what role do you naturally take?
 
 title: q3option1
 ---
-You picked option 1.
+
 
 <<set $crIndustriesScore = $crIndustriesScore + 1>>
 <<set $proComScore = $proComScore + 1>>
@@ -220,7 +197,7 @@ You picked option 1.
 
 title: q3option2
 ---
-You picked option 2.
+
 
 <<set $peformScore = $peformScore + 1>>
 <<set $mediaScore = $mediaScore + 1>>
@@ -231,7 +208,7 @@ You picked option 2.
 
 title: q3option3
 ---
-You picked option 3.
+
 
 <<set $journalismScore = $journalismScore + 1>>
 <<set $proComScore = $proComScore + 1>>
@@ -241,7 +218,7 @@ You picked option 3.
 
 title: q3option4
 ---
-You picked option 4.
+
 
 <<set $GCMScore = $GCMScore + 1>>
 <<set $imgArtsScore = $imgArtsScore + 1>>
@@ -252,7 +229,7 @@ You picked option 4.
 
 title: q3option5
 ---
-You picked option 5.
+
 
 <<set $intDesignScore = $intDesignScore + 1>>
 <<set $peformScore = $peformScore + 1>>
@@ -284,7 +261,7 @@ Pick your ideal creative workspace.
 
 title: q4option1
 ---
-You picked option 1.
+
 
 <<set $mediaScore = $mediaScore + 1>>
 <<set $journalismScore = $journalismScore + 1>>
@@ -294,7 +271,7 @@ You picked option 1.
 
 title: q4option2
 ---
-You picked option 2.
+
 
 <<set $peformScore = $peformScore + 1>>
 <<set $imgArtsScore = $imgArtsScore + 1>>
@@ -304,7 +281,7 @@ You picked option 2.
 
 title: q4option3
 ---
-You picked option 3.
+
 
 <<set $fashionScore = $fashionScore + 1>>
 <<set $intDesignScore = $intDesignScore + 1>>
@@ -314,7 +291,7 @@ You picked option 3.
 
 title: q4option4
 ---
-You picked option 4.
+
 
 <<set $journalismScore = $journalismScore + 1>>
 <<set $proComScore = $proComScore + 1>>
@@ -324,7 +301,6 @@ You picked option 4.
 
 title: q4option5
 ---
-You picked option 5.
 
 <<set $crIndustriesScore = $crIndustriesScore + 1>>
 <<set $proComScore = $proComScore + 1>>
@@ -335,7 +311,6 @@ You picked option 5.
 
 title: q4option6
 ---
-You picked option 6.
 
 <<set $GCMScore = $GCMScore + 1>>
 <<set $imgArtsScore = $imgArtsScore + 1>>
@@ -365,37 +340,44 @@ You're at Fashion Week. What are you doing?
 
 title: q5option1
 ---
-You picked option 1.
+<<set $fashionScore = $fashionScore + 1>>
+
 <<jump Question6>>
 ===
 
 title: q5option2
 ---
-You picked option 2.
+<<set $peformScore = $peformScore + 1>>
+<<set $fashionScore = $fashionScore + 1>>
 <<jump Question6>>
 ===
 
 title: q5option3
 ---
-You picked option 3.
+<<set $imgArtsScore = $imgArtsScore + 1>>
+<<set $fashionScore = $fashionScore + 1>>
 <<jump Question6>>
 ===
 
 title: q5option4
 ---
-You picked option 4.
+<<set $journalismScore = $journalismScore + 1>>
+<<set $mediaScore = $mediaScore + 1>>
+<<set $fashionScore = $fashionScore + 1>>
 <<jump Question6>>
 ===
 
 title: q5option5
 ---
-You picked option 5.
+<<set $crIndustriesScore = $crIndustriesScore + 1>>
+<<set $proComScore = $proComScore + 1>>
 <<jump Question6>>
 ===
 
 title: q5option6
 ---
-You picked option 6.
+<<set $intDesignScore = $intDesignScore + 1>>
+<<set $peformScore = $peformScore + 1>>
 <<jump Question6>>
 ===
 
@@ -421,37 +403,53 @@ Which tool would you reach for first to solve a problem?
 
 title: q6option1
 ---
-You picked option 1.
+<<set $imgArtsScore = $imgArtsScore + 1>>
+<<set $journalismScore = $journalismScore + 1>>
+
 <<jump Question7>>
 ===
 
 title: q6option2
 ---
-You picked option 2.
+<<set $mediaScore = $mediaScore + 1>>
+<<set $peformScore = $peformScore + 1>>
+<<set $proComScore = $proComScore + 1>>
+
 <<jump Question7>>
 ===
 
 title: q6option3
 ---
-You picked option 3.
+<<set $fashionScore = $fashionScore + 1>>
+<<set $intDesignScore = $intDesignScore + 1>>
+<<set $GCMScore = $GCMScore + 1>>
+
 <<jump Question7>>
 ===
 
 title: q6option4
 ---
-You picked option 4.
+<<set $crIndustriesScore = $crIndustriesScore + 1>>
+<<set $GCMScore = $GCMScore + 1>>
+
 <<jump Question7>>
 ===
 
 title: q6option5
 ---
-You picked option 5.
+<<set $fashionScore = $fashionScore + 1>>
+<<set $peformScore = $peformScore + 1>>
+<<set $intDesignScore = $intDesignScore + 1>>
+
 <<jump Question7>>
 ===
 
 title: q6option6
 ---
-You picked option 6.
+<<set $mediaScore = $mediaScore + 1>>
+<<set $imgArtsScore = $imgArtsScore + 1>>
+<<set $GCMScore = $GCMScore + 1>>
+
 <<jump Question7>>
 ===
 
@@ -475,31 +473,45 @@ What kind of impact do you want your work to have?
 
 title: q7option1
 ---
-You picked option 1.
+<<set $peformScore = $peformScore + 1>>
+<<set $mediaScore = $mediaScore + 1>>
+<<set $imgArtsScore = $imgArtsScore + 1>>
+
 <<jump Question8>>
 ===
 
 title: q7option2
 ---
-You picked option 2.
+<<set $journalismScore = $journalismScore + 1>>
+<<set $proComScore = $proComScore + 1>>
+
 <<jump Question8>>
 ===
 
 title: q7option3
 ---
-You picked option 3.
+<<set $intDesignScore = $intDesignScore + 1>>
+<<set $fashionScore = $fashionScore + 1>>
+<<set $GCMScore = $GCMScore + 1>>
+
 <<jump Question8>>
 ===
 
 title: q7option4
 ---
-You picked option 4.
+
+<<set $crIndustriesScore = $crIndustriesScore + 1>>
+<<set $GCMScore = $GCMScore + 1>>
+
 <<jump Question8>>
 ===
 
 title: q7option5
 ---
-You picked option 5.
+
+<<set $proComScore = $proComScore + 1>>
+<<set $mediaScore = $mediaScore + 1>>
+
 <<jump Question8>>
 ===
 
@@ -525,37 +537,50 @@ If you started a YouTube channel, what would it be about?
 
 title: q8option1
 ---
-You picked option 1.
+
+<<set $imgArtsScore = $imgArtsScore + 1>>
+<<set $mediaScore = $mediaScore + 1>>
+
 <<jump Question9>>
 ===
 
 title: q8option2
 ---
-You picked option 2.
+<<set $journalismScore = $journalismScore + 1>>
+<<set $proComScore = $proComScore + 1>>
+
 <<jump Question9>>
 ===
 
 title: q8option3
 ---
-You picked option 3.
+
+<<set $fashionScore = $fashionScore + 1>>
+
 <<jump Question9>>
 ===
 
 title: q8option4
 ---
-You picked option 4.
+<<set $intDesignScore = $intDesignScore + 1>>
+<<set $GCMScore = $GCMScore + 1>>
+
 <<jump Question9>>
 ===
 
 title: q8option5
 ---
-You picked option 5.
+<<set $peformScore = $peformScore + 1>>
+<<set $proComScore = $proComScore + 1>>
+
 <<jump Question9>>
 ===
 
 title: q8option6
 ---
-You picked option 6.
+<<set $crIndustriesScore = $crIndustriesScore + 1>>
+<<set $proComScore = $proComScore + 1>>
+
 <<jump Question9>>
 ===
 
@@ -579,31 +604,45 @@ Pick a word that describes your vibe.
 
 title: q9option1
 ---
-You picked option 1.
+<<set $peformScore = $peformScore + 1>>
+<<set $fashionScore = $fashionScore + 1>>
+<<set $imgArtsScore = $imgArtsScore + 1>>
+
 <<jump Question10>>
 ===
 
 title: q9option2
 ---
-You picked option 2.
+<<set $crIndustriesScore = $crIndustriesScore + 1>>
+<<set $GCMScore = $GCMScore + 1>>
+<<set $proComScore = $proComScore + 1>>
+
 <<jump Question10>>
 ===
 
 title: q9option3
 ---
-You picked option 3.
+<<set $journalismScore = $journalismScore + 1>>
+<<set $mediaScore = $mediaScore + 1>>
+
 <<jump Question10>>
 ===
 
 title: q9option4
 ---
-You picked option 4.
+<<set $intDesignScore = $intDesignScore + 1>>
+<<set $imgArtsScore = $imgArtsScore + 1>>
+<<set $GCMScore = $GCMScore + 1>>
+
 <<jump Question10>>
 ===
 
 title: q9option5
 ---
-You picked option 5.
+<<set $proComScore = $proComScore + 1>>
+<<set $crIndustriesScore = $crIndustriesScore + 1>>
+<<set $peformScore = $peformScore + 1>>
+
 <<jump Question10>>
 ===
 
@@ -625,30 +664,44 @@ Finally, what drives you the most?
 
 title: q10option1
 ---
-You picked option 1.
+<<set $peformScore = $peformScore + 1>>
+<<set $mediaScore = $mediaScore + 1>>
+
 <<jump Loading>>
 ===
 
 title: q10option2
 ---
-You picked option 2.
+<<set $imgArtsScore = $imgArtsScore + 1>>
+<<set $fashionScore = $fashionScore + 1>>
+<<set $intDesignScore = $intDesignScore + 1>>
+
 <<jump Loading>>
 ===
 
 title: q10option3
 ---
-You picked option 3.
+<<set $crIndustriesScore = $crIndustriesScore + 1>>
+<<set $GCMScore = $GCMScore + 1>>
+
 <<jump Loading>>
 ===
 
 title: q10option4
 ---
-You picked option 4.
+<<set $journalismScore = $journalismScore + 1>>
+<<set $proComScore = $proComScore + 1>>
+<<set $mediaScore = $mediaScore + 1>>
+
 <<jump Loading>>
 ===
 
 title: Loading
 ---
+// start the animation
 Loading your top schools...
-Insert cool transition here!!!!!
+<<set $topPrograms = top_three_scores($mediaScore, $journalismScore, $proComScore, $peformScore, $crIndustriesScore, $fashionScore, $imgArtsScore, $GCMScore, $intDesignScore)>>
+// should be where the loading part is
+Your top schools is... 
+Performance!
 ===
